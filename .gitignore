@@ -89,6 +89,7 @@ crashlytics-build.properties
 *.zip
 *.exe
 *.dll
+*.ogg
 
 # Ignore additional OS or tool-specific files
 .DS_Store
