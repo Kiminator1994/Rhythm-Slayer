@@ -61,6 +61,23 @@ sysinfo.txt
 *.unitypackage
 *.app
 
+# Git LFS - track large binary file types
+*.psd
+*.wav
+*.mp3
+*.mp4
+*.mov
+*.tga
+*.png
+*.jpg
+*.tiff
+*.fbx
+*.obj
+*.3ds
+*.zip
+*.exe
+*.dll
+
 # Crashlytics generated file
 crashlytics-build.properties
 
