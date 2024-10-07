@@ -77,6 +77,7 @@ sysinfo.txt
 *.zip
 *.exe
 *.dll
+*.ogg
 
 # Crashlytics generated file
 crashlytics-build.properties
