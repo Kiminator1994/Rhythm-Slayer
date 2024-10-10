@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bad26984f2c6ce047a62bfd53b1d8a04, type: 3}
+  m_Name: NIVIRO - Demons
+  m_EditorClassIdentifier: 
+  title: NIVIRO - Demons
+  audioClip: {fileID: 8300000, guid: 41f25730a1b62344f825ba2d197ce210, type: 3}
+  bpm: 160
+  backgroundImage: {fileID: 21300000, guid: 9153b43055db3fa4f8b8b628bdfc5c56, type: 3}
+  highScore: 2300
+  maxCombo: 7

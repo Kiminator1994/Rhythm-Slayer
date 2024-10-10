@@ -15,12 +15,11 @@ public class ScoreScreenManager : MonoBehaviour
     {
         if(GameManager.Instance != null)
         {
-            Debug.Log("ScoreScreenScene Start()");
             string title = GameManager.Instance.GetTitle();
             int playerPoints = GameManager.Instance.GetPlayerPoints();
             int maxCombo = GameManager.Instance.GetMaxCombo();
             int missCount = GameManager.Instance.GetPlayerMissCount();
-            Debug.Log(missCount);
+            Debug.Log("MissCount: " + missCount);
             SetTitle(title);
             SetScore(playerPoints);
             SetMaxCombo(maxCombo);

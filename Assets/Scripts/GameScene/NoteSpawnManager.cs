@@ -19,13 +19,12 @@ public class NoteSpawnManager : MonoBehaviour
     // Calculated BeatInterval based on BPM
     private float BeatInterval => 60f / BPM;
 
+
     void Start()
     {
         GeneratePatterns(); // Generate the note patterns
         StartCoroutine(SpawnNotes());
     }
-
-
 
     // Generates all note patterns programmatically.
     private void GeneratePatterns()

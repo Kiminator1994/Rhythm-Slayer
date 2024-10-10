@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -32,8 +33,7 @@ public class GameManager : MonoBehaviour
     private string scoreScreenTitle = "Song finished. Congratulations";
 
     // Selected Music
-    private AudioClip selectedSongClip;
-    private float selectedSongBPM;
+    private SongData selectedSongData;
 
 
     private void Awake()
@@ -48,7 +48,6 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
 
     // GameScene
     // Handle Events and send data to UI
@@ -75,8 +74,6 @@ public class GameManager : MonoBehaviour
         musicManager.OnPlaytimeUpdated += SetPlaytime;
         musicManager.OnMusicEnd += SetWinScoreScreenTitle;
         musicManager.OnMusicEnd += EndGame;
-
-
 
         noteEndManager.OnNoteMiss += SetComboOnMiss;
         noteEndManager.OnNoteMiss += SetHealthOnMiss;
@@ -217,21 +214,34 @@ public class GameManager : MonoBehaviour
     // MainMenu
     // Get Selected Music from SongLibraryManager
 
-    public void StartSelectedSong(AudioClip songClip, float bpm)
+    public void SetSelectedSongData(SongData song)
     {
-        selectedSongClip = songClip;
-        selectedSongBPM = bpm;
-        SceneManager.LoadScene("GameScene");
+        selectedSongData = song;
+        Debug.Log(selectedSongData.audioClip);
+    }
+
+    public void StartSelectedSong()
+    {
+        Debug.Log(selectedSongData.audioClip + " " + selectedSongData.bpm);
+        if (selectedSongData.audioClip != null && selectedSongData.bpm != 0f)
+        {
+            SceneManager.LoadScene("GameScene");
+        }
+    }
+
+    public SongData GetSongData()
+    {
+        return selectedSongData;
     }
 
     public AudioClip GetAudioClip()
     {
-        return selectedSongClip;
+        return selectedSongData.audioClip;
     }
 
     public float GetBpm()
     {
-        return selectedSongBPM;
+        return selectedSongData.bpm;
     }
 
 }

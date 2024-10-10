@@ -9,6 +9,7 @@ public class GameSceneInitializer : MonoBehaviour
     [SerializeField] private NoteEndManager noteEndManagerRef;
     [SerializeField] private MusicManager musicManager;
 
+
     private void Start()
     {
         if(GameManager.Instance != null)

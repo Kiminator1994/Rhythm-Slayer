@@ -7,4 +7,6 @@ public class SongData : ScriptableObject
     public AudioClip audioClip;
     public float bpm;
     public Sprite backgroundImage;
+    public int highScore;
+    public int maxCombo;
 }

@@ -14,11 +14,6 @@ public class UIManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI health;
 
 
-
-
-
-
-
     public void UpdatePlaytime(float currentPlaytime)
     {
         // Convert playtime from seconds to format (minutes:seconds)
