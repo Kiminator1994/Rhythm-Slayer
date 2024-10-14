@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bad26984f2c6ce047a62bfd53b1d8a04, type: 3}
-  m_Name: NIVIRO - The Labyrinth
+  m_Name: NIVIRO - The Guardian of Angels
   m_EditorClassIdentifier: 
   interpret: NIVIRO
-  title: The Labyrinth
-  audioClip: {fileID: 8300000, guid: 6ca7d89fbea4df54bba7c5ee8eab0ddb, type: 3}
-  bpm: 138
-  backgroundImage: {fileID: 21300000, guid: 4a554529ebddb244eab420f3991e2161, type: 3}
-  highScore: 0
-  maxCombo: 0
+  title: The Guardian of Angels
+  audioClip: {fileID: 8300000, guid: ba9aab6a131a4ba41a5fcf3c9c711992, type: 3}
+  bpm: 128
+  backgroundImage: {fileID: 21300000, guid: a3feaaac0ea101c419d89565761623ed, type: 3}
+  highScore: 52200
+  maxCombo: 72

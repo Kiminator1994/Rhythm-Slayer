@@ -105,7 +105,7 @@ public class NoteSpawnManager : MonoBehaviour
     {
         if (spawnPoint < spawnPoints.Count)  // in case of a bug, or typo when creating new patterns
         {
-            GameObject note = Instantiate(notePrefab, spawnPoints[spawnPoint].position, Quaternion.identity);
+            GameObject note = Instantiate(notePrefab, spawnPoints[spawnPoint].position, notePrefab.transform.rotation);
             Rigidbody rb = note.GetComponent<Rigidbody>();
 
             if (rb != null)

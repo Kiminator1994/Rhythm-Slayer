@@ -9,9 +9,6 @@ public class GameManager : MonoBehaviour
     // GameScene UI
     private UIManager hudManager;
 
-    // Playtime
-    private NoteSpawnManager noteSpawnManager;
-
     // Points & combo
     private SwordInteraction swordLeft;
     private SwordInteraction swordRight;
@@ -52,12 +49,11 @@ public class GameManager : MonoBehaviour
     // GameScene
     // Handle Events and send data to UI
 
-    public void SetGameSceneReferences(SwordInteraction swordLeftRef, SwordInteraction swordRightRef, UIManager hudManagerRef, NoteSpawnManager noteSpawnManagerRef, NoteEndManager noteEndManagerRef, MusicManager musicManagerRef)
+    public void SetGameSceneReferences(SwordInteraction swordLeftRef, SwordInteraction swordRightRef, UIManager hudManagerRef, NoteEndManager noteEndManagerRef, MusicManager musicManagerRef)
     {
         swordLeft = swordLeftRef;
         swordRight = swordRightRef;
         hudManager = hudManagerRef;
-        noteSpawnManager = noteSpawnManagerRef;
         noteEndManager = noteEndManagerRef;
         musicManager = musicManagerRef;
     }

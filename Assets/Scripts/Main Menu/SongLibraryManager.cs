@@ -8,6 +8,7 @@ using System.Collections;
 public class SongLibraryManager : MonoBehaviour
 {
     [SerializeField] private List<SongData> songLibrary;  // List of ScriptableObjects SongData
+    [SerializeField] private TextMeshProUGUI mainMenuSongInterpret;
     [SerializeField] private TextMeshProUGUI mainMenuSongTitle;
     [SerializeField] private TextMeshProUGUI highscore;
     [SerializeField] private TextMeshProUGUI maxCombo;
@@ -46,6 +47,9 @@ public class SongLibraryManager : MonoBehaviour
             TextMeshProUGUI songNameText = newButton.transform.Find("SongTitle").GetComponent<TextMeshProUGUI>();
             songNameText.text = song.title;
 
+            TextMeshProUGUI songInterpretText = newButton.transform.Find("SongInterpret").GetComponent<TextMeshProUGUI>();
+            songInterpretText.text = song.interpret;
+
             Image backgroundImage = newButton.transform.Find("Image").GetComponent<Image>();
             backgroundImage.sprite = song.backgroundImage;
 
@@ -77,6 +81,7 @@ public class SongLibraryManager : MonoBehaviour
     {
         GameManager.Instance.SetSelectedSongData(song);
         mainMenuSongTitle.text = song.title;
+        mainMenuSongInterpret.text = song.interpret;
         mainMenuImage.sprite = song.backgroundImage;
         highscore.text = song.highScore.ToString();
         maxCombo.text = song.maxCombo.ToString();

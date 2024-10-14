@@ -1,3 +1,4 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
 
@@ -13,6 +14,9 @@ public class UIManager : MonoBehaviour
     // Health
     [SerializeField] private TextMeshProUGUI health;
 
+    // Health
+    [SerializeField] private TextMeshProUGUI countdown;
+    [SerializeField] private int countdownDuration = 3;
 
     public void UpdatePlaytime(float currentPlaytime)
     {
@@ -35,5 +39,25 @@ public class UIManager : MonoBehaviour
     public void UpdateHealth(int actualHealth)
     { 
         health.text = actualHealth.ToString();        
+    }
+
+    public void StartCountdown(System.Action onCountdownComplete)
+    {
+        StartCoroutine(CountdownCoroutine(onCountdownComplete));
+    }
+
+    private IEnumerator CountdownCoroutine(System.Action onCountdownComplete)
+    {
+        for (int seconds = countdownDuration; seconds > 0; seconds--)
+        {
+            countdown.text = seconds.ToString();
+            yield return new WaitForSeconds(1f);
+        }
+
+        countdown.text = "Start!";
+        yield return new WaitForSeconds(1f);
+        countdown.text = ""; // Hide the countdown
+
+        onCountdownComplete.Invoke();
     }
 }
