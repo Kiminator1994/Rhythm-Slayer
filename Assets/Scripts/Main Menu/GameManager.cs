@@ -1,13 +1,16 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance; // Singleton
 
     // GameScene UI
-    private UIManager hudManager;
+    private UIManager uiManager;
 
     // Points & combo
     private SwordInteraction swordLeft;
@@ -32,6 +35,17 @@ public class GameManager : MonoBehaviour
     // Selected Music
     private SongData selectedSongData;
 
+    // Pause
+    public bool isPaused = false;
+    public event Action OnPauseStart;
+    public event Action OnPauseEnd;
+
+
+    // test
+    int subscribeCount = 0;
+    int unsubscribeCount = 0;
+
+
 
     private void Awake()
     {
@@ -49,11 +63,11 @@ public class GameManager : MonoBehaviour
     // GameScene
     // Handle Events and send data to UI
 
-    public void SetGameSceneReferences(SwordInteraction swordLeftRef, SwordInteraction swordRightRef, UIManager hudManagerRef, NoteEndManager noteEndManagerRef, MusicManager musicManagerRef)
+    public void SetGameSceneReferences(SwordInteraction swordLeftRef, SwordInteraction swordRightRef, UIManager uiManagerRef, NoteEndManager noteEndManagerRef, MusicManager musicManagerRef)
     {
         swordLeft = swordLeftRef;
         swordRight = swordRightRef;
-        hudManager = hudManagerRef;
+        uiManager = uiManagerRef;
         noteEndManager = noteEndManagerRef;
         musicManager = musicManagerRef;
     }
@@ -74,11 +88,13 @@ public class GameManager : MonoBehaviour
         noteEndManager.OnNoteMiss += SetComboOnMiss;
         noteEndManager.OnNoteMiss += SetHealthOnMiss;
         noteEndManager.OnNoteMiss += SetMissCount;
+        ++subscribeCount;
+        Debug.Log("subscribed: " + subscribeCount + " unsubscribed: " + unsubscribeCount);
     }
 
     public void ResetGameSceneStats()
     {
-        Debug.Log("After Reset: " + "title " + scoreScreenTitle + " PlayerPoints: " + playerPoints + " MacCombo: " + maxCombo + " playermissCount: " + playerMissCount);
+        Debug.Log("Before Reset: " + "title " + scoreScreenTitle + " PlayerPoints: " + playerPoints + " MacCombo: " + maxCombo + " playermissCount: " + playerMissCount);
         playerPoints = 0;
         playerCombo = 0;
         multiplier = 1f;
@@ -88,7 +104,7 @@ public class GameManager : MonoBehaviour
         Debug.Log("After Reset: " + "title " + scoreScreenTitle + " PlayerPoints: "  + playerPoints + " MacCombo: " + maxCombo + " playermissCount: " + playerMissCount);
     }
 
-    private void UnsubcscribeGameSceneEvents()
+    public void UnsubcscribeGameSceneEvents()
     {
         swordLeft.OnCubeNoteHit -= SetCombo;
         swordRight.OnCubeNoteHit -= SetCombo;
@@ -102,11 +118,12 @@ public class GameManager : MonoBehaviour
 
         noteEndManager.OnNoteMiss -= SetComboOnMiss;
         noteEndManager.OnNoteMiss -= SetHealthOnMiss;
+        ++unsubscribeCount; // Check for memory leak
     }
 
     private void SetPlaytime(float currentPlaytime)
     {
-        hudManager.UpdatePlaytime(currentPlaytime);
+        uiManager.UpdatePlaytime(currentPlaytime);
     }
 
     private void SetPoints()
@@ -117,13 +134,13 @@ public class GameManager : MonoBehaviour
         }
 
         playerPoints += (int)(basicPoints * multiplier);
-        hudManager.UpdatePoints(playerPoints);
+        uiManager.UpdatePoints(playerPoints);
     }
 
     private void SetCombo()
     {
         playerCombo += 1;
-        hudManager.UpdateCombo(playerCombo);
+        uiManager.UpdateCombo(playerCombo);
 
         if (playerCombo > maxCombo)
         {
@@ -136,14 +153,14 @@ public class GameManager : MonoBehaviour
         if (actualHealth < maxHealth && actualHealth > 0)
         {
             actualHealth += 1;
-            hudManager.UpdateHealth(actualHealth);
+            uiManager.UpdateHealth(actualHealth);
         }
     }
 
     private void SetComboOnMiss()
     {
         playerCombo = 0;
-        hudManager.UpdateCombo(playerCombo);
+        uiManager.UpdateCombo(playerCombo);
     }
 
     private void SetHealthOnMiss()
@@ -151,13 +168,13 @@ public class GameManager : MonoBehaviour
         actualHealth -= damage;
         if (actualHealth > 0)
         {
-            hudManager.UpdateHealth(actualHealth);
+            uiManager.UpdateHealth(actualHealth);
         }
 
         else if (actualHealth <= 0)
         {
             actualHealth = 0;
-            hudManager.UpdateHealth(actualHealth);
+            uiManager.UpdateHealth(actualHealth);
             SetScoreScreenTitle("You Lose");
             EndGame();
         }
@@ -212,26 +229,35 @@ public class GameManager : MonoBehaviour
 
     public void SetSelectedSongData(SongData song)
     {
+        if (selectedSongData != null)
+            Debug.Log(selectedSongData.noteList.Count);
         selectedSongData = song;
-        Debug.Log(selectedSongData.audioClip);
     }
 
     public void StartSelectedSong()
     {
-        Debug.Log(selectedSongData.audioClip + " " + selectedSongData.bpm);
-        if (selectedSongData.audioClip != null && selectedSongData.bpm != 0f)
+
+        if (selectedSongData.audioClip != null)
         {
+            Debug.Log("GameManager: " + selectedSongData.title);
+            for (int i = 0; i < selectedSongData.noteList.Count; i++)
+            {
+                Debug.Log("LineLayer: " + selectedSongData.noteList[i].lineLayer + " Index:" + selectedSongData.noteList[i].lineIndex + " timestamp: " + selectedSongData.noteList[i].timestamp + " direction: " + selectedSongData.noteList[i].cutDirection + " type: " + selectedSongData.noteList[i].type);
+            }
             SceneManager.LoadScene("GameScene");
         }
     }
 
     public SongData GetSongData()
     {
+        if(selectedSongData != null)
+            Debug.Log(selectedSongData.noteList.Count);
         return selectedSongData;
     }
 
     public AudioClip GetAudioClip()
     {
+        Debug.Log(selectedSongData.noteList.Count);
         return selectedSongData.audioClip;
     }
 
@@ -240,4 +266,33 @@ public class GameManager : MonoBehaviour
         return selectedSongData.bpm;
     }
 
+    public float GetNoteSpeed()
+    {
+        return selectedSongData.noteSpeed;
+    }
+
+
+
+    // Pause Menu
+
+    public void PauseGame()
+    {
+        OnPauseStart?.Invoke();
+        isPaused = true;
+        musicManager.PauseMusic();
+        uiManager.ShowPauseMenu();
+    }
+
+    public void ResumeGame()
+    {
+        OnPauseEnd?.Invoke();
+        musicManager.UnPauseMusic();
+        isPaused = false;
+    }
+
+    public void RestartGame()
+    {
+        UnsubcscribeGameSceneEvents();
+        SceneManager.LoadScene("GameScene");
+    }
 }

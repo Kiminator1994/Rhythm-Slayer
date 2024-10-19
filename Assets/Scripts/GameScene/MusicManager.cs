@@ -9,7 +9,6 @@ public class MusicManager : MonoBehaviour
     public event Action<float> OnPlaytimeUpdated;
     public event Action OnMusicEnd;
 
-    private bool paused = false;
 
     private void Start()
     {
@@ -19,7 +18,6 @@ public class MusicManager : MonoBehaviour
     public void PlayMusic(AudioClip clip)
     {
         audioSource.clip = clip;
-        paused = false;
         audioSource.Play();
         StartCoroutine(UpdatePlaytime());
         StartCoroutine(CheckMusicEnd());
@@ -42,14 +40,12 @@ public class MusicManager : MonoBehaviour
 
     public void PauseMusic()
     {
-        paused = true;
         audioSource.Pause();
     }
 
-    public void ContinueMusic()
+    public void UnPauseMusic()
     {
         audioSource.UnPause();
-        paused = false;
     }
 
     private IEnumerator UpdatePlaytime()
@@ -65,7 +61,7 @@ public class MusicManager : MonoBehaviour
     {
         yield return new WaitUntil(() => !audioSource.isPlaying);
 
-        if (paused == false)
+        if (GameManager.Instance.isPaused == false)
         {
             OnMusicEnd?.Invoke();
         }

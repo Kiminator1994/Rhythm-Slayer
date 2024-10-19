@@ -1,68 +1,111 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CubeNoteSpawnManager : MonoBehaviour
 {
-    public List<Transform> spawnPoints;      // List of spawn points
-    public GameObject redNotePrefab;         // Red note prefab
-    public GameObject blueNotePrefab;        // Blue note prefab
+    [SerializeField] private Transform[] layerOne = new Transform[4];
+    [SerializeField] private Transform[] layerTwo = new Transform[4];
+    [SerializeField] private Transform[] layerThree = new Transform[4];
+    private Transform[,] spawnPoints;
 
-    public MusicManager musicManager;        // Reference to MusicManager to get song time
-    public SongData songData;                // Loaded song data with notes and timestamps
 
-    public float noteSpeed = 5f;             // Speed of the notes towards the player
-    public float playerOffsetTime = 0f;      // Adjustable time offset for the player
+    public GameObject redNotePrefab;
+    public GameObject blueNotePrefab;
+
+    public GameObject redAnyDirectionNotePrefab;
+    public GameObject blueAnyDirectionNotePrefab;
+
+    public MusicManager musicManager;
+    public SongData songData;
+
+    public float playerOffsetTime = 0f; // Adjustable time offset for the player in settings TO DO!!!!
 
     private void Start()
     {
+        spawnPoints = new Transform[,]
+        {
+            { layerOne[0], layerTwo[0], layerThree[0] },
+            { layerOne[1], layerTwo[1], layerThree[1] },
+            { layerOne[2], layerTwo[2], layerThree[2] },
+            { layerOne[3], layerTwo[3], layerThree[3] }
+        };
+
+        songData = GameManager.Instance.GetSongData();
         if (songData != null)
-            StartCoroutine(SpawnNotes());  // Start spawning notes
+            StartCoroutine(SpawnNotes());
+
     }
 
-    // Coroutine to spawn notes based on timestamps
     private IEnumerator SpawnNotes()
     {
+        Debug.Log("Cubenotespawner: " +songData.title);
+        for (int i = 0; i < songData.noteList.Count; i++)
+        {
+            Debug.Log("LineLayer: " + songData.noteList[i].lineLayer + " Index:" + songData.noteList[i].lineIndex + " timestamp: " + songData.noteList[i].timestamp + " direction: " + songData.noteList[i].cutDirection + " type: " + songData.noteList[i].type);
+        }
         foreach (NoteData note in songData.noteList)
         {
-            float cubeTravelTime = (20 / noteSpeed);
-            if (note.timestamp < cubeTravelTime)
+            float cubeTravelTime = (20 / songData.noteSpeed);
+            if (note.timestamp < cubeTravelTime) // skip cubeNotes that would spawn before the song has started
             {
+                Debug.Log("skiped notes: " + note.timestamp);
                 continue;
             }
 
-            // Wait until the right time to spawn the note
+            // Wait until the right time to spawn the Cubenote
             float spawnTime = note.timestamp - playerOffsetTime - cubeTravelTime;
             while (musicManager.GetCurrentTime() < spawnTime)
             {
-                yield return null;  // Wait until the song time reaches the timestamp minus the offset
+                yield return null;
             }
-
-            SpawnNoteAtPoint(note.spawnPoint, note.isBlueCube);
+            Debug.Log("spawntime: " + spawnTime + " timestamp: " + note.timestamp + " cubeTravelTime: " + cubeTravelTime);
+            SpawnNote(note);
         }
     }
 
     // Spawns the note at the correct spawn point with the correct color
-    private void SpawnNoteAtPoint(byte spawnPoint, bool isBlueCube)
+    private void SpawnNote(NoteData note)
     {
-        if (spawnPoint < spawnPoints.Count)
-        {
-            GameObject notePrefab = isBlueCube ? blueNotePrefab : redNotePrefab;
-            GameObject note = Instantiate(notePrefab, spawnPoints[spawnPoint].position, notePrefab.transform.rotation);
+        GameObject notePrefab = note.type == 1 ? redNotePrefab : blueNotePrefab;
 
-            Rigidbody rb = note.GetComponent<Rigidbody>();
-            if (rb != null)
-            {
-                rb.velocity = new Vector3(0, 0, -noteSpeed);  // Move note towards the player (negative Z direction)
-            }
-            else
-            {
-                Debug.LogWarning("Note prefab is missing a Rigidbody component!");
-            }
-        }
-        else
+        // Define a dictionary to store cut direction rotations
+        Quaternion rotation = notePrefab.transform.rotation; // Default rotation
+
+        switch (note.cutDirection)
         {
-            Debug.LogWarning($"Spawn point index {spawnPoint} is out of range.");
+            case 0: // Up
+                rotation = Quaternion.Euler(0, 90, 0);
+                break;
+            case 1: // Down
+                rotation = Quaternion.Euler(0, 90, 180);
+                break;
+            case 2: // Left
+                rotation = Quaternion.Euler(90, 0, 90);
+                break;
+            case 3: // Right
+                rotation = Quaternion.Euler(0, 90, -90);
+                break;
+            case 4: // Up Left
+                rotation = Quaternion.Euler(90, 0, 45);
+                break;
+            case 5: // Up Right
+                rotation = Quaternion.Euler(90, 0, -45);
+                break;
+            case 6: // Down Left
+                rotation = Quaternion.Euler(90, 0, 135);
+                break;
+            case 7: // Down Right
+                rotation = Quaternion.Euler(0, 90, -135);
+                break;
+            case 8: // Any
+                if (note.type == 1)
+                    notePrefab = redAnyDirectionNotePrefab;
+                else
+                    notePrefab = blueAnyDirectionNotePrefab;
+                break;
         }
+        Debug.Log("type: " + note.type + " cutDir: " + note.cutDirection + " index: " + note.lineIndex + " layer: " + note.lineLayer);
+        Transform spawnPoint = spawnPoints[note.lineIndex, note.lineLayer];
+        Instantiate(notePrefab, spawnPoint.position, rotation);
     }
 }

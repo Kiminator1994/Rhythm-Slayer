@@ -13,14 +13,16 @@ public class GameSceneInitializer : MonoBehaviour
 
     private void Start()
     {
+        Debug.Log("initialize Scene...");
         if(GameManager.Instance != null)
         {
             GameManager.Instance.SetGameSceneReferences(swordLeftRef, swordRightRef, hudManagerRef, noteEndManagerRef, musicManager);
             GameManager.Instance.SubcscribeGameSceneEvents();
             GameManager.Instance.ResetGameSceneStats();
-            //noteSpawnManagerRef.BPM = GameManager.Instance.GetBpm();
             cubeNoteSpawnManagerRef.songData = GameManager.Instance.GetSongData();
-            hudManagerRef.StartCountdown(StartMusic);           
+            hudManagerRef.StartCountdown(StartMusic);
+            Debug.Log("Scene initialized");
+            Debug.Log(GameManager.Instance.GetAudioClip());
         }
     }
 

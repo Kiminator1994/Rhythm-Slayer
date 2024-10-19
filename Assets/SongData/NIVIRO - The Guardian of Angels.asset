@@ -19,3 +19,15 @@ MonoBehaviour:
   backgroundImage: {fileID: 21300000, guid: a3feaaac0ea101c419d89565761623ed, type: 3}
   highScore: 52200
   maxCombo: 72
+  noteSpeed: 6
+  noteList:
+  - timestamp: 3
+    lineIndex: 1
+    lineLayer: 1
+    cutDirection: 4
+    type: 0
+  - timestamp: 4
+    lineIndex: 1
+    lineLayer: 1
+    cutDirection: 6
+    type: 1

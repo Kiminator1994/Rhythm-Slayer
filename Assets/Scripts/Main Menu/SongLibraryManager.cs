@@ -16,6 +16,7 @@ public class SongLibraryManager : MonoBehaviour
     [SerializeField] private GameObject templateButton;
     [SerializeField] private Transform buttonContainer;
     [SerializeField] private GameObject selectedSong;
+    [SerializeField] private float sampletime = 20f;
 
     private void Start()
     {
@@ -41,6 +42,12 @@ public class SongLibraryManager : MonoBehaviour
     {
         foreach (var song in songLibrary)
         {
+            Debug.Log(song.title);
+            for (int i = 0; i < song.noteList.Count; i++)
+            {
+                Debug.Log("LineLayer: " + song.noteList[i].lineLayer + " Index:" + song.noteList[i].lineIndex + " timestamp: " + song.noteList[i].timestamp + " direction: " + song.noteList[i].cutDirection + " type: " + song.noteList[i].type);
+            }
+
             GameObject newButton = Instantiate(templateButton, buttonContainer);
             newButton.SetActive(true);
 
@@ -93,7 +100,7 @@ public class SongLibraryManager : MonoBehaviour
         AudioSource audioSource = GetComponent<AudioSource>();
         audioSource.clip = song.audioClip;
         audioSource.Play();
-        StartCoroutine(StopSample(20f));
+        StartCoroutine(StopSample(sampletime));
     }
 
     private IEnumerator StopSample(float time)
