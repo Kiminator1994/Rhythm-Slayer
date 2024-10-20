@@ -1,0 +1,44 @@
+{
+  "_version": "2.0.0",
+  "_songName": "Internet bitch",
+  "_songSubName": "",
+  "_songAuthorName": "DJ'TEKINA",
+  "_levelAuthorName": "Kikis & AaltopahWi",
+  "_beatsPerMinute": 175,
+  "_songTimeOffset": -2,
+  "_shuffle": 0,
+  "_shufflePeriod": 0.5,
+  "_previewStartTime": 89,
+  "_previewDuration": 21,
+  "_songFilename": "DJ'TEKINA - Internet bitch (PLight Remix).egg",
+  "_coverImageFilename": "cover.jpg",
+  "_environmentName": "TriangleEnvironment",
+  "_customData": {
+    "_contributors": [],
+    "_customEnvironment": "",
+    "_customEnvironmentHash": ""
+  },
+  "_difficultyBeatmapSets": [
+    {
+      "_beatmapCharacteristicName": "Standard",
+      "_difficultyBeatmaps": [
+        {
+          "_difficulty": "Expert",
+          "_difficultyRank": 7,
+          "_beatmapFilename": "Expert.dat",
+          "_noteJumpMovementSpeed": 12,
+          "_noteJumpStartBeatOffset": 0,
+          "_customData": {
+            "_difficultyLabel": "",
+            "_editorOffset": 200,
+            "_editorOldOffset": 200,
+            "_warnings": [],
+            "_information": [],
+            "_suggestions": [],
+            "_requirements": []
+          }
+        }
+      ]
+    }
+  ]
+}

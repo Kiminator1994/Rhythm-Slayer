@@ -1,13 +1,15 @@
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using System.Linq;
 using System.Collections;
+using System.Linq;
+using UnityEngine.Networking;
 
 public class SongLibraryManager : MonoBehaviour
 {
-    [SerializeField] private List<SongData> songLibrary;  // List of ScriptableObjects SongData
+    [SerializeField] private List<SongData> songLibrary;  // Predefined songs
     [SerializeField] private TextMeshProUGUI mainMenuSongInterpret;
     [SerializeField] private TextMeshProUGUI mainMenuSongTitle;
     [SerializeField] private TextMeshProUGUI highscore;
@@ -17,23 +19,24 @@ public class SongLibraryManager : MonoBehaviour
     [SerializeField] private Transform buttonContainer;
     [SerializeField] private GameObject selectedSong;
     [SerializeField] private float sampletime = 20f;
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private SongMapImporter songMapImporter;
+
+    private string customSongsFolder = "CustomSongs";
 
     private void Start()
     {
         DisplaySongs();
 
-        int playerPoints = GameManager.Instance.GetPlayerPoints();
-        int maxCombo = GameManager.Instance.GetMaxCombo();
+        // Show the first song or a selected one
         SongData selectedSongData = GameManager.Instance.GetSongData();
-        UpdateSongDataHighscoreStats(playerPoints, maxCombo, selectedSongData);
-
         if (selectedSongData != null)
         {
             OnSongSelected(selectedSongData);
         }
-        else
+        else if (songLibrary.Count > 0)
         {
-            SongData firstSong = songLibrary.First();
+            SongData firstSong = songLibrary[0];
             OnSongSelected(firstSong);
         }
     }
@@ -42,46 +45,42 @@ public class SongLibraryManager : MonoBehaviour
     {
         foreach (var song in songLibrary)
         {
-            Debug.Log(song.title);
-            for (int i = 0; i < song.noteList.Count; i++)
+            if (!string.IsNullOrEmpty(song.noteDataFilePath))
             {
-                Debug.Log("LineLayer: " + song.noteList[i].lineLayer + " Index:" + song.noteList[i].lineIndex + " timestamp: " + song.noteList[i].timestamp + " direction: " + song.noteList[i].cutDirection + " type: " + song.noteList[i].type);
+                string filePath = Path.Combine(Application.dataPath, customSongsFolder, song.noteDataFilePath); // Path to the .dat file
+                if (File.Exists(filePath))
+                {
+                    var beatSaberMap = songMapImporter.LoadMap(filePath); // Load map from the .dat file
+                    song.noteList = songMapImporter.ConvertToNoteData(beatSaberMap); // Convert the map to note data
+                    CreateSongButton(song);
+                    Debug.Log($"Loaded notes for song: {song.title} from {filePath}");
+                }
+                else
+                {
+                    Debug.LogError($"Note file not found for song: {song.title} at {filePath}");
+                }
             }
-
-            GameObject newButton = Instantiate(templateButton, buttonContainer);
-            newButton.SetActive(true);
-
-            TextMeshProUGUI songNameText = newButton.transform.Find("SongTitle").GetComponent<TextMeshProUGUI>();
-            songNameText.text = song.title;
-
-            TextMeshProUGUI songInterpretText = newButton.transform.Find("SongInterpret").GetComponent<TextMeshProUGUI>();
-            songInterpretText.text = song.interpret;
-
-            Image backgroundImage = newButton.transform.Find("Image").GetComponent<Image>();
-            backgroundImage.sprite = song.backgroundImage;
-
-            Button buttonComponent = newButton.GetComponent<Button>();
-            buttonComponent.onClick.AddListener(() => OnSongSelected(song));
-            buttonComponent.onClick.AddListener(() => PlaySample(song));
-
         }
     }
 
-    public void UpdateSongDataHighscoreStats(int playerPoints, int maxCombo, SongData selectedSongData)
-    {
-        SongData songdata = songLibrary.Find(songData => songData == selectedSongData);
-        if (songdata != null)
-        {
-            if (playerPoints > songdata.highScore)
-            {
-                songdata.highScore = playerPoints;
-            }
 
-            if (maxCombo > selectedSongData.maxCombo)
-            {
-                songdata.maxCombo = maxCombo;
-            }
-        }
+    private void CreateSongButton(SongData song)
+    {
+        GameObject newButton = Instantiate(templateButton, buttonContainer);
+        newButton.SetActive(true);
+
+        TextMeshProUGUI songNameText = newButton.transform.Find("SongTitle").GetComponent<TextMeshProUGUI>();
+        songNameText.text = song.title;
+
+        TextMeshProUGUI songInterpretText = newButton.transform.Find("SongInterpret").GetComponent<TextMeshProUGUI>();
+        songInterpretText.text = song.interpret;
+
+        Image backgroundImage = newButton.transform.Find("Image").GetComponent<Image>();
+        backgroundImage.sprite = song.backgroundImage;
+
+        Button buttonComponent = newButton.GetComponent<Button>();
+        buttonComponent.onClick.AddListener(() => OnSongSelected(song));
+        buttonComponent.onClick.AddListener(() => PlaySample(song));
     }
 
     private void OnSongSelected(SongData song)
@@ -97,7 +96,6 @@ public class SongLibraryManager : MonoBehaviour
 
     private void PlaySample(SongData song)
     {
-        AudioSource audioSource = GetComponent<AudioSource>();
         audioSource.clip = song.audioClip;
         audioSource.Play();
         StartCoroutine(StopSample(sampletime));
@@ -106,5 +104,6 @@ public class SongLibraryManager : MonoBehaviour
     private IEnumerator StopSample(float time)
     {
         yield return new WaitForSeconds(time);
+        audioSource.Stop();
     }
 }

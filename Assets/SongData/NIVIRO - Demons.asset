@@ -20,54 +20,6 @@ MonoBehaviour:
   highScore: 2300
   maxCombo: 10
   noteSpeed: 8
-  noteList:
-  - timestamp: 3
-    lineIndex: 2
-    lineLayer: 2
-    cutDirection: 8
-    type: 1
-  - timestamp: 3
-    lineIndex: 1
-    lineLayer: 1
-    cutDirection: 6
-    type: 1
-  - timestamp: 5
-    lineIndex: 0
-    lineLayer: 0
-    cutDirection: 0
-    type: 0
-  - timestamp: 5
-    lineIndex: 1
-    lineLayer: 0
-    cutDirection: 0
-    type: 1
-  - timestamp: 7
-    lineIndex: 2
-    lineLayer: 0
-    cutDirection: 0
-    type: 1
-  - timestamp: 7
-    lineIndex: 3
-    lineLayer: 0
-    cutDirection: 0
-    type: 1
-  - timestamp: 9
-    lineIndex: 3
-    lineLayer: 2
-    cutDirection: 0
-    type: 0
-  - timestamp: 11
-    lineIndex: 2
-    lineLayer: 2
-    cutDirection: 2
-    type: 0
-  - timestamp: 11
-    lineIndex: 1
-    lineLayer: 2
-    cutDirection: 8
-    type: 1
-  - timestamp: 12
-    lineIndex: 2
-    lineLayer: 2
-    cutDirection: 4
-    type: 1
+  songTimeOffset: 0
+  noteList: []
+  noteDataFilePath: 

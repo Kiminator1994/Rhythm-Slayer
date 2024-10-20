@@ -2082,6 +2082,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPaused: 0
+  GameIsOver: 0
 --- !u!1 &464284525
 GameObject:
   m_ObjectHideFlags: 0
@@ -6738,6 +6739,7 @@ GameObject:
   - component: {fileID: 1997341337}
   - component: {fileID: 1997341338}
   - component: {fileID: 1997341339}
+  - component: {fileID: 1997341340}
   m_Layer: 0
   m_Name: SongLibraryManager
   m_TagString: Untagged
@@ -6774,9 +6776,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   songLibrary:
-  - {fileID: 11400000, guid: 66181cdb62ca9c54cbf11b6a32d1dfe4, type: 2}
-  - {fileID: 11400000, guid: cf9952d4f9e2f394983231e95b7b86c5, type: 2}
-  - {fileID: 11400000, guid: f90267d933eee5a4dbc31186da223f80, type: 2}
+  - {fileID: 11400000, guid: 60d321b122ea1174a9767e3b915db3d2, type: 2}
+  - {fileID: 11400000, guid: c8ad1b36b894ef848bd1478cb23cb4d2, type: 2}
+  - {fileID: 11400000, guid: 31d9b388e2598814799f6cd5f54d1030, type: 2}
   mainMenuSongInterpret: {fileID: 733568600}
   mainMenuSongTitle: {fileID: 242264895}
   highscore: {fileID: 1800454620}
@@ -6786,6 +6788,8 @@ MonoBehaviour:
   buttonContainer: {fileID: 1192792234}
   selectedSong: {fileID: 392098980}
   sampletime: 20
+  audioSource: {fileID: 1997341339}
+  songMapImporter: {fileID: 1997341340}
 --- !u!82 &1997341339
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6882,6 +6886,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1997341340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997341336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbb58d5961b532f49bfe6dff821c48d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2045694600
 GameObject:
   m_ObjectHideFlags: 0

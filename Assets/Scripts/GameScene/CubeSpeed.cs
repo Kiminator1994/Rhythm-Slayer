@@ -18,13 +18,11 @@ public class CubeSpeed : MonoBehaviour
     private void SetSpeedZero()
     {
         rb.velocity = Vector3.zero;
-        Debug.Log("CubeNoteSpeed paused: " + rb.velocity);
     }
 
     public void SetSpeed()
     {
         rb.velocity = Vector3.back * GameManager.Instance.GetNoteSpeed();
-        Debug.Log("CubeNoteSpeed: " + rb.velocity);
     }
 
     private void OnDestroy()

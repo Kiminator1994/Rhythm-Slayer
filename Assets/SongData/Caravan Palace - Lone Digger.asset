@@ -1,0 +1,3755 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bad26984f2c6ce047a62bfd53b1d8a04, type: 3}
+  m_Name: Caravan Palace - Lone Digger
+  m_EditorClassIdentifier: 
+  interpret: Caravane Palace
+  title: Lone Digger
+  audioClip: {fileID: 8300000, guid: 5d97a0f236cebd04f9427aa0c3ffeae9, type: 3}
+  bpm: 124
+  backgroundImage: {fileID: 21300000, guid: 0db0ca80e9cded342aa2c29829afdada, type: 3}
+  highScore: 74000
+  maxCombo: 107
+  noteSpeed: 10
+  songTimeOffset: 0
+  noteList:
+  - timestamp: 8.25
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 8.25
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 8.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 8.75
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 10.25
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 10.5
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 11
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 12.25
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 12.25
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 12.75
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 12.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 14.25
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 14.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 15
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 16.25
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 16.25
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 16.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 16.75
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 18.25
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 18.5
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 19
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 19
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 20.25
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 20.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 21.25
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 21.875
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 7
+    type: 1
+  - timestamp: 22.25
+    lineIndex: 1
+    lineLayer: 2
+    cutDirection: 0
+    type: 0
+  - timestamp: 22.75
+    lineIndex: 2
+    lineLayer: 2
+    cutDirection: 0
+    type: 1
+  - timestamp: 23.25
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 7
+    type: 1
+  - timestamp: 23.25
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 6
+    type: 0
+  - timestamp: 23.75
+    lineIndex: 1
+    lineLayer: 1
+    cutDirection: 5
+    type: 0
+  - timestamp: 23.75
+    lineIndex: 2
+    lineLayer: 1
+    cutDirection: 4
+    type: 1
+  - timestamp: 24.25
+    lineIndex: 0
+    lineLayer: 2
+    cutDirection: 4
+    type: 0
+  - timestamp: 24.25
+    lineIndex: 3
+    lineLayer: 2
+    cutDirection: 5
+    type: 1
+  - timestamp: 24.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 24.75
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 26.25
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 26.5
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 27
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 28.25
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 28.25
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 28.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 28.75
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 30.25
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 30.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 31
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 32.25
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 32.25
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 32.75
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 32.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 34.25
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 34.5
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 35
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 35
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 36.5
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 36.75
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 37
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 37.25
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 37.5
+    lineIndex: 2
+    lineLayer: 2
+    cutDirection: 0
+    type: 1
+  - timestamp: 37.75
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 38
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 38
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 38.5
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 38.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 39
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 39.25
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 39.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 40
+    lineIndex: 1
+    lineLayer: 1
+    cutDirection: 2
+    type: 1
+  - timestamp: 40
+    lineIndex: 2
+    lineLayer: 1
+    cutDirection: 2
+    type: 1
+  - timestamp: 41.25
+    lineIndex: 2
+    lineLayer: 2
+    cutDirection: 0
+    type: 1
+  - timestamp: 41.75
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 42.25
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 1
+  - timestamp: 42.75
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 43.25
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 43.75
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 43.75
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 44.75
+    lineIndex: 1
+    lineLayer: 2
+    cutDirection: 0
+    type: 0
+  - timestamp: 45.25
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 0
+  - timestamp: 45.75
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 6
+    type: 0
+  - timestamp: 46.25
+    lineIndex: 2
+    lineLayer: 2
+    cutDirection: 0
+    type: 0
+  - timestamp: 46.75
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 47.25
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 47.25
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 47.75
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 47.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 48.25
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 48.25
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 49.25
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 49.5
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 49.75
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 50.25
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 50.75
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 51.25
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 51.75
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 0
+  - timestamp: 51.75
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 1
+  - timestamp: 52.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 52.75
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 53.25
+    lineIndex: 2
+    lineLayer: 2
+    cutDirection: 0
+    type: 1
+  - timestamp: 53.25
+    lineIndex: 1
+    lineLayer: 2
+    cutDirection: 0
+    type: 0
+  - timestamp: 54.25
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 54.25
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 54.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 3
+    type: 0
+  - timestamp: 54.75
+    lineIndex: 1
+    lineLayer: 1
+    cutDirection: 2
+    type: 1
+  - timestamp: 55.25
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 55.75
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 55.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 57.25
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 57.5
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 58.25
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 58.75
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 59.25
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 59.25
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 59.75
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 2
+    type: 1
+  - timestamp: 59.75
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 3
+    type: 0
+  - timestamp: 60.75
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 3
+    type: 1
+  - timestamp: 61.25
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 2
+    type: 0
+  - timestamp: 61.75
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 3
+    type: 1
+  - timestamp: 62.25
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 2
+    type: 0
+  - timestamp: 62.75
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 2
+    type: 0
+  - timestamp: 62.75
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 3
+    type: 1
+  - timestamp: 63.75
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 8
+    type: 0
+  - timestamp: 63.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 8
+    type: 1
+  - timestamp: 64.75
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 2
+    type: 0
+  - timestamp: 65.25
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 3
+    type: 1
+  - timestamp: 66
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 66
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 66.25
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 66.75
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 67.25
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 7
+    type: 1
+  - timestamp: 67.75
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 6
+    type: 0
+  - timestamp: 69
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 7
+    type: 3
+  - timestamp: 69
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 7
+    type: 3
+  - timestamp: 69
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 7
+    type: 3
+  - timestamp: 69
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 7
+    type: 3
+  - timestamp: 71.75
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 71.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 72.75
+    lineIndex: 2
+    lineLayer: 2
+    cutDirection: 0
+    type: 1
+  - timestamp: 73.25
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 73.75
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 1
+  - timestamp: 74.25
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 74.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 75.25
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 75.25
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 75.75
+    lineIndex: 2
+    lineLayer: 1
+    cutDirection: 3
+    type: 0
+  - timestamp: 76.25
+    lineIndex: 1
+    lineLayer: 2
+    cutDirection: 0
+    type: 0
+  - timestamp: 76.75
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 0
+  - timestamp: 77.25
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 6
+    type: 0
+  - timestamp: 77.75
+    lineIndex: 2
+    lineLayer: 2
+    cutDirection: 0
+    type: 0
+  - timestamp: 78.25
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 78.75
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 78.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 79.25
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 79.25
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 79.75
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 79.75
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 80.75
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 81
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 81.25
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 81.75
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 82.25
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 82.75
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 83.25
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 0
+  - timestamp: 83.25
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 1
+  - timestamp: 84.25
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 84.25
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 84.75
+    lineIndex: 1
+    lineLayer: 2
+    cutDirection: 0
+    type: 0
+  - timestamp: 84.75
+    lineIndex: 2
+    lineLayer: 2
+    cutDirection: 0
+    type: 1
+  - timestamp: 85.25
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 85.25
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 86.25
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 3
+    type: 0
+  - timestamp: 86.25
+    lineIndex: 1
+    lineLayer: 1
+    cutDirection: 2
+    type: 1
+  - timestamp: 86.75
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 87.25
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 87.25
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 87.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 87.75
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 88.75
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 89.25
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 89.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 90.25
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 90.75
+    lineIndex: 2
+    lineLayer: 1
+    cutDirection: 3
+    type: 0
+  - timestamp: 91.25
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 91.75
+    lineIndex: 2
+    lineLayer: 1
+    cutDirection: 2
+    type: 1
+  - timestamp: 92.25
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 92.75
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 93.25
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 93.75
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 94.25
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 94.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 95.25
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 2
+    type: 0
+  - timestamp: 95.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 3
+    type: 0
+  - timestamp: 95.75
+    lineIndex: 2
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 96.75
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 97.25
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 97.75
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 98.5
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 98.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 99.25
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 99.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 8
+    type: 0
+  - timestamp: 99.75
+    lineIndex: 0
+    lineLayer: 2
+    cutDirection: 8
+    type: 0
+  - timestamp: 99.75
+    lineIndex: 1
+    lineLayer: 1
+    cutDirection: 8
+    type: 0
+  - timestamp: 103.25
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 103.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 103.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 104
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 104.25
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 104.5
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 104.75
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 105.25
+    lineIndex: 3
+    lineLayer: 2
+    cutDirection: 5
+    type: 1
+  - timestamp: 105.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 106
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 106.25
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 106.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 107
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 107.5
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 107.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 107.75
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 107.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 108.25
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 108.25
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 109.25
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 109.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 110.25
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 110.5
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 110.75
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 111.25
+    lineIndex: 1
+    lineLayer: 2
+    cutDirection: 0
+    type: 0
+  - timestamp: 111.25
+    lineIndex: 2
+    lineLayer: 2
+    cutDirection: 0
+    type: 1
+  - timestamp: 112.5
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 113
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 0
+    type: 1
+  - timestamp: 113.25
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 113.75
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 0
+    type: 0
+  - timestamp: 114.25
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 114.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 114.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 115
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 115.5
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 115.75
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 116
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 116
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 116.5
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 116.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 117.25
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 117.25
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 117.75
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 0
+  - timestamp: 117.75
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 1
+  - timestamp: 118.25
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 6
+    type: 0
+  - timestamp: 118.25
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 7
+    type: 1
+  - timestamp: 118.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 118.75
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 119.25
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 119.25
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 119.5
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 119.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 120.25
+    lineIndex: 1
+    lineLayer: 2
+    cutDirection: 0
+    type: 0
+  - timestamp: 120.25
+    lineIndex: 2
+    lineLayer: 2
+    cutDirection: 0
+    type: 1
+  - timestamp: 120.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 121
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 121.25
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 121.5
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 121.75
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 122
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 122.25
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 122.75
+    lineIndex: 3
+    lineLayer: 2
+    cutDirection: 5
+    type: 1
+  - timestamp: 123
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 123.5
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 123.75
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 124.25
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 124.75
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 125.25
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 125.25
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 125.5
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 125.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 126.25
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 126.75
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 127.25
+    lineIndex: 1
+    lineLayer: 1
+    cutDirection: 2
+    type: 1
+  - timestamp: 127.25
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 3
+    type: 0
+  - timestamp: 128.25
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 128.5
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 128.75
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 129
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 129.25
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 129.75
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 6
+    type: 0
+  - timestamp: 130
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 7
+    type: 1
+  - timestamp: 130.25
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 130.5
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 130.75
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 131
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 131.25
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 131.25
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 132
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 132
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 136
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 136
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 137.25
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 137.75
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 1
+  - timestamp: 138.25
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 138.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 139.25
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 139.25
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 139.75
+    lineIndex: 2
+    lineLayer: 1
+    cutDirection: 3
+    type: 0
+  - timestamp: 140.75
+    lineIndex: 1
+    lineLayer: 2
+    cutDirection: 0
+    type: 0
+  - timestamp: 141.25
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 0
+  - timestamp: 141.75
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 6
+    type: 0
+  - timestamp: 142.25
+    lineIndex: 1
+    lineLayer: 1
+    cutDirection: 3
+    type: 0
+  - timestamp: 142.75
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 143.25
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 143.25
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 143.75
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 143.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 144.5
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 145.25
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 145.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 146.25
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 146.75
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 147.25
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 147.75
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 1
+  - timestamp: 147.75
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 0
+  - timestamp: 148.75
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 148.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 149.25
+    lineIndex: 2
+    lineLayer: 2
+    cutDirection: 0
+    type: 1
+  - timestamp: 149.25
+    lineIndex: 1
+    lineLayer: 2
+    cutDirection: 0
+    type: 0
+  - timestamp: 150.25
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 150.25
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 150.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 3
+    type: 0
+  - timestamp: 150.75
+    lineIndex: 1
+    lineLayer: 1
+    cutDirection: 2
+    type: 1
+  - timestamp: 151.25
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 151.75
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 151.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 153.25
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 153.5
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 154.25
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 154.75
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 155.25
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 155.25
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 155.75
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 2
+    type: 1
+  - timestamp: 155.75
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 3
+    type: 0
+  - timestamp: 156.75
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 3
+    type: 1
+  - timestamp: 157.25
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 2
+    type: 0
+  - timestamp: 157.75
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 3
+    type: 1
+  - timestamp: 158.25
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 2
+    type: 0
+  - timestamp: 158.75
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 3
+    type: 1
+  - timestamp: 158.75
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 2
+    type: 0
+  - timestamp: 159.75
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 8
+    type: 0
+  - timestamp: 159.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 8
+    type: 1
+  - timestamp: 160.75
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 2
+    type: 0
+  - timestamp: 161.25
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 3
+    type: 1
+  - timestamp: 162
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 162
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 162.25
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 162.75
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 163.25
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 7
+    type: 1
+  - timestamp: 163.75
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 6
+    type: 0
+  - timestamp: 165
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 3
+  - timestamp: 165
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 1
+    type: 3
+  - timestamp: 165
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 3
+  - timestamp: 165
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 3
+  - timestamp: 166
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 3
+  - timestamp: 166
+    lineIndex: 1
+    lineLayer: 2
+    cutDirection: 1
+    type: 3
+  - timestamp: 166
+    lineIndex: 1
+    lineLayer: 1
+    cutDirection: 1
+    type: 3
+  - timestamp: 168.25
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 168.25
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 169.25
+    lineIndex: 2
+    lineLayer: 2
+    cutDirection: 0
+    type: 1
+  - timestamp: 169.75
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 170.25
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 1
+  - timestamp: 170.75
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 171.25
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 171.75
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 171.75
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 172.25
+    lineIndex: 2
+    lineLayer: 1
+    cutDirection: 3
+    type: 0
+  - timestamp: 172.75
+    lineIndex: 1
+    lineLayer: 2
+    cutDirection: 0
+    type: 0
+  - timestamp: 173.25
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 0
+  - timestamp: 173.75
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 6
+    type: 0
+  - timestamp: 174.25
+    lineIndex: 2
+    lineLayer: 2
+    cutDirection: 0
+    type: 0
+  - timestamp: 174.75
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 175.25
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 175.25
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 175.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 175.75
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 176.25
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 176.25
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 177.25
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 177.5
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 177.75
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 178.25
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 178.75
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 179.25
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 179.75
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 0
+  - timestamp: 179.75
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 1
+  - timestamp: 180.75
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 180.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 181.25
+    lineIndex: 1
+    lineLayer: 2
+    cutDirection: 0
+    type: 0
+  - timestamp: 181.25
+    lineIndex: 2
+    lineLayer: 2
+    cutDirection: 0
+    type: 1
+  - timestamp: 182.25
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 182.25
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 182.75
+    lineIndex: 1
+    lineLayer: 1
+    cutDirection: 2
+    type: 1
+  - timestamp: 182.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 3
+    type: 0
+  - timestamp: 183.25
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 183.75
+    lineIndex: 1
+    lineLayer: 1
+    cutDirection: 2
+    type: 1
+  - timestamp: 184.75
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 185.25
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 185.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 186.25
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 186.75
+    lineIndex: 2
+    lineLayer: 1
+    cutDirection: 3
+    type: 0
+  - timestamp: 187.25
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 187.75
+    lineIndex: 2
+    lineLayer: 1
+    cutDirection: 2
+    type: 1
+  - timestamp: 188.25
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 188.75
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 189.25
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 189.75
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 190.25
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 190.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 191.25
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 2
+    type: 0
+  - timestamp: 191.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 3
+    type: 0
+  - timestamp: 191.75
+    lineIndex: 2
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 192.75
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 193.25
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 193.75
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 194.5
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 194.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 195.25
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 195.75
+    lineIndex: 1
+    lineLayer: 1
+    cutDirection: 8
+    type: 0
+  - timestamp: 195.75
+    lineIndex: 0
+    lineLayer: 2
+    cutDirection: 8
+    type: 0
+  - timestamp: 195.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 8
+    type: 0
+  - timestamp: 199.25
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 199.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 199.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 200
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 200.25
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 200.5
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 200.75
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 201.25
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 201.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 202
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 202.25
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 202.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 203
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 203.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 203.5
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 203.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 203.75
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 204.25
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 204.25
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 205.25
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 205.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 206.25
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 206.5
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 206.75
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 207.25
+    lineIndex: 2
+    lineLayer: 2
+    cutDirection: 0
+    type: 1
+  - timestamp: 207.25
+    lineIndex: 1
+    lineLayer: 2
+    cutDirection: 0
+    type: 0
+  - timestamp: 208.5
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 209
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 0
+    type: 1
+  - timestamp: 209.25
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 209.75
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 0
+    type: 0
+  - timestamp: 210.25
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 210.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 210.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 211
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 211.5
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 211.75
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 212
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 212
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 212.5
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 212.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 213.25
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 213.25
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 213.75
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 1
+  - timestamp: 213.75
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 0
+  - timestamp: 214.25
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 6
+    type: 0
+  - timestamp: 214.25
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 7
+    type: 1
+  - timestamp: 214.75
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 214.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 215.25
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 215.25
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 215.5
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 215.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 216.25
+    lineIndex: 2
+    lineLayer: 2
+    cutDirection: 0
+    type: 1
+  - timestamp: 216.25
+    lineIndex: 1
+    lineLayer: 2
+    cutDirection: 0
+    type: 0
+  - timestamp: 216.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 217
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 217.25
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 217.5
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 217.75
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 218
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 218.25
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 218.75
+    lineIndex: 3
+    lineLayer: 2
+    cutDirection: 5
+    type: 1
+  - timestamp: 219
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 219.5
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 219.75
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 220.25
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 220.75
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 221.25
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 221.25
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 221.5
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 221.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 222.25
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 222.75
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 223.25
+    lineIndex: 1
+    lineLayer: 1
+    cutDirection: 2
+    type: 1
+  - timestamp: 223.25
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 3
+    type: 0
+  - timestamp: 224.25
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 224.5
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 224.75
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 225
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 225.25
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 225.75
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 6
+    type: 0
+  - timestamp: 226
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 7
+    type: 1
+  - timestamp: 226.25
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 226.5
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 226.75
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 227
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 227.25
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 227.25
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 228
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 228
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 228.25
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 228.25
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 228.75
+    lineIndex: 2
+    lineLayer: 2
+    cutDirection: 0
+    type: 1
+  - timestamp: 228.75
+    lineIndex: 1
+    lineLayer: 2
+    cutDirection: 0
+    type: 0
+  - timestamp: 229.25
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 229.25
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 229.75
+    lineIndex: 2
+    lineLayer: 2
+    cutDirection: 0
+    type: 1
+  - timestamp: 229.75
+    lineIndex: 1
+    lineLayer: 2
+    cutDirection: 0
+    type: 0
+  - timestamp: 230.25
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 230.75
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 231.25
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 231.75
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 232.25
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 3
+    type: 0
+  - timestamp: 232.25
+    lineIndex: 1
+    lineLayer: 1
+    cutDirection: 2
+    type: 1
+  - timestamp: 233.25
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 233.75
+    lineIndex: 2
+    lineLayer: 2
+    cutDirection: 0
+    type: 1
+  - timestamp: 235.25
+    lineIndex: 1
+    lineLayer: 2
+    cutDirection: 0
+    type: 0
+  - timestamp: 235.75
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 237.25
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 237.75
+    lineIndex: 2
+    lineLayer: 2
+    cutDirection: 0
+    type: 1
+  - timestamp: 239.25
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 239.75
+    lineIndex: 2
+    lineLayer: 1
+    cutDirection: 3
+    type: 0
+  - timestamp: 241.25
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 241.75
+    lineIndex: 1
+    lineLayer: 1
+    cutDirection: 2
+    type: 1
+  - timestamp: 243.25
+    lineIndex: 0
+    lineLayer: 2
+    cutDirection: 4
+    type: 0
+  - timestamp: 243.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 7
+    type: 0
+  - timestamp: 245.25
+    lineIndex: 3
+    lineLayer: 2
+    cutDirection: 5
+    type: 1
+  - timestamp: 245.75
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 6
+    type: 1
+  - timestamp: 248.25
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 248.25
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 248.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 248.75
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 250.25
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 6
+    type: 0
+  - timestamp: 251.25
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 7
+    type: 1
+  - timestamp: 252.25
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 6
+    type: 0
+  - timestamp: 253.25
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 7
+    type: 1
+  - timestamp: 254.25
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 6
+    type: 0
+  - timestamp: 255.25
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 7
+    type: 1
+  - timestamp: 256.25
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 6
+    type: 0
+  - timestamp: 257.25
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 7
+    type: 1
+  - timestamp: 258.25
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 6
+    type: 0
+  - timestamp: 259.25
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 7
+    type: 1
+  - timestamp: 260.375
+    lineIndex: 1
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 260.625
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 260.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 261.125
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 261.25
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 261.625
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 261.75
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 262.125
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 262.25
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 262.625
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 262.75
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 263.125
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 263.125
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 264.625
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 264.875
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 265.25
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 265.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 266
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 266.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 266.75
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 267.25
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 268.75
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 268.875
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 269
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 269.25
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 269.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 270
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 270.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 270.75
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 271.25
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 272.625
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 272.875
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 273.25
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 273.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 274
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 274.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 274.75
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 275.125
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 276.25
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 276.25
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 276.75
+    lineIndex: 2
+    lineLayer: 2
+    cutDirection: 0
+    type: 1
+  - timestamp: 276.75
+    lineIndex: 1
+    lineLayer: 2
+    cutDirection: 0
+    type: 0
+  - timestamp: 277.25
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 277.25
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 277.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 278.25
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 278.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 279.375
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 279.375
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 279.625
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 3
+    type: 0
+  - timestamp: 279.625
+    lineIndex: 1
+    lineLayer: 1
+    cutDirection: 2
+    type: 1
+  - timestamp: 280.25
+    lineIndex: 1
+    lineLayer: 2
+    cutDirection: 0
+    type: 0
+  - timestamp: 280.25
+    lineIndex: 2
+    lineLayer: 2
+    cutDirection: 0
+    type: 1
+  - timestamp: 280.625
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 280.875
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 281.25
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 281.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 282
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 282.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 282.75
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 283.25
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 284.75
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 284.875
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 285
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 285.25
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 285.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 286
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 286.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 286.75
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 287.25
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 288.625
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 288.875
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 289.25
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 289.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 290
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 290.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 290.75
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 291.125
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 292.25
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 292.25
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 292.75
+    lineIndex: 2
+    lineLayer: 2
+    cutDirection: 0
+    type: 1
+  - timestamp: 292.75
+    lineIndex: 1
+    lineLayer: 2
+    cutDirection: 0
+    type: 0
+  - timestamp: 293.25
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 293.25
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 293.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 294.25
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 294.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 295.375
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 295.375
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 296
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 296.25
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 296.5
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 296.75
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 297.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 298
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 298.25
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 298.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 299
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 299.5
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 299.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 299.75
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 299.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 300.25
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 300.25
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 301.25
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 301.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 302.25
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 302.5
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 302.75
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 303.25
+    lineIndex: 2
+    lineLayer: 2
+    cutDirection: 0
+    type: 1
+  - timestamp: 303.25
+    lineIndex: 1
+    lineLayer: 2
+    cutDirection: 0
+    type: 0
+  - timestamp: 304.5
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 305
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 0
+    type: 1
+  - timestamp: 305.25
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 305.75
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 0
+    type: 0
+  - timestamp: 306.25
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 306.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 306.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 307
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 307.5
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 307.75
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 308
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 308
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 308.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 308.5
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 309.25
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 309.25
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 309.75
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 1
+  - timestamp: 309.75
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 0
+  - timestamp: 310.25
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 7
+    type: 1
+  - timestamp: 310.25
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 6
+    type: 0
+  - timestamp: 310.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 310.75
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 311.25
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 311.25
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 311.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 311.5
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 312.25
+    lineIndex: 2
+    lineLayer: 2
+    cutDirection: 0
+    type: 1
+  - timestamp: 312.25
+    lineIndex: 1
+    lineLayer: 2
+    cutDirection: 0
+    type: 0
+  - timestamp: 312.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 313
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 313.25
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 313.5
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 313.75
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 314
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 314.25
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 314.75
+    lineIndex: 3
+    lineLayer: 2
+    cutDirection: 5
+    type: 1
+  - timestamp: 315
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 315.5
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 315.75
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 316.25
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 316.75
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 317.25
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 317.25
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 317.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 317.5
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 318.25
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 318.75
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 319.25
+    lineIndex: 1
+    lineLayer: 1
+    cutDirection: 2
+    type: 1
+  - timestamp: 319.25
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 3
+    type: 0
+  - timestamp: 320.25
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 320.5
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 320.75
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 321
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 321.25
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 321.75
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 6
+    type: 0
+  - timestamp: 322
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 7
+    type: 1
+  - timestamp: 322.25
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 322.5
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 322.75
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 323
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 323.25
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 323.25
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 324
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 324
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 328.25
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 328.25
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 329.25
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 329.75
+    lineIndex: 2
+    lineLayer: 1
+    cutDirection: 2
+    type: 1
+  - timestamp: 331.25
+    lineIndex: 1
+    lineLayer: 2
+    cutDirection: 0
+    type: 0
+  - timestamp: 331.75
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 333.25
+    lineIndex: 1
+    lineLayer: 1
+    cutDirection: 2
+    type: 1
+  - timestamp: 333.75
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 335.25
+    lineIndex: 0
+    lineLayer: 2
+    cutDirection: 4
+    type: 0
+  - timestamp: 335.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 7
+    type: 0
+  - timestamp: 337.25
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 6
+    type: 1
+  - timestamp: 337.75
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 339.25
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 2
+    type: 0
+  - timestamp: 339.75
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 3
+    type: 0
+  - timestamp: 341.25
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 341.75
+    lineIndex: 2
+    lineLayer: 1
+    cutDirection: 0
+    type: 1
+  noteDataFilePath: Caravan Palace - Lone Digger/Expert.dat

@@ -8,6 +8,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1437924667642039443, guid: 695ef3353a440d04c80aaf967e3ac4b0,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a36759e5b5d64ea4eae6ab48143fd044, type: 2}
+    - target: {fileID: 7014324755763221511, guid: 695ef3353a440d04c80aaf967e3ac4b0,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 7014324755763221511, guid: 695ef3353a440d04c80aaf967e3ac4b0,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 7014324755763221511, guid: 695ef3353a440d04c80aaf967e3ac4b0,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 7014324755763221511, guid: 695ef3353a440d04c80aaf967e3ac4b0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -58,6 +78,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7014324755763221511, guid: 695ef3353a440d04c80aaf967e3ac4b0,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7646043026247028413, guid: 695ef3353a440d04c80aaf967e3ac4b0,
         type: 3}
       propertyPath: m_Name
@@ -75,7 +100,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7646043026247028413, guid: 695ef3353a440d04c80aaf967e3ac4b0,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8798126025753533663}
+      addedObject: {fileID: 5609733466571616092}
   m_SourcePrefab: {fileID: 100100000, guid: 695ef3353a440d04c80aaf967e3ac4b0, type: 3}
 --- !u!1 &5349486248954282289 stripped
 GameObject:
@@ -83,7 +108,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2315134955053600652}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &8798126025753533663
+--- !u!114 &5609733466571616092
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -92,6 +117,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 5349486248954282289}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b83ebb001dfe52429aa44c097c22d0d, type: 3}
+  m_Script: {fileID: 11500000, guid: 84aa85452203b634193ac041391113d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  particleEffectPrefab: {fileID: 5024009746357069194, guid: ec3f674830402cc45bce805cf6493db7,
+    type: 3}

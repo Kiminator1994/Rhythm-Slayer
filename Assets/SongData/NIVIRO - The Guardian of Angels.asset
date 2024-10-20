@@ -20,14 +20,6 @@ MonoBehaviour:
   highScore: 52200
   maxCombo: 72
   noteSpeed: 6
-  noteList:
-  - timestamp: 3
-    lineIndex: 1
-    lineLayer: 1
-    cutDirection: 4
-    type: 0
-  - timestamp: 4
-    lineIndex: 1
-    lineLayer: 1
-    cutDirection: 6
-    type: 1
+  songTimeOffset: 0
+  noteList: []
+  noteDataFilePath: 

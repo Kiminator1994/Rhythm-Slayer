@@ -63,6 +63,7 @@ public class MusicManager : MonoBehaviour
 
         if (GameManager.Instance.isPaused == false)
         {
+            Debug.Log("Music ended");
             OnMusicEnd?.Invoke();
         }
     }

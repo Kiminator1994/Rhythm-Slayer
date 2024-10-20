@@ -38,28 +38,39 @@ public class CubeNoteSpawnManager : MonoBehaviour
 
     private IEnumerator SpawnNotes()
     {
-        Debug.Log("Cubenotespawner: " +songData.title);
-        for (int i = 0; i < songData.noteList.Count; i++)
-        {
-            Debug.Log("LineLayer: " + songData.noteList[i].lineLayer + " Index:" + songData.noteList[i].lineIndex + " timestamp: " + songData.noteList[i].timestamp + " direction: " + songData.noteList[i].cutDirection + " type: " + songData.noteList[i].type);
-        }
+        float cubeTravelTime = (20 / songData.noteSpeed);  // Calculate cube travel time based on note speed
+
+        Debug.Log("Cubenotespawner: " + songData.title + " Notes: " + songData.noteList.Count);
+
         foreach (NoteData note in songData.noteList)
         {
-            float cubeTravelTime = (20 / songData.noteSpeed);
-            if (note.timestamp < cubeTravelTime) // skip cubeNotes that would spawn before the song has started
+            if(GameManager.Instance.GameIsOver)
             {
-                Debug.Log("skiped notes: " + note.timestamp);
-                continue;
+                break;
             }
 
-            // Wait until the right time to spawn the Cubenote
-            float spawnTime = note.timestamp - playerOffsetTime - cubeTravelTime;
-            while (musicManager.GetCurrentTime() < spawnTime)
+            // Convert timestamp from beats to seconds using BPM
+            float secondsPerBeat = 60f / songData.bpm;
+            float spawnTimeInSeconds = note.timestamp * secondsPerBeat;
+
+            float spawnTime = spawnTimeInSeconds + playerOffsetTime + songData.songTimeOffset - cubeTravelTime;
+            float remainingTime = (GameManager.Instance.GetRemainingCountdown() * -1); // * -1 so we have negative Time since we get negative time in the beginning from cubeTravelTime
+            Debug.Log("spawntime: " + spawnTime + " remainingtime: " + remainingTime);
+            if (spawnTime < remainingTime && spawnTime <= 0)
             {
-                yield return null;
+                SpawnNote(note);
+                continue;
             }
-            Debug.Log("spawntime: " + spawnTime + " timestamp: " + note.timestamp + " cubeTravelTime: " + cubeTravelTime);
-            SpawnNote(note);
+            else
+            {
+                // Wait until it's time to spawn the note
+                while (musicManager.GetCurrentTime() < spawnTime)
+                {
+                    yield return null;  // Wait until the exact time to spawn the note
+                }
+                SpawnNote(note);
+            }
+
         }
     }
 
@@ -74,28 +85,28 @@ public class CubeNoteSpawnManager : MonoBehaviour
         switch (note.cutDirection)
         {
             case 0: // Up
-                rotation = Quaternion.Euler(0, 90, 0);
+                rotation = Quaternion.Euler(180, 270, 0);
                 break;
             case 1: // Down
-                rotation = Quaternion.Euler(0, 90, 180);
+                rotation = Quaternion.Euler(0, 270, 0);
                 break;
             case 2: // Left
-                rotation = Quaternion.Euler(90, 0, 90);
+                rotation = Quaternion.Euler(-90, 270, 0);
                 break;
             case 3: // Right
-                rotation = Quaternion.Euler(0, 90, -90);
+                rotation = Quaternion.Euler(90, 270, 0);
                 break;
             case 4: // Up Left
-                rotation = Quaternion.Euler(90, 0, 45);
+                rotation = Quaternion.Euler(-135, 270, 0);
                 break;
             case 5: // Up Right
-                rotation = Quaternion.Euler(90, 0, -45);
+                rotation = Quaternion.Euler(135, 270, 0);
                 break;
             case 6: // Down Left
-                rotation = Quaternion.Euler(90, 0, 135);
+                rotation = Quaternion.Euler(-45, 270, 0);
                 break;
             case 7: // Down Right
-                rotation = Quaternion.Euler(0, 90, -135);
+                rotation = Quaternion.Euler(45, 270, 0);
                 break;
             case 8: // Any
                 if (note.type == 1)

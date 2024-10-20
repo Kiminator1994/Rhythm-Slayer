@@ -14,7 +14,10 @@ public class SongData : ScriptableObject
     [SerializeField] public int highScore;
     [SerializeField] public int maxCombo;
     [SerializeField] public float noteSpeed;
+    [SerializeField] public float songTimeOffset;
     [SerializeField] public List<NoteData> noteList;
+    [SerializeField] public string noteDataFilePath;
+
 }
 
 [System.Serializable]

@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -40,6 +41,8 @@ public class GameManager : MonoBehaviour
     public event Action OnPauseStart;
     public event Action OnPauseEnd;
 
+    // GameOver
+    public bool GameIsOver = false;
 
     // test
     int subscribeCount = 0;
@@ -101,7 +104,6 @@ public class GameManager : MonoBehaviour
         playerMissCount = 0;
         actualHealth = 100;
         maxCombo = 0;
-        Debug.Log("After Reset: " + "title " + scoreScreenTitle + " PlayerPoints: "  + playerPoints + " MacCombo: " + maxCombo + " playermissCount: " + playerMissCount);
     }
 
     public void UnsubcscribeGameSceneEvents()
@@ -175,7 +177,9 @@ public class GameManager : MonoBehaviour
         {
             actualHealth = 0;
             uiManager.UpdateHealth(actualHealth);
+            GameIsOver = true;
             SetScoreScreenTitle("You Lose");
+            musicManager.StopMusic();
             EndGame();
         }
     }
@@ -195,9 +199,33 @@ public class GameManager : MonoBehaviour
         scoreScreenTitle = "Song finished. Congratulations!";
     }
 
+    public void UpdateHighScore()
+    {
+        // Check if the current score is higher than the high score
+        if (playerPoints > selectedSongData.highScore)
+        {
+            selectedSongData.highScore = playerPoints;
+        }
+
+        // Check if the current combo is higher than the max combo
+        if (maxCombo > selectedSongData.maxCombo)
+        {
+            selectedSongData.maxCombo = maxCombo;
+            Debug.Log($"New max combo: {selectedSongData.maxCombo} for song: {selectedSongData.title}");
+        }
+    }
+
     private void EndGame()
     {
+        Debug.Log("Endgame called.");
+        UpdateHighScore();
         UnsubcscribeGameSceneEvents();
+        StartCoroutine(WaitEndGame());
+    }
+
+    private IEnumerator WaitEndGame()
+    {
+        yield return new WaitForSeconds(2);
         SceneManager.LoadScene("ScoreScreen");
     }
 
@@ -229,8 +257,6 @@ public class GameManager : MonoBehaviour
 
     public void SetSelectedSongData(SongData song)
     {
-        if (selectedSongData != null)
-            Debug.Log(selectedSongData.noteList.Count);
         selectedSongData = song;
     }
 
@@ -239,25 +265,22 @@ public class GameManager : MonoBehaviour
 
         if (selectedSongData.audioClip != null)
         {
-            Debug.Log("GameManager: " + selectedSongData.title);
-            for (int i = 0; i < selectedSongData.noteList.Count; i++)
-            {
-                Debug.Log("LineLayer: " + selectedSongData.noteList[i].lineLayer + " Index:" + selectedSongData.noteList[i].lineIndex + " timestamp: " + selectedSongData.noteList[i].timestamp + " direction: " + selectedSongData.noteList[i].cutDirection + " type: " + selectedSongData.noteList[i].type);
-            }
             SceneManager.LoadScene("GameScene");
         }
     }
 
+    public float GetRemainingCountdown()
+    {
+        return uiManager.GetRemainingCountdownTime();
+    }
+
     public SongData GetSongData()
     {
-        if(selectedSongData != null)
-            Debug.Log(selectedSongData.noteList.Count);
         return selectedSongData;
     }
 
     public AudioClip GetAudioClip()
     {
-        Debug.Log(selectedSongData.noteList.Count);
         return selectedSongData.audioClip;
     }
 

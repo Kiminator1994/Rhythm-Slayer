@@ -4,6 +4,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class SwordInteraction : MonoBehaviour
 {
+    [SerializeField] private AudioSource audioSource;
     [SerializeField] [Range(0, 1)] private float hapticIntensity = 0.2f;
     [SerializeField] private float hapticDuration = 0.1f;
     [SerializeField] private bool isLeftSword;
@@ -30,6 +31,7 @@ public class SwordInteraction : MonoBehaviour
             Destroy(other.gameObject);
             OnCubeNoteHit?.Invoke();
             InvokeHapticImpulse();
+            audioSource.PlayOneShot(audioSource.clip);
         }
     }
 
