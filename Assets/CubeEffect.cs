@@ -29,7 +29,7 @@ public class CubeEffect : MonoBehaviour
             if (particleSystem != null)
             {
                 particleSystem.Play();
-                Destroy(effect, particleSystem.main.duration);
+                Destroy(effect, 1.2f);
             }
         }
     }

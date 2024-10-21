@@ -114,7 +114,7 @@ public class UIManager : MonoBehaviour
 
     private IEnumerator WaitEndGame()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(2.5f);
         SceneManager.LoadScene("MainMenu");
     }
 }

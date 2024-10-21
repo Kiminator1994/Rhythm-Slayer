@@ -116,6 +116,7 @@ public class GameManager : MonoBehaviour
         swordRight.OnCubeNoteHit -= SetHealth;
 
         musicManager.OnPlaytimeUpdated -= SetPlaytime;
+        musicManager.OnMusicEnd -= SetWinScoreScreenTitle;
         musicManager.OnMusicEnd -= EndGame;
 
         noteEndManager.OnNoteMiss -= SetComboOnMiss;
@@ -177,9 +178,9 @@ public class GameManager : MonoBehaviour
         {
             actualHealth = 0;
             uiManager.UpdateHealth(actualHealth);
+            musicManager.StopMusic();
             GameIsOver = true;
             SetScoreScreenTitle("You Lose");
-            musicManager.StopMusic();
             EndGame();
         }
     }

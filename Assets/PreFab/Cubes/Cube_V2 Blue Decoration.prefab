@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &2315134955053600652
+--- !u!1001 &3474483550908333940
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -13,6 +13,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: a36759e5b5d64ea4eae6ab48143fd044, type: 2}
+    - target: {fileID: 5728891355519884926, guid: 695ef3353a440d04c80aaf967e3ac4b0,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7014324755763221511, guid: 695ef3353a440d04c80aaf967e3ac4b0,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -31,17 +36,17 @@ PrefabInstance:
     - target: {fileID: 7014324755763221511, guid: 695ef3353a440d04c80aaf967e3ac4b0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0
+      value: -1.94
       objectReference: {fileID: 0}
     - target: {fileID: 7014324755763221511, guid: 695ef3353a440d04c80aaf967e3ac4b0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.082
+      value: 0.195
       objectReference: {fileID: 0}
     - target: {fileID: 7014324755763221511, guid: 695ef3353a440d04c80aaf967e3ac4b0,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.733
+      value: 2.902
       objectReference: {fileID: 0}
     - target: {fileID: 7014324755763221511, guid: 695ef3353a440d04c80aaf967e3ac4b0,
         type: 3}
@@ -86,14 +91,15 @@ PrefabInstance:
     - target: {fileID: 7646043026247028413, guid: 695ef3353a440d04c80aaf967e3ac4b0,
         type: 3}
       propertyPath: m_Name
-      value: Cube_V2 Blue
+      value: Cube_V2 Blue Decoration
       objectReference: {fileID: 0}
     - target: {fileID: 8150618051077812072, guid: 695ef3353a440d04c80aaf967e3ac4b0,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 2658531ba14af7642812624e133776e3, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 552311336000388236, guid: 695ef3353a440d04c80aaf967e3ac4b0, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
