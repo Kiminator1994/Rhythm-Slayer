@@ -5,11 +5,17 @@ using UnityEngine;
 public class CubeEffect : MonoBehaviour
 {
     public GameObject particleEffectPrefab;
+    public bool isRed;
 
-    private void OnDestroy()
+    void OnCollisionEnter(Collision other)
     {
-        SpawnParticleEffect();
+        if (other.gameObject.layer == 11) // Saber
+        {
+            SpawnParticleEffect();
+        }
     }
+
+
 
     private void FixedUpdate()
     {
@@ -19,7 +25,7 @@ public class CubeEffect : MonoBehaviour
         }
     }
 
-    private void SpawnParticleEffect()
+    public void SpawnParticleEffect()
     {
         if (particleEffectPrefab != null)
         {
@@ -29,7 +35,7 @@ public class CubeEffect : MonoBehaviour
             if (particleSystem != null)
             {
                 particleSystem.Play();
-                Destroy(effect, 1.2f);
+                Destroy(effect, 1.5f);
             }
         }
     }

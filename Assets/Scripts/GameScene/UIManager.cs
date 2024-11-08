@@ -18,7 +18,7 @@ public class UIManager : MonoBehaviour
 
     // Countdown
     [SerializeField] private TextMeshProUGUI countdown;
-    [SerializeField] private int countdownDuration = 3;
+    [SerializeField] private int countdownDuration = 2;
     private float remainingCountdown; 
 
     // PauseGame
@@ -58,7 +58,7 @@ public class UIManager : MonoBehaviour
 
     private IEnumerator CountdownCoroutine(System.Action onCountdownComplete)
     {
-        remainingCountdown = countdownDuration + 1;
+        remainingCountdown = countdownDuration;
 
         while (remainingCountdown > 0)
         {
@@ -66,9 +66,6 @@ public class UIManager : MonoBehaviour
             remainingCountdown -= Time.deltaTime;  // Subtract time passed since last frame
             yield return null;  // Wait until next frame
         }
-
-        countdown.text = "Start!";
-        yield return new WaitForSeconds(1f);
         countdown.text = "";  // Hide countdown
 
         onCountdownComplete.Invoke();  // Start the game after countdown
@@ -108,13 +105,7 @@ public class UIManager : MonoBehaviour
 
     public void BackToMenu()
     {
-        GameManager.Instance.UnsubcscribeGameSceneEvents();
-        StartCoroutine(WaitEndGame());
+        GameManager.Instance.LoadMainMenu();
     }
 
-    private IEnumerator WaitEndGame()
-    {
-        yield return new WaitForSeconds(2.5f);
-        SceneManager.LoadScene("MainMenu");
-    }
 }

@@ -6,11 +6,14 @@ public class SwordInteraction : MonoBehaviour
 {
     [SerializeField] private AudioSource audioSource;
     [SerializeField] [Range(0, 1)] private float hapticIntensity = 0.2f;
+    [SerializeField][Range(0, 1)] private float hapticIntensityWronghit = 0.4f;
     [SerializeField] private float hapticDuration = 0.1f;
+    [SerializeField] private float hapticDurationWrongHit = 0.15f;
     [SerializeField] private bool isLeftSword;
     private ActionBasedController controllerLeft;
     private ActionBasedController controllerRight;
     public event Action OnCubeNoteHit;
+    public event Action OnWrongHit;
 
 
     private void Start()
@@ -28,11 +31,37 @@ public class SwordInteraction : MonoBehaviour
     {
         if (other.gameObject.layer == 10) // CubeNote
         {
-            Destroy(other.gameObject);
-            OnCubeNoteHit?.Invoke();
-            InvokeHapticImpulse();
+            if (isLeftSword) 
+            {
+                if (other.gameObject.tag == "BlueCube")
+                {
+                    OnCubeNoteHit?.Invoke();
+                    InvokeHapticImpulse();
+                }
+                else 
+                {
+                    OnWrongHit?.Invoke();
+                    InvokeHapticImpulseWrongHit();
+                }
+            }
+            else
+            {
+                if (other.gameObject.tag == "RedCube")
+                {
+                    OnCubeNoteHit?.Invoke();
+                    InvokeHapticImpulse();
+                }
+                else
+                {
+                    OnWrongHit?.Invoke();
+                    InvokeHapticImpulseWrongHit();
+                }
+            }
             audioSource.PlayOneShot(audioSource.clip);
+            Destroy(other.gameObject);
         }
+
+
     }
 
     void InvokeHapticImpulse()
@@ -45,6 +74,19 @@ public class SwordInteraction : MonoBehaviour
         else if (!isLeftSword && controllerRight != null)
         {
             controllerRight.SendHapticImpulse(hapticIntensity, hapticDuration);
+        }
+    }
+
+    void InvokeHapticImpulseWrongHit()
+    {
+        if (isLeftSword && controllerLeft != null)
+        {
+            controllerLeft.SendHapticImpulse(hapticIntensityWronghit, hapticDurationWrongHit);
+        }
+
+        else if (!isLeftSword && controllerRight != null)
+        {
+            controllerRight.SendHapticImpulse(hapticIntensityWronghit, hapticDurationWrongHit);
         }
     }
 }

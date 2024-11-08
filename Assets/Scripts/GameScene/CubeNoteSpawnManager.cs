@@ -38,9 +38,7 @@ public class CubeNoteSpawnManager : MonoBehaviour
 
     private IEnumerator SpawnNotes()
     {
-        float cubeTravelTime = (20 / songData.noteSpeed);  // Calculate cube travel time based on note speed
-
-        Debug.Log("Cubenotespawner: " + songData.title + " Notes: " + songData.noteList.Count);
+        float cubeTravelTime = (20 / songData.noteSpeed);  // Calculate cube travel time based on note speed to reach Player
 
         foreach (NoteData note in songData.noteList)
         {
@@ -49,64 +47,68 @@ public class CubeNoteSpawnManager : MonoBehaviour
                 break;
             }
 
-            // Convert timestamp from beats to seconds using BPM
+            // Music Games work with Beats instead of seconds. Means timestamp is the actual beat in the song
+            // To spawn the cubes at the correct time, we have to calculate the spawntime according to the the bpm.
             float secondsPerBeat = 60f / songData.bpm;
             float spawnTimeInSeconds = note.timestamp * secondsPerBeat;
 
             float spawnTime = spawnTimeInSeconds + playerOffsetTime + songData.songTimeOffset - cubeTravelTime;
             float remainingTime = (GameManager.Instance.GetRemainingCountdown() * -1); // * -1 so we have negative Time since we get negative time in the beginning from cubeTravelTime
-            Debug.Log("spawntime: " + spawnTime + " remainingtime: " + remainingTime);
-            if (spawnTime < remainingTime && spawnTime <= 0)
+
+            if (spawnTime > remainingTime && spawnTime <= 0)
             {
                 SpawnNote(note);
-                continue;
             }
             else
             {
                 // Wait until it's time to spawn the note
                 while (musicManager.GetCurrentTime() < spawnTime)
                 {
-                    yield return null;  // Wait until the exact time to spawn the note
+                    yield return null; // check 8 times per second, instead of every frame
                 }
                 SpawnNote(note);
             }
-
         }
     }
 
-    // Spawns the note at the correct spawn point with the correct color
+    // Spawns the note at the correct spawn point with the correct color and rotation
     private void SpawnNote(NoteData note)
     {
         GameObject notePrefab = note.type == 1 ? redNotePrefab : blueNotePrefab;
 
-        // Define a dictionary to store cut direction rotations
+        if (note.type > 1) // we only handle normal cubes for the moment, special types will be implemented later
+        {
+            return;
+        }
+
         Quaternion rotation = notePrefab.transform.rotation; // Default rotation
 
         switch (note.cutDirection)
         {
             case 0: // Up
-                rotation = Quaternion.Euler(180, 270, 0);
-                break;
-            case 1: // Down
                 rotation = Quaternion.Euler(0, 270, 0);
                 break;
-            case 2: // Left
-                rotation = Quaternion.Euler(-90, 270, 0);
+            case 1: // Down
+                rotation = Quaternion.Euler(180, 270, 0);
                 break;
-            case 3: // Right
+            case 2: // Left
                 rotation = Quaternion.Euler(90, 270, 0);
                 break;
+            case 3: // Right
+                rotation = Quaternion.Euler(-90, 270, 0);
+                break;
             case 4: // Up Left
-                rotation = Quaternion.Euler(-135, 270, 0);
+                rotation = Quaternion.Euler(45, 270, 0);
                 break;
             case 5: // Up Right
-                rotation = Quaternion.Euler(135, 270, 0);
-                break;
-            case 6: // Down Left
                 rotation = Quaternion.Euler(-45, 270, 0);
                 break;
+            case 6: // Down Left
+                rotation = Quaternion.Euler(135, 270, 0);
+
+                break;
             case 7: // Down Right
-                rotation = Quaternion.Euler(45, 270, 0);
+                rotation = Quaternion.Euler(-135, 270, 0);
                 break;
             case 8: // Any
                 if (note.type == 1)
@@ -115,8 +117,6 @@ public class CubeNoteSpawnManager : MonoBehaviour
                     notePrefab = blueAnyDirectionNotePrefab;
                 break;
         }
-        Debug.Log("type: " + note.type + " cutDir: " + note.cutDirection + " index: " + note.lineIndex + " layer: " + note.lineLayer);
-        Transform spawnPoint = spawnPoints[note.lineIndex, note.lineLayer];
-        Instantiate(notePrefab, spawnPoint.position, rotation);
+        Instantiate(notePrefab, spawnPoints[note.lineIndex, note.lineLayer].position, rotation);
     }
 }

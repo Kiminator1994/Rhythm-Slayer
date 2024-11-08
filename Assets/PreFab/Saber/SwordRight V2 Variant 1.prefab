@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 970399822903862582}
   - component: {fileID: 1224742746924026356}
   - component: {fileID: 3064035540633279261}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Saber (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 462140767505436379}
   - component: {fileID: 5932090505209913616}
   - component: {fileID: 2357252371266764694}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Tip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -180,7 +180,7 @@ GameObject:
   - component: {fileID: 2847167215609486591}
   - component: {fileID: 5296825571431392113}
   - component: {fileID: 739686213843343907}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -282,7 +282,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6155483699690911130}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: AttachPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -315,7 +315,7 @@ GameObject:
   - component: {fileID: 7285678848607572270}
   - component: {fileID: 427277500777084480}
   - component: {fileID: 9172037539641533424}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Saber
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -402,7 +402,7 @@ GameObject:
   - component: {fileID: 2273634168107753264}
   - component: {fileID: 1490701155219577085}
   - component: {fileID: 2850596248416153129}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: SwordRight V2 Variant 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -619,8 +619,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 2850596248416153129}
-  hapticIntensity: 0.13
-  hapticDuration: 0.1
+  hapticIntensity: 0.18
+  hapticDuration: 0.15
   isLeftSword: 0
 --- !u!136 &2273634168107753264
 CapsuleCollider:

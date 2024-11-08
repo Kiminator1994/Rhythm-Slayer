@@ -6,6 +6,8 @@ TagManager:
   tags:
   - LeftHandController
   - RightHandController
+  - BlueCube
+  - RedCube
   layers:
   - Default
   - TransparentFX
@@ -18,7 +20,7 @@ TagManager:
   - 
   - 
   - CubeNote
-  - 
+  - Saber
   - 
   - 
   - 

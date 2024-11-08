@@ -26,7 +26,8 @@ public class GameManager : MonoBehaviour
     private int playerMissCount = 0;
 
     // Health
-    private byte damage = 10;
+    private byte missDamage = 10;
+    private byte wrongHitDamage = 3;
     private short maxHealth = 100;
     private short actualHealth = 100;
 
@@ -83,6 +84,10 @@ public class GameManager : MonoBehaviour
         swordRight.OnCubeNoteHit += SetPoints;
         swordLeft.OnCubeNoteHit += SetHealth;
         swordRight.OnCubeNoteHit += SetHealth;
+        swordLeft.OnWrongHit += SetHealthOnWrongHit;
+        swordRight.OnWrongHit += SetHealthOnWrongHit;
+        swordLeft.OnWrongHit += SetComboOnMiss;
+        swordRight.OnWrongHit += SetComboOnMiss;
 
         musicManager.OnPlaytimeUpdated += SetPlaytime;
         musicManager.OnMusicEnd += SetWinScoreScreenTitle;
@@ -104,6 +109,7 @@ public class GameManager : MonoBehaviour
         playerMissCount = 0;
         actualHealth = 100;
         maxCombo = 0;
+        Debug.Log("After Reset: " + "title " + scoreScreenTitle + " PlayerPoints: " + playerPoints + " MacCombo: " + maxCombo + " playermissCount: " + playerMissCount);
     }
 
     public void UnsubcscribeGameSceneEvents()
@@ -114,6 +120,11 @@ public class GameManager : MonoBehaviour
         swordRight.OnCubeNoteHit -= SetPoints;
         swordLeft.OnCubeNoteHit -= SetHealth;
         swordRight.OnCubeNoteHit -= SetHealth;
+        swordLeft.OnWrongHit -= SetHealthOnWrongHit;
+        swordRight.OnWrongHit -= SetHealthOnWrongHit;
+        swordLeft.OnWrongHit -= SetComboOnMiss;
+        swordRight.OnWrongHit -= SetComboOnMiss;
+
 
         musicManager.OnPlaytimeUpdated -= SetPlaytime;
         musicManager.OnMusicEnd -= SetWinScoreScreenTitle;
@@ -168,7 +179,26 @@ public class GameManager : MonoBehaviour
 
     private void SetHealthOnMiss()
     {
-        actualHealth -= damage;
+        actualHealth -= missDamage;
+        if (actualHealth > 0)
+        {
+            uiManager.UpdateHealth(actualHealth);
+        }
+
+        else if (actualHealth <= 0)
+        {
+            actualHealth = 0;
+            uiManager.UpdateHealth(actualHealth);
+            musicManager.StopMusic();
+            GameIsOver = true;
+            SetScoreScreenTitle("You Lose");
+            EndGame();
+        }
+    }
+
+    private void SetHealthOnWrongHit()
+    {
+        actualHealth -= wrongHitDamage;
         if (actualHealth > 0)
         {
             uiManager.UpdateHealth(actualHealth);
@@ -218,17 +248,43 @@ public class GameManager : MonoBehaviour
 
     private void EndGame()
     {
+        GameIsOver = true;
         Debug.Log("Endgame called.");
         UpdateHighScore();
         UnsubcscribeGameSceneEvents();
-        StartCoroutine(WaitEndGame());
-    }
-
-    private IEnumerator WaitEndGame()
-    {
-        yield return new WaitForSeconds(2);
         SceneManager.LoadScene("ScoreScreen");
     }
+
+
+    // Pause Menu
+
+    public void PauseGame()
+    {
+        OnPauseStart?.Invoke();
+        isPaused = true;
+        musicManager.PauseMusic();
+        uiManager.ShowPauseMenu();
+    }
+
+    public void ResumeGame()
+    {
+        OnPauseEnd?.Invoke();
+        musicManager.UnPauseMusic();
+        isPaused = false;
+    }
+
+    public void RestartGame()
+    {
+        UnsubcscribeGameSceneEvents();
+        SceneManager.LoadScene("GameScene");
+    }
+
+    public void LoadMainMenu()
+    {
+        UnsubcscribeGameSceneEvents();
+        SceneManager.LoadScene("MainMenu");
+    }
+
 
     // ScoreScreenScene
     // GetData
@@ -253,6 +309,7 @@ public class GameManager : MonoBehaviour
         return playerMissCount;
     }
 
+
     // MainMenu
     // Get Selected Music from SongLibraryManager
 
@@ -263,7 +320,6 @@ public class GameManager : MonoBehaviour
 
     public void StartSelectedSong()
     {
-
         if (selectedSongData.audioClip != null)
         {
             SceneManager.LoadScene("GameScene");
@@ -293,30 +349,5 @@ public class GameManager : MonoBehaviour
     public float GetNoteSpeed()
     {
         return selectedSongData.noteSpeed;
-    }
-
-
-
-    // Pause Menu
-
-    public void PauseGame()
-    {
-        OnPauseStart?.Invoke();
-        isPaused = true;
-        musicManager.PauseMusic();
-        uiManager.ShowPauseMenu();
-    }
-
-    public void ResumeGame()
-    {
-        OnPauseEnd?.Invoke();
-        musicManager.UnPauseMusic();
-        isPaused = false;
-    }
-
-    public void RestartGame()
-    {
-        UnsubcscribeGameSceneEvents();
-        SceneManager.LoadScene("GameScene");
     }
 }
