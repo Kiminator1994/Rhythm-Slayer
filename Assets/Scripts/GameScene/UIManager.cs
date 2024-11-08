@@ -9,9 +9,10 @@ public class UIManager : MonoBehaviour
     // Playtime
     [SerializeField] private TextMeshProUGUI playtime;
 
-    // Points & combo
+    // Points, combo, multiplier
     [SerializeField] private TextMeshProUGUI points;
     [SerializeField] private TextMeshProUGUI combo;
+    [SerializeField] private TextMeshProUGUI multiplier;
 
     // Health
     [SerializeField] private TextMeshProUGUI health;
@@ -39,6 +40,11 @@ public class UIManager : MonoBehaviour
     public void UpdatePoints(int actualPoints)
     {
         points.text = actualPoints.ToString();
+    }
+
+    public void UpdateMultiplier(float acutalMultiplier)
+    {
+        multiplier.text = acutalMultiplier.ToString();
     }
 
     public void UpdateCombo(int actualCombo)

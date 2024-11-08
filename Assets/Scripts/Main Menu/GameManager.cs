@@ -65,7 +65,7 @@ public class GameManager : MonoBehaviour
     }
 
     // GameScene
-    // Handle Events and send data to UI
+    // Handle Events and Reset GameScene
 
     public void SetGameSceneReferences(SwordInteraction swordLeftRef, SwordInteraction swordRightRef, UIManager uiManagerRef, NoteEndManager noteEndManagerRef, MusicManager musicManagerRef)
     {
@@ -135,6 +135,8 @@ public class GameManager : MonoBehaviour
         ++unsubscribeCount; // Check for memory leak
     }
 
+    // Update UI
+
     private void SetPlaytime(float currentPlaytime)
     {
         uiManager.UpdatePlaytime(currentPlaytime);
@@ -144,11 +146,13 @@ public class GameManager : MonoBehaviour
     {
         if (playerCombo >= 10)
         {
-            multiplier = 1 + ((playerCombo / 10) / 10); // Gain 0.1 multiplier for each 10 combostreak
+            multiplier = 1f + (playerCombo / 10) * 0.1f; // Gain 0.1 multiplier for each 10 combostreak
+            Debug.Log("multi: " + multiplier + " combo: " + playerCombo);
         }
-
+  
         playerPoints += (int)(basicPoints * multiplier);
         uiManager.UpdatePoints(playerPoints);
+        uiManager.UpdateMultiplier(multiplier);
     }
 
     private void SetCombo()
@@ -174,6 +178,7 @@ public class GameManager : MonoBehaviour
     private void SetComboOnMiss()
     {
         playerCombo = 0;
+        multiplier = 1;
         uiManager.UpdateCombo(playerCombo);
     }
 
@@ -214,6 +219,9 @@ public class GameManager : MonoBehaviour
             EndGame();
         }
     }
+
+
+
 
     private void SetMissCount()
     {
