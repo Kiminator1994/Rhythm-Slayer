@@ -20,7 +20,7 @@ public class UIManager : MonoBehaviour
     // Countdown
     [SerializeField] private TextMeshProUGUI countdown;
     [SerializeField] private int countdownDuration = 2;
-    private float remainingCountdown; 
+    private float remainingCountdown = 2; 
 
     // PauseGame
     [SerializeField] private Canvas Canvas;

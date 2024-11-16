@@ -1968,6 +1968,74 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1602337749}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1662524772
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7779271416017091515, guid: 6d62d0b501fe7b349a9d7753817b0862,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.3689101
+      objectReference: {fileID: 0}
+    - target: {fileID: 7779271416017091515, guid: 6d62d0b501fe7b349a9d7753817b0862,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.064
+      objectReference: {fileID: 0}
+    - target: {fileID: 7779271416017091515, guid: 6d62d0b501fe7b349a9d7753817b0862,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.5757521
+      objectReference: {fileID: 0}
+    - target: {fileID: 7779271416017091515, guid: 6d62d0b501fe7b349a9d7753817b0862,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7779271416017091515, guid: 6d62d0b501fe7b349a9d7753817b0862,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7779271416017091515, guid: 6d62d0b501fe7b349a9d7753817b0862,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7779271416017091515, guid: 6d62d0b501fe7b349a9d7753817b0862,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7779271416017091515, guid: 6d62d0b501fe7b349a9d7753817b0862,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7779271416017091515, guid: 6d62d0b501fe7b349a9d7753817b0862,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7779271416017091515, guid: 6d62d0b501fe7b349a9d7753817b0862,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7874765991578271013, guid: 6d62d0b501fe7b349a9d7753817b0862,
+        type: 3}
+      propertyPath: m_Name
+      value: SwordRight V2 Variant 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6d62d0b501fe7b349a9d7753817b0862, type: 3}
 --- !u!1 &1673224806
 GameObject:
   m_ObjectHideFlags: 0
@@ -2755,8 +2823,33 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8139546499528557571, guid: 35769050af2d0a84dabf40d216e912de,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1824507450}
   m_SourcePrefab: {fileID: 100100000, guid: 35769050af2d0a84dabf40d216e912de, type: 3}
+--- !u!1 &1824507449 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8139546499528557571, guid: 35769050af2d0a84dabf40d216e912de,
+    type: 3}
+  m_PrefabInstance: {fileID: 1824507448}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1824507450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1824507449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3019ab8f8bb7f7c4db602cf1c846541d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicManager: {fileID: 0}
+  songData: {fileID: 0}
+  playerOffsetTime: 0
 --- !u!1 &1950316156
 GameObject:
   m_ObjectHideFlags: 0
@@ -3345,6 +3438,74 @@ MonoBehaviour:
   m_CameraFloorOffsetObject: {fileID: 1995938504}
   m_RequestedTrackingOriginMode: 0
   m_CameraYOffset: 1.7
+--- !u!1001 &2062947567
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2628691824666256944, guid: 2e33d4132d630d741b13dc2dd9aa45e4,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2628691824666256944, guid: 2e33d4132d630d741b13dc2dd9aa45e4,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.084
+      objectReference: {fileID: 0}
+    - target: {fileID: 2628691824666256944, guid: 2e33d4132d630d741b13dc2dd9aa45e4,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2628691824666256944, guid: 2e33d4132d630d741b13dc2dd9aa45e4,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2628691824666256944, guid: 2e33d4132d630d741b13dc2dd9aa45e4,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2628691824666256944, guid: 2e33d4132d630d741b13dc2dd9aa45e4,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2628691824666256944, guid: 2e33d4132d630d741b13dc2dd9aa45e4,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2628691824666256944, guid: 2e33d4132d630d741b13dc2dd9aa45e4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2628691824666256944, guid: 2e33d4132d630d741b13dc2dd9aa45e4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2628691824666256944, guid: 2e33d4132d630d741b13dc2dd9aa45e4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9052144342673420426, guid: 2e33d4132d630d741b13dc2dd9aa45e4,
+        type: 3}
+      propertyPath: m_Name
+      value: SwordLeft V2 Variant 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2e33d4132d630d741b13dc2dd9aa45e4, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -3356,3 +3517,5 @@ SceneRoots:
   - {fileID: 1673224808}
   - {fileID: 292669866}
   - {fileID: 1824507448}
+  - {fileID: 2062947567}
+  - {fileID: 1662524772}

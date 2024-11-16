@@ -8,6 +8,7 @@ TagManager:
   - RightHandController
   - BlueCube
   - RedCube
+  - HitCollider
   layers:
   - Default
   - TransparentFX

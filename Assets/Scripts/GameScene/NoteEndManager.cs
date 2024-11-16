@@ -11,6 +11,7 @@ public class NoteEndManager : MonoBehaviour
     {
         if (other.gameObject.layer == 10)
         {
+            Debug.Log("Miss!");
             OnNoteMiss?.Invoke();
             Destroy(other.gameObject);
         }

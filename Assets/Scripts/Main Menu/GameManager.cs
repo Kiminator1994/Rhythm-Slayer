@@ -147,7 +147,6 @@ public class GameManager : MonoBehaviour
         if (playerCombo >= 10)
         {
             multiplier = 1f + (playerCombo / 10) * 0.1f; // Gain 0.1 multiplier for each 10 combostreak
-            Debug.Log("multi: " + multiplier + " combo: " + playerCombo);
         }
   
         playerPoints += (int)(basicPoints * multiplier);

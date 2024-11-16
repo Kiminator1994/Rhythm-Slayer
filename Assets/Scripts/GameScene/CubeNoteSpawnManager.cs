@@ -33,7 +33,6 @@ public class CubeNoteSpawnManager : MonoBehaviour
         songData = GameManager.Instance.GetSongData();
         if (songData != null)
             StartCoroutine(SpawnNotes());
-
     }
 
     private IEnumerator SpawnNotes()
@@ -51,12 +50,15 @@ public class CubeNoteSpawnManager : MonoBehaviour
             // To spawn the cubes at the correct time, we have to calculate the spawntime according to the the bpm.
             float secondsPerBeat = 60f / songData.bpm;
             float spawnTimeInSeconds = note.timestamp * secondsPerBeat;
-
             float spawnTime = spawnTimeInSeconds + playerOffsetTime + songData.songTimeOffset - cubeTravelTime;
-            float remainingTime = (GameManager.Instance.GetRemainingCountdown() * -1); // * -1 so we have negative Time since we get negative time in the beginning from cubeTravelTime
 
-            if (spawnTime > remainingTime && spawnTime <= 0)
+            if (spawnTime < 0)
             {
+                // Wait until it's time to spawn the note
+                while ((GameManager.Instance.GetRemainingCountdown() *-1) < spawnTime)
+                {
+                    yield return null;
+                }
                 SpawnNote(note);
             }
             else
@@ -64,7 +66,7 @@ public class CubeNoteSpawnManager : MonoBehaviour
                 // Wait until it's time to spawn the note
                 while (musicManager.GetCurrentTime() < spawnTime)
                 {
-                    yield return null; // check 8 times per second, instead of every frame
+                    yield return null; 
                 }
                 SpawnNote(note);
             }
@@ -86,29 +88,29 @@ public class CubeNoteSpawnManager : MonoBehaviour
         switch (note.cutDirection)
         {
             case 0: // Up
-                rotation = Quaternion.Euler(0, 270, 0);
+                rotation = Quaternion.Euler(0, 0, 0);
                 break;
             case 1: // Down
-                rotation = Quaternion.Euler(180, 270, 0);
+                rotation = Quaternion.Euler(0, 0, 180);
                 break;
             case 2: // Left
-                rotation = Quaternion.Euler(90, 270, 0);
+                rotation = Quaternion.Euler(0, 0, 90);
                 break;
             case 3: // Right
-                rotation = Quaternion.Euler(-90, 270, 0);
+                rotation = Quaternion.Euler(0, 0, -90);
                 break;
             case 4: // Up Left
-                rotation = Quaternion.Euler(45, 270, 0);
+                rotation = Quaternion.Euler(0, 0, 45);
                 break;
             case 5: // Up Right
-                rotation = Quaternion.Euler(-45, 270, 0);
+                rotation = Quaternion.Euler(0, 0, -45);
                 break;
             case 6: // Down Left
-                rotation = Quaternion.Euler(135, 270, 0);
+                rotation = Quaternion.Euler(0, 0, 135);
 
                 break;
             case 7: // Down Right
-                rotation = Quaternion.Euler(-135, 270, 0);
+                rotation = Quaternion.Euler(0, 0, -135);
                 break;
             case 8: // Any
                 if (note.type == 1)

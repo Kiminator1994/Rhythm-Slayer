@@ -31,37 +31,47 @@ public class SwordInteraction : MonoBehaviour
     {
         if (other.gameObject.layer == 10) // CubeNote
         {
-            if (isLeftSword) 
+            CorrectHit correctHit = other.gameObject.GetComponent<CorrectHit>();
+            if (correctHit.GetCorrectHit() == true)
             {
-                if (other.gameObject.tag == "BlueCube")
+                if (isLeftSword)
                 {
-                    OnCubeNoteHit?.Invoke();
-                    InvokeHapticImpulse();
+                    if (other.gameObject.tag == "BlueCube" && other.gameObject)
+                    {
+                        OnCubeNoteHit?.Invoke();
+                        InvokeHapticImpulse();
+                    }
+                    else
+                    {
+                        Debug.Log("Wrong Color!");
+                        OnWrongHit?.Invoke();
+                        InvokeHapticImpulseWrongHit();
+                    }
                 }
-                else 
+                else
                 {
-                    OnWrongHit?.Invoke();
-                    InvokeHapticImpulseWrongHit();
+                    if (other.gameObject.tag == "RedCube")
+                    {
+                        OnCubeNoteHit?.Invoke();
+                        InvokeHapticImpulse();
+                    }
+                    else
+                    {
+                        Debug.Log("Wrong Color!");
+                        OnWrongHit?.Invoke();
+                        InvokeHapticImpulseWrongHit();
+                    }
                 }
             }
             else
             {
-                if (other.gameObject.tag == "RedCube")
-                {
-                    OnCubeNoteHit?.Invoke();
-                    InvokeHapticImpulse();
-                }
-                else
-                {
-                    OnWrongHit?.Invoke();
-                    InvokeHapticImpulseWrongHit();
-                }
+                Debug.Log("Wrong Hit!");
+                OnWrongHit?.Invoke();
+                InvokeHapticImpulseWrongHit();
             }
             audioSource.PlayOneShot(audioSource.clip);
             Destroy(other.gameObject);
         }
-
-
     }
 
     void InvokeHapticImpulse()

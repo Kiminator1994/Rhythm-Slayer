@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2909215214656565432}
   - component: {fileID: 1763229506853864252}
   - component: {fileID: 7228898848309058893}
+  - component: {fileID: 5056735471701159869}
   m_Layer: 10
   m_Name: CubeBlueAllDirections
   m_TagString: BlueCube
@@ -55,7 +56,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.35, y: 0.35, z: 0.35}
+  m_Size: {x: 0.42, y: 0.42, z: 0.42}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &2909215214656565432
 Rigidbody:
@@ -111,6 +112,21 @@ MonoBehaviour:
   particleEffectPrefab: {fileID: 5024009746357069194, guid: ec3f674830402cc45bce805cf6493db7,
     type: 3}
   isRed: 0
+--- !u!114 &5056735471701159869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8841924964531797794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4acf908ddd8d60a4c8c5719766a8c026, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toleranceAngle: 60
+  coneSegments: 24
+  correctHit: 1
 --- !u!1001 &3276351679534614743
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -122,17 +138,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 0860be1f00a265345bf7153c114c2f06,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.16
+      value: 0.18000002
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0860be1f00a265345bf7153c114c2f06,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.16
+      value: 0.18000002
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0860be1f00a265345bf7153c114c2f06,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.16
+      value: 0.18000002
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0860be1f00a265345bf7153c114c2f06,
         type: 3}

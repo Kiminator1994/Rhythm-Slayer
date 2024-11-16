@@ -20,10 +20,9 @@ public class GameSceneInitializer : MonoBehaviour
 
     private void Start()
     {
-        cubeNoteSpawnManagerRef.songData = GameManager.Instance.GetSongData();
         hudManagerRef.StartCountdown(StartMusic);
-        Debug.Log(GameManager.Instance.GetAudioClip());
-        Debug.Log("Scene initialized");
+        cubeNoteSpawnManagerRef.songData = GameManager.Instance.GetSongData();
+        Debug.Log("Scene initialized: " + GameManager.Instance.GetAudioClip());
     }
 
     private void StartMusic()
