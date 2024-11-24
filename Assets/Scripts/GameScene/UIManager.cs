@@ -68,6 +68,11 @@ public class UIManager : MonoBehaviour
 
         while (remainingCountdown > 0)
         {
+            if (GameManager.Instance.isPaused)
+            {
+                Debug.Log("Countdown paused");
+                yield return null;
+            }
             countdown.text = ((int)remainingCountdown).ToString();  // Cast to int to display whole numbers
             remainingCountdown -= Time.deltaTime;  // Subtract time passed since last frame
             yield return null;  // Wait until next frame

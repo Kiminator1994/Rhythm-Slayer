@@ -45,6 +45,10 @@ public class GameManager : MonoBehaviour
     // GameOver
     public bool GameIsOver = false;
 
+    // Settings
+    [SerializeField] private SettingsManager settingsManager;
+    private float playerOffsetTime = 0;
+
     // test
     int subscribeCount = 0;
     int unsubscribeCount = 0;
@@ -64,6 +68,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        playerOffsetTime = settingsManager.GetPlayerOffset();
+    }
+
     // GameScene
     // Handle Events and Reset GameScene
 
@@ -74,6 +83,18 @@ public class GameManager : MonoBehaviour
         uiManager = uiManagerRef;
         noteEndManager = noteEndManagerRef;
         musicManager = musicManagerRef;
+    }
+
+    public void ResetGameSceneStats()
+    {
+        Debug.Log("Before Reset: " + "title " + scoreScreenTitle + " PlayerPoints: " + playerPoints + " MacCombo: " + maxCombo + " playermissCount: " + playerMissCount);
+        playerPoints = 0;
+        playerCombo = 0;
+        multiplier = 1f;
+        playerMissCount = 0;
+        actualHealth = 100;
+        maxCombo = 0;
+        Debug.Log("After Reset: " + "title " + scoreScreenTitle + " PlayerPoints: " + playerPoints + " MacCombo: " + maxCombo + " playermissCount: " + playerMissCount);
     }
 
     public void SubcscribeGameSceneEvents()
@@ -100,18 +121,6 @@ public class GameManager : MonoBehaviour
         Debug.Log("subscribed: " + subscribeCount + " unsubscribed: " + unsubscribeCount);
     }
 
-    public void ResetGameSceneStats()
-    {
-        Debug.Log("Before Reset: " + "title " + scoreScreenTitle + " PlayerPoints: " + playerPoints + " MacCombo: " + maxCombo + " playermissCount: " + playerMissCount);
-        playerPoints = 0;
-        playerCombo = 0;
-        multiplier = 1f;
-        playerMissCount = 0;
-        actualHealth = 100;
-        maxCombo = 0;
-        Debug.Log("After Reset: " + "title " + scoreScreenTitle + " PlayerPoints: " + playerPoints + " MacCombo: " + maxCombo + " playermissCount: " + playerMissCount);
-    }
-
     public void UnsubcscribeGameSceneEvents()
     {
         swordLeft.OnCubeNoteHit -= SetCombo;
@@ -134,6 +143,7 @@ public class GameManager : MonoBehaviour
         noteEndManager.OnNoteMiss -= SetHealthOnMiss;
         ++unsubscribeCount; // Check for memory leak
     }
+
 
     // Update UI
 
@@ -219,12 +229,19 @@ public class GameManager : MonoBehaviour
         }
     }
 
-
-
-
     private void SetMissCount()
     {
         ++playerMissCount;
+    }
+
+    public void SetPlayerOffset(float offset)
+    {
+        playerOffsetTime = offset;
+    }
+
+    public float GetPlayerOffset()
+    {
+        return playerOffsetTime;
     }
 
     private void SetScoreScreenTitle(string title)

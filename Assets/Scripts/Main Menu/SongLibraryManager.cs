@@ -9,7 +9,7 @@ using UnityEngine.Networking;
 
 public class SongLibraryManager : MonoBehaviour
 {
-    [SerializeField] private List<SongData> songLibrary;  // Predefined songs
+    [SerializeField] private List<SongData> songLibrary;
     [SerializeField] private TextMeshProUGUI mainMenuSongInterpret;
     [SerializeField] private TextMeshProUGUI mainMenuSongTitle;
     [SerializeField] private TextMeshProUGUI highscore;

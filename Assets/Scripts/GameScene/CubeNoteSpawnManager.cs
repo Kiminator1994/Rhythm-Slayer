@@ -18,7 +18,7 @@ public class CubeNoteSpawnManager : MonoBehaviour
     public MusicManager musicManager;
     public SongData songData;
 
-    public float playerOffsetTime = 0f; // Adjustable time offset for the player in settings TO DO!!!!
+    public float playerOffsetTime = 0f;
 
     private void Start()
     {
@@ -29,7 +29,8 @@ public class CubeNoteSpawnManager : MonoBehaviour
             { layerOne[2], layerTwo[2], layerThree[2] },
             { layerOne[3], layerTwo[3], layerThree[3] }
         };
-
+        playerOffsetTime = GameManager.Instance.GetPlayerOffset();
+        Debug.Log("playerOffset: " + playerOffsetTime);
         songData = GameManager.Instance.GetSongData();
         if (songData != null)
             StartCoroutine(SpawnNotes());
