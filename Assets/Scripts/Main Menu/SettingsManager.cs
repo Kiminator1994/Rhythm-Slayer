@@ -14,32 +14,43 @@ public class SettingsManager : MonoBehaviour
     [SerializeField] private CanvasGroup graphicsMenu;
     [SerializeField] private float fadeDuration = 0.1f;
     private float actualOffsetTime = 0f;
+    private bool settingsPageActive = true;
 
     private void Start()
     {
-        UpdateOffsetTime(actualOffsetTime);
+        UpdateOffsetTime(actualOffsetTime, false);
     }
 
     public void ShowSettings()
     {
+        if (settingsPageActive) 
+            return;
         StartCoroutine(FadeMenu(graphicsMenu, 1, 0, fadeDuration));
         StartCoroutine(FadeMenu(playerSettingsMenu, 0, 1, fadeDuration));
+        settingsPageActive = true;
     }
 
     public void CloseSettings()
     {
+        if (!settingsPageActive)
+            return;
         StartCoroutine(FadeMenu(playerSettingsMenu, 1, 0, fadeDuration));
         StartCoroutine(FadeMenu(graphicsMenu, 0, 1, fadeDuration));
     }
 
     public void ShowGraphics()
     {
+        if (!settingsPageActive)
+            return;
         StartCoroutine(FadeMenu(playerSettingsMenu, 1, 0, fadeDuration));
         StartCoroutine(FadeMenu(graphicsMenu, 0, 1, fadeDuration));
+        settingsPageActive = false;
     }
 
     public void CloseGraphics()
     {
+        if (settingsPageActive)
+            return;
         StartCoroutine(FadeMenu(graphicsMenu, 1, 0, fadeDuration));
         StartCoroutine(FadeMenu(playerSettingsMenu, 0, 1, fadeDuration));
     }
@@ -68,6 +79,16 @@ public class SettingsManager : MonoBehaviour
             canvasGroup.blocksRaycasts = false;
         }
     }
+
+    // Slider can only use methods with 1 float parameter
+    public void UpdateOffsetTime(float currentOffset)
+    {
+        actualOffsetTime = currentOffset;
+        offsetTime.text = currentOffset.ToString("F3") + " Sec.";
+        settingsSavedText.text = "Unsaved Settings!";
+        settingsSavedText.gameObject.SetActive(true);
+    }
+
 
     public void UpdateOffsetTime(float currentOffset, bool offsetChanged = false)
     {
@@ -112,5 +133,12 @@ public class SettingsManager : MonoBehaviour
         GameManager.Instance.SetPlayerOffset(actualOffsetTime);
         settingsSavedText.text = "Settings saved.";
         settingsSavedText.gameObject.SetActive(true);
+        StartCoroutine(DeactivateSavedtext());
+    }
+
+    private IEnumerator DeactivateSavedtext()
+    {
+        yield return new WaitForSeconds(3f);
+        settingsSavedText.gameObject.SetActive(false);
     }
 }
