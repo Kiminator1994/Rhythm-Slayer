@@ -7,19 +7,57 @@ using UnityEngine.UI;
 
 public class SettingsManager : MonoBehaviour
 {
+    [SerializeField] private CanvasGroup playerSettingsMenu;
     [SerializeField] private TextMeshProUGUI settingsSavedText;
     [SerializeField] private TextMeshProUGUI offsetTime;
     [SerializeField] private Slider slider;
-    [SerializeField] private CanvasGroup playerSettingsMenu;
     [SerializeField] private CanvasGroup graphicsMenu;
+    [SerializeField] private Toggle fullscreen;
+    [SerializeField] private Toggle vsync;
+    [SerializeField] private TextMeshProUGUI resolution;
+    [SerializeField] private List<ResolutionItem> resolutions = new List<ResolutionItem>();
     [SerializeField] private float fadeDuration = 0.1f;
+
+    private int selectedResolution;
     private float actualOffsetTime = 0f;
     private bool settingsPageActive = true;
 
     private void Start()
     {
+        fullscreen.isOn = Screen.fullScreen;
+        if (QualitySettings.vSyncCount == 0)
+        {
+            vsync.isOn = false;
+        }
+        else
+        {
+            vsync.isOn = true;
+        }
+
+        bool foundResolution = false;
+        for(int i = 0; i < resolutions.Count; i++)
+        {
+            if(Screen.width == resolutions[i].horizontal && Screen.height == resolutions[i].vertical)
+            {
+                foundResolution = true;
+                selectedResolution = i;
+                UpdateResolution();
+            }
+        }
+        if (!foundResolution)
+        {
+            ResolutionItem resolutionItem = new ResolutionItem();
+            resolutionItem.vertical = Screen.height;
+            resolutionItem.horizontal = Screen.width;
+            resolutions.Add(resolutionItem);
+            selectedResolution = resolutions.Count - 1;
+        }
+
         UpdateOffsetTime(actualOffsetTime, false);
     }
+
+
+    // Switch between Settings
 
     public void ShowSettings()
     {
@@ -79,6 +117,8 @@ public class SettingsManager : MonoBehaviour
             canvasGroup.blocksRaycasts = false;
         }
     }
+
+    // Player Settings
 
     // Slider can only use methods with 1 float parameter
     public void UpdateOffsetTime(float currentOffset)
@@ -141,4 +181,52 @@ public class SettingsManager : MonoBehaviour
         yield return new WaitForSeconds(3f);
         settingsSavedText.gameObject.SetActive(false);
     }
+
+
+    // Graphic Settings
+
+    public void SwitchResolutionLeft()
+    {
+        selectedResolution--;
+        if (selectedResolution < 0)
+        {
+            selectedResolution = 0;
+        }
+        UpdateResolution();
+    }
+
+    public void SwitchResolutionRight()
+    {
+        selectedResolution++;
+        if (selectedResolution > resolutions.Count - 1)
+        {
+            selectedResolution = resolutions.Count - 1;
+        }
+        UpdateResolution();
+    }
+
+    private void UpdateResolution()
+    {
+        resolution.text = resolutions[selectedResolution].horizontal.ToString() + " x " + resolutions[selectedResolution].vertical.ToString();
+    }
+
+    public void ApplyGraphics()
+    {
+        if (vsync.isOn) 
+        { 
+            QualitySettings.vSyncCount = 1;
+        }
+        else
+        {
+            QualitySettings.vSyncCount = 0;
+        }
+        Screen.SetResolution(resolutions[selectedResolution].horizontal, resolutions[selectedResolution].vertical, fullscreen.isOn);
+    }
+}
+
+[System.Serializable] // Show in Inspector
+public class ResolutionItem
+{
+    public int horizontal;
+    public int vertical;
 }

@@ -28,7 +28,7 @@ public class SongLibraryManager : MonoBehaviour
     {
         DisplaySongs();
 
-        // Show the first song or a selected one
+        // Show the first song or the one selected befofore
         SongData selectedSongData = GameManager.Instance.GetSongData();
         if (selectedSongData != null)
         {
@@ -37,7 +37,7 @@ public class SongLibraryManager : MonoBehaviour
         else if (songLibrary.Count > 0)
         {
             SongData firstSong = songLibrary[0];
-            OnSongSelected(firstSong);
+            OnSongSelected(firstSong, false);
         }
     }
 
@@ -50,8 +50,8 @@ public class SongLibraryManager : MonoBehaviour
                 string filePath = Path.Combine(Application.dataPath, customSongsFolder, song.noteDataFilePath); // Path to the .dat file
                 if (File.Exists(filePath))
                 {
-                    var map = songMapImporter.LoadMap(filePath); // Load map from the .dat file
-                    song.noteList = songMapImporter.ConvertToNoteData(map); // Convert the map to note data
+                    var map = songMapImporter.LoadMap(filePath);
+                    song.noteList = songMapImporter.ConvertToNoteData(map);
                     CreateSongButton(song);
                     Debug.Log($"Loaded notes for song: {song.title} from {filePath}");
                 }
@@ -80,11 +80,15 @@ public class SongLibraryManager : MonoBehaviour
 
         Button buttonComponent = newButton.GetComponent<Button>();
         buttonComponent.onClick.AddListener(() => OnSongSelected(song));
-        buttonComponent.onClick.AddListener(() => PlaySample(song));
     }
 
-    private void OnSongSelected(SongData song)
+    private void OnSongSelected(SongData song, bool playSample = true)
     {
+        if (playSample)
+        {
+            PlaySample(song);
+        }
+
         GameManager.Instance.SetSelectedSongData(song);
         mainMenuSongTitle.text = song.title;
         mainMenuSongInterpret.text = song.interpret;

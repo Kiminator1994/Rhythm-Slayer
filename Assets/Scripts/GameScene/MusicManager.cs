@@ -23,11 +23,6 @@ public class MusicManager : MonoBehaviour
         StartCoroutine(CheckMusicEnd());
     }
 
-    public bool IsPlaying()
-    {
-        return audioSource.isPlaying;
-    }
-
     public float GetCurrentTime()
     {
         return audioSource.time;
@@ -50,21 +45,19 @@ public class MusicManager : MonoBehaviour
 
     private IEnumerator UpdatePlaytime()
     {
-        while (IsPlaying())
+        while (true)
         {
             OnPlaytimeUpdated?.Invoke(GetCurrentTime());
-            yield return null; // pause coroutine and resume in next frame, otherwise game will freeze as long as music is playing
+            yield return null; 
         }
     }
 
     private IEnumerator CheckMusicEnd()
     {
-        yield return new WaitUntil(() => !audioSource.isPlaying);
-
-        if (GameManager.Instance.isPaused == false)
+        while (audioSource.clip.length != GetCurrentTime())
         {
-            Debug.Log("Music ended");
-            OnMusicEnd?.Invoke();
+            yield return null;
         }
+        OnMusicEnd?.Invoke();
     }
 }

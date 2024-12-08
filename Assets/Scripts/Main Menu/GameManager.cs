@@ -284,8 +284,8 @@ public class GameManager : MonoBehaviour
 
     public void PauseGame()
     {
-        OnPauseStart?.Invoke();
         isPaused = true;
+        OnPauseStart?.Invoke();
         musicManager.PauseMusic();
         uiManager.ShowPauseMenu();
     }

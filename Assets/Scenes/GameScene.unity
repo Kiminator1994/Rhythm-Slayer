@@ -2263,7 +2263,7 @@ MonoBehaviour:
   m_ConeCastAngle: 6
   m_RaycastMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 1079
   m_RaycastTriggerInteraction: 1
   m_RaycastSnapVolumeInteraction: 1
   m_HitClosestOnly: 0
@@ -5913,6 +5913,7 @@ GameObject:
   - component: {fileID: 1520392228}
   - component: {fileID: 1520392227}
   - component: {fileID: 1520392226}
+  - component: {fileID: 1520392230}
   m_Layer: 0
   m_Name: UIPause
   m_TagString: Untagged
@@ -6025,6 +6026,20 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1520392230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520392224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f207065725d2ca488ce544ad234dac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amplitude: 0.02
+  frequency: 1
 --- !u!1 &1716922677
 GameObject:
   m_ObjectHideFlags: 0
@@ -6962,7 +6977,7 @@ MonoBehaviour:
   m_ConeCastAngle: 6
   m_RaycastMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 1079
   m_RaycastTriggerInteraction: 1
   m_RaycastSnapVolumeInteraction: 1
   m_HitClosestOnly: 0
@@ -7979,6 +7994,11 @@ PrefabInstance:
     - target: {fileID: 2628691824666256944, guid: 2e33d4132d630d741b13dc2dd9aa45e4,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3686340413429746282, guid: 2e33d4132d630d741b13dc2dd9aa45e4,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5764964145523173363, guid: 2e33d4132d630d741b13dc2dd9aa45e4,
