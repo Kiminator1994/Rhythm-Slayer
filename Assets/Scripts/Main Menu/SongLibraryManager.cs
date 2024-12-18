@@ -10,13 +10,15 @@ using UnityEngine.Networking;
 public class SongLibraryManager : MonoBehaviour
 {
     [SerializeField] private List<SongData> songLibrary;
+    [SerializeField] private List<SongData> songLibrary2;
     [SerializeField] private TextMeshProUGUI mainMenuSongInterpret;
     [SerializeField] private TextMeshProUGUI mainMenuSongTitle;
     [SerializeField] private TextMeshProUGUI highscore;
     [SerializeField] private TextMeshProUGUI maxCombo;
     [SerializeField] private Image mainMenuImage;
     [SerializeField] private GameObject templateButton;
-    [SerializeField] private Transform buttonContainer;
+    [SerializeField] private Transform scrollbar;
+    [SerializeField] private Transform scrollbar2;
     [SerializeField] private GameObject selectedSong;
     [SerializeField] private float sampletime = 20f;
     [SerializeField] private AudioSource audioSource;
@@ -26,7 +28,8 @@ public class SongLibraryManager : MonoBehaviour
 
     private void Start()
     {
-        DisplaySongs();
+        DisplaySongs(songLibrary, scrollbar);
+        DisplaySongs(songLibrary2, scrollbar2);
 
         // Show the first song or the one selected befofore
         SongData selectedSongData = GameManager.Instance.GetSongData();
@@ -41,9 +44,9 @@ public class SongLibraryManager : MonoBehaviour
         }
     }
 
-    private void DisplaySongs()
+    private void DisplaySongs(List<SongData> songList, Transform scrollbar)
     {
-        foreach (var song in songLibrary)
+        foreach (var song in songList)
         {
             if (!string.IsNullOrEmpty(song.noteDataFilePath))
             {
@@ -52,7 +55,7 @@ public class SongLibraryManager : MonoBehaviour
                 {
                     var map = songMapImporter.LoadMap(filePath);
                     song.noteList = songMapImporter.ConvertToNoteData(map);
-                    CreateSongButton(song);
+                    CreateSongButton(song, scrollbar);
                     Debug.Log($"Loaded notes for song: {song.title} from {filePath}");
                 }
                 else
@@ -64,9 +67,9 @@ public class SongLibraryManager : MonoBehaviour
     }
 
 
-    private void CreateSongButton(SongData song)
+    private void CreateSongButton(SongData song, Transform scrollbar)
     {
-        GameObject newButton = Instantiate(templateButton, buttonContainer);
+        GameObject newButton = Instantiate(templateButton, scrollbar);
         newButton.SetActive(true);
 
         TextMeshProUGUI songNameText = newButton.transform.Find("SongTitle").GetComponent<TextMeshProUGUI>();
@@ -74,6 +77,9 @@ public class SongLibraryManager : MonoBehaviour
 
         TextMeshProUGUI songInterpretText = newButton.transform.Find("SongInterpret").GetComponent<TextMeshProUGUI>();
         songInterpretText.text = song.interpret;
+
+        TextMeshProUGUI difficultyText = newButton.transform.Find("Difficulty").GetComponent<TextMeshProUGUI>();
+        difficultyText.text = song.difficulty;
 
         Image backgroundImage = newButton.transform.Find("Image").GetComponent<Image>();
         backgroundImage.sprite = song.backgroundImage;

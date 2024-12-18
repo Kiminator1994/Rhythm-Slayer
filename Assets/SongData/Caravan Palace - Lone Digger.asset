@@ -3753,3 +3753,4 @@ MonoBehaviour:
     cutDirection: 0
     type: 1
   noteDataFilePath: Caravan Palace - Lone Digger/Expert.dat
+  difficulty: Expert

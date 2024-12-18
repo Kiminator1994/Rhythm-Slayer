@@ -8943,3 +8943,4 @@ MonoBehaviour:
     cutDirection: 7
     type: 1
   noteDataFilePath: PLight Remix/Expert.dat
+  difficulty: Expert+

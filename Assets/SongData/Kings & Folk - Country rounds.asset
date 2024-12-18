@@ -1,0 +1,1216 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bad26984f2c6ce047a62bfd53b1d8a04, type: 3}
+  m_Name: Kings & Folk - Country rounds
+  m_EditorClassIdentifier: 
+  interpret: Kings & Folk
+  title: Country Rounds
+  audioClip: {fileID: 8300000, guid: 43e56e5ed4fdc8c4e99af8b6c7d1be8f, type: 3}
+  bpm: 105
+  backgroundImage: {fileID: 21300000, guid: 631eac1360067c940b7494f254bd5370, type: 3}
+  highScore: 0
+  maxCombo: 0
+  noteSpeed: 12
+  songTimeOffset: 0
+  noteList:
+  - timestamp: 8
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 8
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 10
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 0
+    type: 1
+  - timestamp: 11
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 0
+    type: 0
+  - timestamp: 12
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 12
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 14
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 0
+    type: 1
+  - timestamp: 15
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 0
+    type: 0
+  - timestamp: 16
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 16
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 18
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 0
+    type: 1
+  - timestamp: 19
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 0
+    type: 0
+  - timestamp: 20
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 20
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 22
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 0
+    type: 1
+  - timestamp: 23
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 0
+    type: 0
+  - timestamp: 24
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 24
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 26
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 0
+    type: 1
+  - timestamp: 27
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 0
+    type: 0
+  - timestamp: 28
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 28
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 30
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 0
+    type: 1
+  - timestamp: 31
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 0
+    type: 0
+  - timestamp: 32
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 32
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 34
+    lineIndex: 1
+    lineLayer: 2
+    cutDirection: 0
+    type: 0
+  - timestamp: 34
+    lineIndex: 2
+    lineLayer: 2
+    cutDirection: 0
+    type: 1
+  - timestamp: 36
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 36
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 38
+    lineIndex: 0
+    lineLayer: 2
+    cutDirection: 0
+    type: 0
+  - timestamp: 38
+    lineIndex: 3
+    lineLayer: 2
+    cutDirection: 0
+    type: 1
+  - timestamp: 40
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 40.75
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 41.5
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 0
+    type: 1
+  - timestamp: 42
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 0
+    type: 0
+  - timestamp: 43.5
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 44
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 45
+    lineIndex: 3
+    lineLayer: 2
+    cutDirection: 0
+    type: 1
+  - timestamp: 46
+    lineIndex: 0
+    lineLayer: 2
+    cutDirection: 0
+    type: 0
+  - timestamp: 48
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 48.75
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 49.5
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 5
+    type: 1
+  - timestamp: 50
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 4
+    type: 0
+  - timestamp: 51.5
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 52
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 53
+    lineIndex: 3
+    lineLayer: 2
+    cutDirection: 0
+    type: 1
+  - timestamp: 54
+    lineIndex: 0
+    lineLayer: 2
+    cutDirection: 0
+    type: 0
+  - timestamp: 56
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 56
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 57
+    lineIndex: 0
+    lineLayer: 2
+    cutDirection: 0
+    type: 0
+  - timestamp: 57
+    lineIndex: 1
+    lineLayer: 2
+    cutDirection: 0
+    type: 1
+  - timestamp: 58
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 58
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 60
+    lineIndex: 2
+    lineLayer: 2
+    cutDirection: 0
+    type: 0
+  - timestamp: 60
+    lineIndex: 3
+    lineLayer: 2
+    cutDirection: 0
+    type: 1
+  - timestamp: 61
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 61
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 62
+    lineIndex: 0
+    lineLayer: 2
+    cutDirection: 0
+    type: 0
+  - timestamp: 62
+    lineIndex: 1
+    lineLayer: 2
+    cutDirection: 0
+    type: 1
+  - timestamp: 64
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 64
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 65
+    lineIndex: 1
+    lineLayer: 2
+    cutDirection: 0
+    type: 0
+  - timestamp: 65
+    lineIndex: 2
+    lineLayer: 2
+    cutDirection: 0
+    type: 1
+  - timestamp: 66
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 66
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 68
+    lineIndex: 2
+    lineLayer: 2
+    cutDirection: 0
+    type: 0
+  - timestamp: 68
+    lineIndex: 3
+    lineLayer: 2
+    cutDirection: 0
+    type: 1
+  - timestamp: 69
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 69
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 70
+    lineIndex: 0
+    lineLayer: 2
+    cutDirection: 0
+    type: 0
+  - timestamp: 70
+    lineIndex: 1
+    lineLayer: 2
+    cutDirection: 0
+    type: 1
+  - timestamp: 96
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 98
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 100
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 0
+    type: 1
+  - timestamp: 101
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 0
+    type: 0
+  - timestamp: 102
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 103
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 104
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 104
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 106
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 107
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 108
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 0
+    type: 0
+  - timestamp: 108
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 0
+    type: 1
+  - timestamp: 110
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 6
+    type: 1
+  - timestamp: 111
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 7
+    type: 0
+  - timestamp: 112
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 4
+    type: 0
+  - timestamp: 112
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 5
+    type: 1
+  - timestamp: 114
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 115
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 116
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 0
+    type: 0
+  - timestamp: 116
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 0
+    type: 1
+  - timestamp: 118
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 119
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 120
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 0
+    type: 0
+  - timestamp: 120
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 0
+    type: 1
+  - timestamp: 122
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 123
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 124
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 0
+    type: 0
+  - timestamp: 124
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 0
+    type: 1
+  - timestamp: 126
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 127
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 128
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 4
+    type: 0
+  - timestamp: 128
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 5
+    type: 1
+  - timestamp: 130
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 131
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 132
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 0
+    type: 0
+  - timestamp: 132
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 0
+    type: 1
+  - timestamp: 134
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 135
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 136
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 0
+    type: 1
+  - timestamp: 136.75
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 0
+    type: 0
+  - timestamp: 138
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 139
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 140
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 0
+    type: 1
+  - timestamp: 140.75
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 0
+    type: 0
+  - timestamp: 142
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 143
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 144
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 0
+    type: 1
+  - timestamp: 144.75
+    lineIndex: 1
+    lineLayer: 2
+    cutDirection: 0
+    type: 0
+  - timestamp: 146
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 147
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 148
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 0
+    type: 1
+  - timestamp: 148.75
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 0
+    type: 0
+  - timestamp: 150
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 151
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 152
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 152.75
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 154
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 6
+    type: 1
+  - timestamp: 155
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 7
+    type: 0
+  - timestamp: 156
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 5
+    type: 1
+  - timestamp: 156.75
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 4
+    type: 0
+  - timestamp: 158
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 159
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 160
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 0
+    type: 1
+  - timestamp: 160.75
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 0
+    type: 0
+  - timestamp: 162
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 163
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 164
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 0
+    type: 1
+  - timestamp: 164.75
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 0
+    type: 0
+  - timestamp: 166
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 167
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 200
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 200
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 201.5
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 0
+    type: 1
+  - timestamp: 202.5
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 0
+    type: 0
+  - timestamp: 204
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 204
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 205.5
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 0
+    type: 1
+  - timestamp: 206.5
+    lineIndex: 0
+    lineLayer: 2
+    cutDirection: 0
+    type: 0
+  - timestamp: 208
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 208
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 209.5
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 0
+    type: 1
+  - timestamp: 210.5
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 0
+    type: 0
+  - timestamp: 212
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 212
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 213.5
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 0
+    type: 1
+  - timestamp: 214.5
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 0
+    type: 0
+  - timestamp: 216
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 216
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 217.5
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 0
+    type: 1
+  - timestamp: 218.5
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 0
+    type: 0
+  - timestamp: 220
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 220
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 221.5
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 0
+    type: 1
+  - timestamp: 222.5
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 0
+    type: 0
+  - timestamp: 224
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 224
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 225.5
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 0
+    type: 1
+  - timestamp: 226.5
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 0
+    type: 0
+  - timestamp: 228
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 228
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 229.5
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 0
+    type: 1
+  - timestamp: 230.5
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 0
+    type: 0
+  - timestamp: 232
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 232.75
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 234
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 0
+    type: 1
+  - timestamp: 235
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 0
+    type: 0
+  - timestamp: 236
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 236.75
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 238
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 0
+    type: 1
+  - timestamp: 239
+    lineIndex: 0
+    lineLayer: 2
+    cutDirection: 0
+    type: 0
+  - timestamp: 240
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 240.75
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 242
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 0
+    type: 1
+  - timestamp: 243
+    lineIndex: 0
+    lineLayer: 2
+    cutDirection: 0
+    type: 0
+  - timestamp: 244
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 244.75
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 246
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 0
+    type: 1
+  - timestamp: 247
+    lineIndex: 0
+    lineLayer: 2
+    cutDirection: 0
+    type: 0
+  - timestamp: 248
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 248.75
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 250
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 0
+    type: 1
+  - timestamp: 251
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 0
+    type: 0
+  - timestamp: 252
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 252.75
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 254
+    lineIndex: 2
+    lineLayer: 2
+    cutDirection: 0
+    type: 1
+  - timestamp: 255
+    lineIndex: 1
+    lineLayer: 2
+    cutDirection: 0
+    type: 0
+  - timestamp: 256
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 256.75
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 258
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 0
+    type: 1
+  - timestamp: 259
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 0
+    type: 0
+  - timestamp: 260
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 260.75
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 262
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 0
+    type: 1
+  - timestamp: 263
+    lineIndex: 0
+    lineLayer: 2
+    cutDirection: 0
+    type: 0
+  - timestamp: 264
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 264
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 266
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 0
+    type: 1
+  - timestamp: 267
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 0
+    type: 0
+  - timestamp: 268
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 268
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 269.969
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 0
+    type: 1
+  - timestamp: 270.969
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 0
+    type: 0
+  - timestamp: 271.969
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 271.969
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 273.969
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 0
+    type: 1
+  - timestamp: 274.969
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 0
+    type: 0
+  - timestamp: 275.969
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 275.969
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 277.969
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 0
+    type: 1
+  - timestamp: 278.969
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 0
+    type: 0
+  - timestamp: 279.938
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 279.938
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 281.938
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 0
+    type: 1
+  - timestamp: 282.938
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 0
+    type: 0
+  - timestamp: 283.938
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 283.938
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 285.938
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 0
+    type: 1
+  - timestamp: 286.938
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 0
+    type: 0
+  - timestamp: 287.907
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 287.907
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 289.907
+    lineIndex: 0
+    lineLayer: 2
+    cutDirection: 0
+    type: 0
+  - timestamp: 289.907
+    lineIndex: 3
+    lineLayer: 2
+    cutDirection: 0
+    type: 1
+  - timestamp: 291.907
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 291.907
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 293.907
+    lineIndex: 1
+    lineLayer: 2
+    cutDirection: 0
+    type: 0
+  - timestamp: 293.907
+    lineIndex: 2
+    lineLayer: 2
+    cutDirection: 0
+    type: 1
+  noteDataFilePath: Kings & Folk - Country Rounds/HardStandard.dat
+  difficulty: Hard

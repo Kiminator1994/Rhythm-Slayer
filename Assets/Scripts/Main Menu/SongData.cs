@@ -17,6 +17,7 @@ public class SongData : ScriptableObject
     [SerializeField] public float songTimeOffset;
     [SerializeField] public List<NoteData> noteList;
     [SerializeField] public string noteDataFilePath;
+    [SerializeField] public string difficulty;
 
 }
 

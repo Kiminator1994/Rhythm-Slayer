@@ -1428,3 +1428,4 @@ MonoBehaviour:
     cutDirection: 3
     type: 0
   noteDataFilePath: Beatsaber/Expert.dat
+  difficulty: Expert

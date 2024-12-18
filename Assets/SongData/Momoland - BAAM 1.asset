@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Momoland - BAAM 1
   m_EditorClassIdentifier: 
   interpret: Momoland
-  title: BAAM New
+  title: BAAM
   audioClip: {fileID: 8300000, guid: 3ba79d0614977cd43b50338442bcc774, type: 3}
   bpm: 127
   backgroundImage: {fileID: 21300000, guid: a7aa88b0eb7ffe94790763297c146b70, type: 3}
@@ -3013,3 +3013,4 @@ MonoBehaviour:
     cutDirection: 2
     type: 1
   noteDataFilePath: Momoland - BAAM 1/Expert.json
+  difficulty: Expert
