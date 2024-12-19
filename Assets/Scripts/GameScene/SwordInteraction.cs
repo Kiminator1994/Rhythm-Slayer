@@ -1,15 +1,18 @@
 using System;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
+using Random = UnityEngine.Random;
 
 public class SwordInteraction : MonoBehaviour
 {
     [SerializeField] private AudioSource audioSource;
     [SerializeField] [Range(0, 1)] private float hapticIntensity = 0.2f;
-    [SerializeField][Range(0, 1)] private float hapticIntensityWronghit = 0.4f;
+    [SerializeField] [Range(0, 1)] private float hapticIntensityWronghit = 0.4f;
     [SerializeField] private float hapticDuration = 0.1f;
     [SerializeField] private float hapticDurationWrongHit = 0.15f;
     [SerializeField] private bool isLeftSword;
+    [SerializeField] private float minPitch = 0.7f;
+    [SerializeField] private float maxPitch = 1.3f;
     private ActionBasedController controllerLeft;
     private ActionBasedController controllerRight;
     public event Action OnCubeNoteHit;
@@ -27,7 +30,7 @@ public class SwordInteraction : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter(Collision other)
+    private void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.layer == 10) // CubeNote
         {
@@ -69,12 +72,12 @@ public class SwordInteraction : MonoBehaviour
                 OnWrongHit?.Invoke();
                 InvokeHapticImpulseWrongHit();
             }
-            audioSource.PlayOneShot(audioSource.clip);
+            PlayRandomPitchedSlashEffect();
             Destroy(other.gameObject);
         }
     }
 
-    void InvokeHapticImpulse()
+    private void InvokeHapticImpulse()
     {
         if (isLeftSword && controllerLeft != null)
         {
@@ -87,7 +90,7 @@ public class SwordInteraction : MonoBehaviour
         }
     }
 
-    void InvokeHapticImpulseWrongHit()
+    private void InvokeHapticImpulseWrongHit()
     {
         if (isLeftSword && controllerLeft != null)
         {
@@ -98,5 +101,11 @@ public class SwordInteraction : MonoBehaviour
         {
             controllerRight.SendHapticImpulse(hapticIntensityWronghit, hapticDurationWrongHit);
         }
+    }
+
+    private void PlayRandomPitchedSlashEffect()
+    {
+        audioSource.pitch = Random.Range(minPitch, maxPitch);
+        audioSource.PlayOneShot(audioSource.clip);
     }
 }

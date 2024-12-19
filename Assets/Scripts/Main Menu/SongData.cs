@@ -16,6 +16,7 @@ public class SongData : ScriptableObject
     [SerializeField] public float noteSpeed;
     [SerializeField] public float songTimeOffset;
     [SerializeField] public List<NoteData> noteList;
+    [SerializeField] public List<EventData> eventList;
     [SerializeField] public string noteDataFilePath;
     [SerializeField] public string difficulty;
 
@@ -37,6 +38,22 @@ public class NoteData
         this.lineLayer = lineLayer;
         this.type = type;
         this.cutDirection = cutDirection;
+    }
+}
+
+
+[System.Serializable]
+public class EventData
+{
+    public float time; // Beatstamp
+    public int type; // 0: Back laser, 1: Track neons, 2: red laser, 3: blue laser, 4: Primary light
+    public int value; //0: Laser off, 1: Blue on, 2: fade in blue, 3: fade out blue, 5: red On, 6: fade in red, 7: fade out red
+
+    public EventData(float time, int type, int value)
+    {
+        this.time = time;
+        this.type = type;
+        this.value = value;
     }
 }
 

@@ -11477,6 +11477,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SwordRight V2 Grabable
       objectReference: {fileID: 0}
+    - target: {fileID: 8150246732033163637, guid: c2c58945f1b252b439dc85168d907d3a,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 24cb5bd69a394f948ac20ff75350deb6, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14033,6 +14038,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4472606144370270071, guid: 4c940f12f5c587c4fb49dad1bca3d53b,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 24cb5bd69a394f948ac20ff75350deb6, type: 3}
     - target: {fileID: 6895303640066845457, guid: 4c940f12f5c587c4fb49dad1bca3d53b,
         type: 3}
       propertyPath: m_Name

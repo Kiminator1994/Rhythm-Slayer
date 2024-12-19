@@ -55,6 +55,7 @@ public class SongLibraryManager : MonoBehaviour
                 {
                     var map = songMapImporter.LoadMap(filePath);
                     song.noteList = songMapImporter.ConvertToNoteData(map);
+                    song.eventList = songMapImporter.ConvertToEventData(map);
                     CreateSongButton(song, scrollbar);
                     Debug.Log($"Loaded notes for song: {song.title} from {filePath}");
                 }

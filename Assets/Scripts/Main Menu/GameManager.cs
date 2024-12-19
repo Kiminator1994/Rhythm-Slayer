@@ -10,7 +10,8 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance; // Singleton
 
-    // GameScene UI
+    // GameScene
+    // UI
     private UIManager uiManager;
 
     // Points & combo
@@ -45,9 +46,14 @@ public class GameManager : MonoBehaviour
     // GameOver
     public bool GameIsOver = false;
 
+    // MainMenuScene
     // Settings
     [SerializeField] private SettingsManager settingsManager;
     private float playerOffsetTime = 0;
+
+    // GameModifications
+    
+
 
     // test
     int subscribeCount = 0;
@@ -346,8 +352,14 @@ public class GameManager : MonoBehaviour
     {
         if (selectedSongData.audioClip != null)
         {
+            CheckGameModifications();
             SceneManager.LoadScene("GameScene");
         }
+    }
+
+    private void CheckGameModifications()
+    {
+        
     }
 
     public float GetRemainingCountdown()
