@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
-using static SongMapImporter;
 
 [CreateAssetMenu(fileName = "NewSong", menuName = "SongLibrary/Song")]
 public class SongData : ScriptableObject

@@ -24,6 +24,24 @@ public class SettingsManager : MonoBehaviour
 
     private void Start()
     {
+        LoadSettings();
+        LoadGraphics();
+    }
+
+    private void LoadSettings()
+    {
+        SaveData saveData = GameSaveManager.LoadGame();
+
+        if (saveData.settingsSaveData != null)
+        {
+            actualOffsetTime = saveData.settingsSaveData.playerOffset;
+            slider.value = actualOffsetTime;
+            UpdateOffsetTimeText(actualOffsetTime, false);
+        }
+    }
+
+    private void LoadGraphics()
+    {
         fullscreen.isOn = Screen.fullScreen;
         if (QualitySettings.vSyncCount == 0)
         {
@@ -35,13 +53,13 @@ public class SettingsManager : MonoBehaviour
         }
 
         bool foundResolution = false;
-        for(int i = 0; i < resolutions.Count; i++)
+        for (int i = 0; i < resolutions.Count; i++)
         {
-            if(Screen.width == resolutions[i].horizontal && Screen.height == resolutions[i].vertical)
+            if (Screen.width == resolutions[i].horizontal && Screen.height == resolutions[i].vertical)
             {
                 foundResolution = true;
                 selectedResolution = i;
-                UpdateResolution();
+                UpdateResolutionText();
             }
         }
         if (!foundResolution)
@@ -52,10 +70,7 @@ public class SettingsManager : MonoBehaviour
             resolutions.Add(resolutionItem);
             selectedResolution = resolutions.Count - 1;
         }
-
-        UpdateOffsetTime(actualOffsetTime, false);
     }
-
 
     // Switch between Settings
 
@@ -130,7 +145,7 @@ public class SettingsManager : MonoBehaviour
     }
 
 
-    public void UpdateOffsetTime(float currentOffset, bool offsetChanged = false)
+    public void UpdateOffsetTimeText(float currentOffset, bool offsetChanged = false)
     {
         if (offsetChanged)
         {
@@ -150,27 +165,40 @@ public class SettingsManager : MonoBehaviour
     {
         actualOffsetTime += 0.01f;
         slider.value = actualOffsetTime;
-        UpdateOffsetTime(actualOffsetTime, true);
+        UpdateOffsetTimeText(actualOffsetTime, true);
     }
 
     public void SubToPlayerOffset()
     {
         actualOffsetTime -= 0.01f;
         slider.value = actualOffsetTime;
-        UpdateOffsetTime(actualOffsetTime, true);
+        UpdateOffsetTimeText(actualOffsetTime, true);
     }
 
     public void ResetPlayerOffset()
     {
         actualOffsetTime = 0f;
         slider.value = 0f;
-        UpdateOffsetTime(actualOffsetTime, true);
+        UpdateOffsetTimeText(actualOffsetTime, true);
     }
 
-    // TO DO
     public void SaveSettings()
     {
         GameManager.Instance.SetPlayerOffset(actualOffsetTime);
+
+        SettingsSaveData settingsData = new SettingsSaveData
+        {
+            playerOffset = actualOffsetTime,
+            selectedResolutionIndex = selectedResolution,
+            isFullscreen = fullscreen.isOn,
+            vsync = vsync.isOn
+        };
+
+        // Load existing save data and save it in the json file
+        SaveData saveData = GameSaveManager.LoadGame();
+        saveData.settingsSaveData = settingsData;
+        GameSaveManager.SaveGame(saveData);
+
         settingsSavedText.text = "Settings saved.";
         settingsSavedText.gameObject.SetActive(true);
         StartCoroutine(DeactivateSavedtext());
@@ -178,7 +206,7 @@ public class SettingsManager : MonoBehaviour
 
     private IEnumerator DeactivateSavedtext()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(3f); // show Text for 3 seconds
         settingsSavedText.gameObject.SetActive(false);
     }
 
@@ -192,7 +220,7 @@ public class SettingsManager : MonoBehaviour
         {
             selectedResolution = 0;
         }
-        UpdateResolution();
+        UpdateResolutionText();
     }
 
     public void SwitchResolutionRight()
@@ -202,10 +230,10 @@ public class SettingsManager : MonoBehaviour
         {
             selectedResolution = resolutions.Count - 1;
         }
-        UpdateResolution();
+        UpdateResolutionText();
     }
 
-    private void UpdateResolution()
+    private void UpdateResolutionText()
     {
         resolution.text = resolutions[selectedResolution].horizontal.ToString() + " x " + resolutions[selectedResolution].vertical.ToString();
     }

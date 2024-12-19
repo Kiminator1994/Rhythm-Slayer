@@ -50,14 +50,13 @@ public class SongLibraryManager : MonoBehaviour
         {
             if (!string.IsNullOrEmpty(song.noteDataFilePath))
             {
-                string filePath = Path.Combine(Application.dataPath, customSongsFolder, song.noteDataFilePath); // Path to the .dat file
+                string filePath = Path.Combine(Application.dataPath, customSongsFolder, song.noteDataFilePath); // Path to the .dat file with infos from Beatmapper
                 if (File.Exists(filePath))
                 {
                     var map = songMapImporter.LoadMap(filePath);
                     song.noteList = songMapImporter.ConvertToNoteData(map);
                     song.eventList = songMapImporter.ConvertToEventData(map);
                     CreateSongButton(song, scrollbar);
-                    Debug.Log($"Loaded notes for song: {song.title} from {filePath}");
                 }
                 else
                 {

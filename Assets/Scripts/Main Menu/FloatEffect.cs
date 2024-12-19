@@ -16,10 +16,8 @@ public class FloatEffect : MonoBehaviour
 
     void Update()
     {
-        // Berechne die neue Position basierend auf der Sinusfunktion
+        // Berechne die neue Position basierend auf der Sinusfunktion, um eine auf und ab Bewegung zu erzeugen
         float newY = startPos.y + Mathf.Sin(Time.time * frequency) * amplitude;
-
-        // Wende die neue Position an
         transform.localPosition = new Vector3(startPos.x, newY, startPos.z);
     }
 }

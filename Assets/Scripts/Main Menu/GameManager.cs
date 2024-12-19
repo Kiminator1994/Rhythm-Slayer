@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -52,10 +53,13 @@ public class GameManager : MonoBehaviour
     private float playerOffsetTime = 0;
 
     // GameModifications
-    
+    private bool noFailModeActive = false;
+    private float speedMultiplier = 1f;
 
+    // Save and Load Game
+    private SaveData saveData;
 
-    // test
+    // test memoryleak
     int subscribeCount = 0;
     int unsubscribeCount = 0;
 
@@ -76,6 +80,8 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        saveData = GameSaveManager.LoadGame();
+        LoadSaveData();
         playerOffsetTime = settingsManager.GetPlayerOffset();
     }
 
@@ -89,18 +95,17 @@ public class GameManager : MonoBehaviour
         uiManager = uiManagerRef;
         noteEndManager = noteEndManagerRef;
         musicManager = musicManagerRef;
+        ApplyMusicSpeed();
     }
 
     public void ResetGameSceneStats()
     {
-        Debug.Log("Before Reset: " + "title " + scoreScreenTitle + " PlayerPoints: " + playerPoints + " MacCombo: " + maxCombo + " playermissCount: " + playerMissCount);
         playerPoints = 0;
         playerCombo = 0;
         multiplier = 1f;
         playerMissCount = 0;
         actualHealth = 100;
         maxCombo = 0;
-        Debug.Log("After Reset: " + "title " + scoreScreenTitle + " PlayerPoints: " + playerPoints + " MacCombo: " + maxCombo + " playermissCount: " + playerMissCount);
     }
 
     public void SubcscribeGameSceneEvents()
@@ -199,6 +204,9 @@ public class GameManager : MonoBehaviour
 
     private void SetHealthOnMiss()
     {
+        if (noFailModeActive)
+        { return; }
+
         actualHealth -= missDamage;
         if (actualHealth > 0)
         {
@@ -218,6 +226,9 @@ public class GameManager : MonoBehaviour
 
     private void SetHealthOnWrongHit()
     {
+        if (noFailModeActive)
+            { return; }
+
         actualHealth -= wrongHitDamage;
         if (actualHealth > 0)
         {
@@ -262,18 +273,28 @@ public class GameManager : MonoBehaviour
 
     public void UpdateHighScore()
     {
-        // Check if the current score is higher than the high score
-        if (playerPoints > selectedSongData.highScore)
+        // Try to find an existing song in the saveData
+        var songSaveData = saveData.songSaveDatas.FirstOrDefault(data => data.songTitle == selectedSongData.title);
+
+        if (songSaveData == null)
         {
+            // Create a new entry if its the first time the song is completed
+            songSaveData = new SongSaveData(selectedSongData.title, playerPoints, maxCombo);
+            saveData.songSaveDatas.Add(songSaveData);
             selectedSongData.highScore = playerPoints;
+            selectedSongData.maxCombo = maxCombo;
+        }
+        else
+        {
+            // Update the existing entry if new scores are higher
+            songSaveData.highScore = Mathf.Max(songSaveData.highScore, playerPoints);
+            selectedSongData.highScore = songSaveData.highScore;
+            songSaveData.maxCombo = Mathf.Max(songSaveData.maxCombo, maxCombo);
+            selectedSongData.maxCombo = songSaveData.maxCombo;
         }
 
-        // Check if the current combo is higher than the max combo
-        if (maxCombo > selectedSongData.maxCombo)
-        {
-            selectedSongData.maxCombo = maxCombo;
-            Debug.Log($"New max combo: {selectedSongData.maxCombo} for song: {selectedSongData.title}");
-        }
+        // Save the updated data
+        GameSaveManager.SaveGame(saveData);
     }
 
     private void EndGame()
@@ -359,7 +380,50 @@ public class GameManager : MonoBehaviour
 
     private void CheckGameModifications()
     {
-        
+        GameModiManager gameModiManager = FindObjectOfType<GameModiManager>();
+
+        if (gameModiManager != null)
+        {
+            // Check if faster game is selected
+            if (gameModiManager.IsFasterGameSelected())
+            {
+                SetGameSpeed(1.35f);
+            }
+            else if (gameModiManager.IsSlowerGameSelected())
+            {
+                SetGameSpeed(0.65f);
+            }
+            else
+            {
+                SetGameSpeed(1f); // Normal speed
+            }
+
+            if (gameModiManager.IsNoFailModeSelected())
+            {
+                noFailModeActive = true;
+            }
+            else
+            {
+                noFailModeActive = false;
+            }
+        }   
+    }
+
+    public void SetGameSpeed(float newSpeedMultiplier)
+    {
+        speedMultiplier = newSpeedMultiplier;
+        Time.timeScale = speedMultiplier;
+        Time.fixedDeltaTime = 0.02f * Time.timeScale; // make sure physic calculations stay consistent with the new timeScale
+    }
+
+    private void ApplyMusicSpeed()
+    {
+        // Change Music speed with pitch, accordong to speedmultiplier, set by gameModification
+        MusicManager musicManager = FindObjectOfType<MusicManager>();
+        if (musicManager != null && musicManager.audioSource != null)
+        {
+            musicManager.audioSource.pitch = speedMultiplier;
+        }
     }
 
     public float GetRemainingCountdown()
@@ -385,5 +449,18 @@ public class GameManager : MonoBehaviour
     public float GetNoteSpeed()
     {
         return selectedSongData.noteSpeed;
+    }
+
+    private void LoadSaveData()
+    {
+        foreach (var songData in Resources.FindObjectsOfTypeAll<SongData>())
+        {
+            SongSaveData savedData = saveData.songSaveDatas.Find(data => data.songTitle == songData.title);
+            if (savedData != null)
+            {
+                songData.highScore = savedData.highScore;
+                songData.maxCombo = savedData.maxCombo;
+            }
+        }
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class MusicManager : MonoBehaviour
 {
-    private AudioSource audioSource;
+    public AudioSource audioSource;
     public event Action<float> OnPlaytimeUpdated;
     public event Action OnMusicEnd;
 
