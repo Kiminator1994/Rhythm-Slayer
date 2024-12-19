@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/*
 public class CorrectHit : MonoBehaviour
 {
     [Range(0, 90)] public float toleranceAngle = 60f;
@@ -65,7 +65,7 @@ public class CorrectHit : MonoBehaviour
     }
 }
 
-/*
+*/
 public class CorrectHit : MonoBehaviour
 {
     [Range(0, 90)] public float toleranceAngle = 60f;
@@ -120,4 +120,3 @@ public class CorrectHit : MonoBehaviour
         }
     }
 }
-*/
