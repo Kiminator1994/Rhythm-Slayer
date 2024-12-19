@@ -387,11 +387,11 @@ public class GameManager : MonoBehaviour
             // Check if faster game is selected
             if (gameModiManager.IsFasterGameSelected())
             {
-                SetGameSpeed(1.35f);
+                SetGameSpeed(1.25f);
             }
             else if (gameModiManager.IsSlowerGameSelected())
             {
-                SetGameSpeed(0.65f);
+                SetGameSpeed(0.7f);
             }
             else
             {
@@ -414,6 +414,10 @@ public class GameManager : MonoBehaviour
         speedMultiplier = newSpeedMultiplier;
         Time.timeScale = speedMultiplier;
         Time.fixedDeltaTime = 0.02f * Time.timeScale; // make sure physic calculations stay consistent with the new timeScale
+    }
+    public float GetSpeedMultiplier()
+    {
+        return speedMultiplier;
     }
 
     private void ApplyMusicSpeed()

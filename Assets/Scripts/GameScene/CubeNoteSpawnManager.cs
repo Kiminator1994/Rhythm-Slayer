@@ -38,7 +38,7 @@ public class CubeNoteSpawnManager : MonoBehaviour
 
     private IEnumerator SpawnNotes()
     {
-        float cubeTravelTime = (20 / songData.noteSpeed);  // Calculate cube travel time based on note speed to reach Player
+        float cubeTravelTime = (20 / (songData.noteSpeed * GameManager.Instance.GetSpeedMultiplier()));  // Calculate cube travel time based on note speed to reach Player
 
         foreach (NoteData note in songData.noteList)
         {
