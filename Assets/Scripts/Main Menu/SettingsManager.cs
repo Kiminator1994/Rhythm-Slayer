@@ -26,6 +26,7 @@ public class SettingsManager : MonoBehaviour
     {
         LoadSettings();
         LoadGraphics();
+        settingsSavedText.gameObject.SetActive(false);
     }
 
     private void LoadSettings()

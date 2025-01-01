@@ -18,7 +18,6 @@ public class SongData : ScriptableObject
     [SerializeField] public List<EventData> eventList;
     [SerializeField] public string noteDataFilePath;
     [SerializeField] public string difficulty;
-
 }
 
 [System.Serializable]

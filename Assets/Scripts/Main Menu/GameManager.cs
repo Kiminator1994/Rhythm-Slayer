@@ -9,6 +9,8 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class GameManager : MonoBehaviour
 {
+    #region Variables
+
     public static GameManager Instance; // Singleton
 
     // GameScene
@@ -47,6 +49,7 @@ public class GameManager : MonoBehaviour
     // GameOver
     public bool GameIsOver = false;
 
+
     // MainMenuScene
     // Settings
     [SerializeField] private SettingsManager settingsManager;
@@ -63,6 +66,7 @@ public class GameManager : MonoBehaviour
     int subscribeCount = 0;
     int unsubscribeCount = 0;
 
+    #endregion
 
 
     private void Awake()
@@ -85,8 +89,7 @@ public class GameManager : MonoBehaviour
         playerOffsetTime = settingsManager.GetPlayerOffset();
     }
 
-    // GameScene
-    // Handle Events and Reset GameScene
+    #region GameScene
 
     public void SetGameSceneReferences(SwordInteraction swordLeftRef, SwordInteraction swordRightRef, UIManager uiManagerRef, NoteEndManager noteEndManagerRef, MusicManager musicManagerRef)
     {
@@ -145,7 +148,6 @@ public class GameManager : MonoBehaviour
         swordLeft.OnWrongHit -= SetComboOnMiss;
         swordRight.OnWrongHit -= SetComboOnMiss;
 
-
         musicManager.OnPlaytimeUpdated -= SetPlaytime;
         musicManager.OnMusicEnd -= SetWinScoreScreenTitle;
         musicManager.OnMusicEnd -= EndGame;
@@ -155,6 +157,30 @@ public class GameManager : MonoBehaviour
         ++unsubscribeCount; // Check for memory leak
     }
 
+    public float GetRemainingCountdown()
+    {
+        return uiManager.GetRemainingCountdownTime();
+    }
+
+    public SongData GetSongData()
+    {
+        return selectedSongData;
+    }
+
+    public AudioClip GetAudioClip()
+    {
+        return selectedSongData.audioClip;
+    }
+
+    public float GetBpm()
+    {
+        return selectedSongData.bpm;
+    }
+
+    public float GetNoteSpeed()
+    {
+        return selectedSongData.noteSpeed;
+    }
 
     // Update UI
 
@@ -292,8 +318,6 @@ public class GameManager : MonoBehaviour
             songSaveData.maxCombo = Mathf.Max(songSaveData.maxCombo, maxCombo);
             selectedSongData.maxCombo = songSaveData.maxCombo;
         }
-
-        // Save the updated data
         GameSaveManager.SaveGame(saveData);
     }
 
@@ -336,9 +360,9 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
     }
 
+    #endregion
 
-    // ScoreScreenScene
-    // GetData
+    #region ScoreScreenScene
 
     public string GetTitle()
     {
@@ -360,9 +384,9 @@ public class GameManager : MonoBehaviour
         return playerMissCount;
     }
 
+    #endregion
 
-    // MainMenu
-    // Get Selected Music from SongLibraryManager
+    #region MainMenu
 
     public void SetSelectedSongData(SongData song)
     {
@@ -384,14 +408,13 @@ public class GameManager : MonoBehaviour
 
         if (gameModiManager != null)
         {
-            // Check if faster game is selected
             if (gameModiManager.IsFasterGameSelected())
             {
                 SetGameSpeed(1.25f);
             }
             else if (gameModiManager.IsSlowerGameSelected())
             {
-                SetGameSpeed(0.7f);
+                SetGameSpeed(0.75f);
             }
             else
             {
@@ -413,7 +436,7 @@ public class GameManager : MonoBehaviour
     {
         speedMultiplier = newSpeedMultiplier;
         Time.timeScale = speedMultiplier;
-        Time.fixedDeltaTime = 0.02f * Time.timeScale; // make sure physic calculations stay consistent with the new timeScale
+        Time.fixedDeltaTime = 0.01f * Time.timeScale; // make sure physic calculations stay consistent with the new timeScale
     }
     public float GetSpeedMultiplier()
     {
@@ -422,37 +445,12 @@ public class GameManager : MonoBehaviour
 
     private void ApplyMusicSpeed()
     {
-        // Change Music speed with pitch, accordong to speedmultiplier, set by gameModification
+        // Change Music speed with pitch, according to speedmultiplier, set by gameModification
         MusicManager musicManager = FindObjectOfType<MusicManager>();
         if (musicManager != null && musicManager.audioSource != null)
         {
             musicManager.audioSource.pitch = speedMultiplier;
         }
-    }
-
-    public float GetRemainingCountdown()
-    {
-        return uiManager.GetRemainingCountdownTime();
-    }
-
-    public SongData GetSongData()
-    {
-        return selectedSongData;
-    }
-
-    public AudioClip GetAudioClip()
-    {
-        return selectedSongData.audioClip;
-    }
-
-    public float GetBpm()
-    {
-        return selectedSongData.bpm;
-    }
-
-    public float GetNoteSpeed()
-    {
-        return selectedSongData.noteSpeed;
     }
 
     private void LoadSaveData()
@@ -467,4 +465,6 @@ public class GameManager : MonoBehaviour
             }
         }
     }
+
+    #endregion
 }

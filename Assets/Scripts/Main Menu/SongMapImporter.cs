@@ -6,7 +6,7 @@ using UnityEngine;
 public class SongMapImporter : MonoBehaviour
 {
     [System.Serializable]
-    public class BeatSaberNote
+    public class BeatNote
     {
         public float _time;
         public int _lineIndex;
@@ -16,7 +16,7 @@ public class SongMapImporter : MonoBehaviour
     }
 
     [System.Serializable]
-    public class BeatSaberEvent
+    public class BeatEvent
     {
         public float _time;
         public int _type;
@@ -24,47 +24,47 @@ public class SongMapImporter : MonoBehaviour
     }
 
     [System.Serializable]
-    public class BeatSaberMap
+    public class BeatMap
     {
-        public List<BeatSaberNote> _notes;
-        public List<BeatSaberEvent> _events;
+        public List<BeatNote> _notes;
+        public List<BeatEvent> _events;
     }
 
     // Read Beatmapper file
-    public BeatSaberMap LoadMap(string filePath)
+    public BeatMap LoadMap(string filePath)
     {
         string json = File.ReadAllText(filePath);
-        return JsonConvert.DeserializeObject<BeatSaberMap>(json);
+        return JsonConvert.DeserializeObject<BeatMap>(json);
     }
 
-    public List<NoteData> ConvertToNoteData(BeatSaberMap beatSaberMap)
+    public List<NoteData> ConvertToNoteData(BeatMap beatMap)
     {
         List<NoteData> noteDataList = new List<NoteData>();
 
-        foreach (var beatSaberNote in beatSaberMap._notes)
+        foreach (var beatNote in beatMap._notes)
         {
             NoteData noteData = new NoteData(
-                beatSaberNote._time,
-                beatSaberNote._lineIndex,
-                beatSaberNote._lineLayer,
-                beatSaberNote._type,
-                beatSaberNote._cutDirection
+                beatNote._time,
+                beatNote._lineIndex,
+                beatNote._lineLayer,
+                beatNote._type,
+                beatNote._cutDirection
             );
             noteDataList.Add(noteData);
         }
         return noteDataList;
     }
 
-    public List<EventData> ConvertToEventData(BeatSaberMap beatSaberMap)
+    public List<EventData> ConvertToEventData(BeatMap beatMap)
     {
         List<EventData> eventDataList = new List<EventData>();
 
-        foreach (var beatSaberEvent in beatSaberMap._events)
+        foreach (var beatEvent in beatMap._events)
         {
             EventData eventData = new EventData(
-                beatSaberEvent._time,
-                beatSaberEvent._type,
-                beatSaberEvent._value
+                beatEvent._time,
+                beatEvent._type,
+                beatEvent._value
             );
             eventDataList.Add(eventData);
         }

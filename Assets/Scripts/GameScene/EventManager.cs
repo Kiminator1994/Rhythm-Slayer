@@ -11,7 +11,7 @@ public class EventManager : MonoBehaviour
     [SerializeField] private Renderer[] bluePlatforms;
     [SerializeField] private Material redMaterial;
     [SerializeField] private Material blueMaterial;
-    [SerializeField] private Renderer[] trackNeonLightBars; // All 30 manually positioned light bars
+    [SerializeField] private Renderer[] trackNeonLightBars;
     [SerializeField] private float lightFadeDuration = 0.5f;
 
     private static readonly string EmissionKeyword = "_EMISSION";
@@ -35,11 +35,10 @@ public class EventManager : MonoBehaviour
 
     private IEnumerator HandleEvents()
     {
-        float secondsPerBeat = 60f / songData.bpm; // Duration of one beat in seconds
+        float secondsPerBeat = 60f / songData.bpm;
 
         foreach (EventData eventData in songData.eventList)
         {
-            // Calculate the event time in seconds
             float eventTimeInSeconds = eventData.time * secondsPerBeat;
             float eventTime = eventTimeInSeconds + songData.songTimeOffset + GameManager.Instance.GetPlayerOffset();
 
@@ -140,13 +139,11 @@ public class EventManager : MonoBehaviour
 
     private void HandlePrimaryLightEvent(int value)
     {
-        // Handle red platforms
         foreach (Renderer platform in redPlatforms)
         {
             HandlePlatformEmission(platform, redMaterial, value);
         }
 
-        // Handle blue platforms
         foreach (Renderer platform in bluePlatforms)
         {
             HandlePlatformEmission(platform, blueMaterial, value);

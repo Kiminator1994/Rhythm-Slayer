@@ -15,8 +15,6 @@ public class CubeEffect : MonoBehaviour
         }
     }
 
-
-
     private void FixedUpdate()
     {
         if (GameManager.Instance.GameIsOver)

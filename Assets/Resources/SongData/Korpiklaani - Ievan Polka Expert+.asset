@@ -1,0 +1,9424 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bad26984f2c6ce047a62bfd53b1d8a04, type: 3}
+  m_Name: Korpiklaani - Ievan Polka Expert+
+  m_EditorClassIdentifier: 
+  interpret: Korpiklaani
+  title: Ievan Polka
+  audioClip: {fileID: 8300000, guid: ae4d4e960d5159b4ca06aa998d977a3d, type: 3}
+  bpm: 130
+  backgroundImage: {fileID: 21300000, guid: 0796d73bfa03bea48a4aa93cbb64ea90, type: 3}
+  highScore: 48306
+  maxCombo: 83
+  noteSpeed: 11
+  songTimeOffset: 0
+  noteList:
+  - timestamp: 5
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 5.75
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 6.5
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 6.5
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 0
+    type: 1
+  - timestamp: 7
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 7
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 0
+    type: 0
+  - timestamp: 8.5
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 9
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 10.5
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 11
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 12.5
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 13
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 14.5
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 15
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 16.5
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 17
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 18.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 19
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 19
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 0
+    type: 1
+  - timestamp: 20
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 21
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 21.5
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 8
+    type: 1
+  - timestamp: 22
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 8
+    type: 0
+  - timestamp: 23
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 23
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 1
+    type: 1
+  - timestamp: 23.5
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 24
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 24.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 26
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 6
+    type: 0
+  - timestamp: 27
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 28
+    lineIndex: 1
+    lineLayer: 2
+    cutDirection: 0
+    type: 0
+  - timestamp: 29
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 30
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 31
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 31.5
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 32
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 32.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 34
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 35
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 36
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 37.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 37.5
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 38
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 38
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 39
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 39
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 1
+    type: 1
+  - timestamp: 39.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 40
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 41
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 41.5
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 42
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 43
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 4
+    type: 0
+  - timestamp: 44
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 5
+    type: 1
+  - timestamp: 45
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 46
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 47
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 0
+    type: 0
+  - timestamp: 47.5
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 0
+    type: 1
+  - timestamp: 48
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 49
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 6
+    type: 1
+  - timestamp: 50
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 51
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 52
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 7
+    type: 0
+  - timestamp: 53
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 54
+    lineIndex: 0
+    lineLayer: 2
+    cutDirection: 4
+    type: 0
+  - timestamp: 55
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 55
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 55.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 56
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 57
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 58
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 59
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 5
+    type: 1
+  - timestamp: 60
+    lineIndex: 1
+    lineLayer: 2
+    cutDirection: 5
+    type: 0
+  - timestamp: 60
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 6
+    type: 1
+  - timestamp: 61
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 6
+    type: 0
+  - timestamp: 62
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 5
+    type: 1
+  - timestamp: 63
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 3
+    type: 0
+  - timestamp: 64
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 65
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 65.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 66
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 5
+    type: 1
+  - timestamp: 67
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 2
+    type: 1
+  - timestamp: 68
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 5
+    type: 1
+  - timestamp: 69
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 4
+    type: 0
+  - timestamp: 70
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 7
+    type: 0
+  - timestamp: 70
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 7
+    type: 0
+  - timestamp: 71
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 71.5
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 72
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 72.5
+    lineIndex: 1
+    lineLayer: 1
+    cutDirection: 3
+    type: 0
+  - timestamp: 74
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 75
+    lineIndex: 0
+    lineLayer: 2
+    cutDirection: 4
+    type: 0
+  - timestamp: 75.5
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 76
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 76.5
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 78
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 3
+    type: 0
+  - timestamp: 79
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 4
+    type: 0
+  - timestamp: 80
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 2
+    type: 1
+  - timestamp: 81
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 82
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 5
+    type: 1
+  - timestamp: 83
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 83.5
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 84
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 85.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 85.5
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 86
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 86
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 87
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 87
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 1
+    type: 0
+  - timestamp: 87.5
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 88
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 88.5
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 89
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 90
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 6
+    type: 1
+  - timestamp: 91
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 0
+    type: 0
+  - timestamp: 92
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 93
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 7
+    type: 0
+  - timestamp: 94
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 95
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 95.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 96
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 0
+    type: 1
+  - timestamp: 97
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 0
+    type: 0
+  - timestamp: 97.5
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 98
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 99
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 4
+    type: 0
+  - timestamp: 99
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 5
+    type: 1
+  - timestamp: 100
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 100
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 101
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 5
+    type: 1
+  - timestamp: 102
+    lineIndex: 0
+    lineLayer: 2
+    cutDirection: 4
+    type: 0
+  - timestamp: 103
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 103
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 103.5
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 104
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 105
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 106
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 107
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 4
+    type: 0
+  - timestamp: 108
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 7
+    type: 0
+  - timestamp: 108
+    lineIndex: 2
+    lineLayer: 2
+    cutDirection: 4
+    type: 1
+  - timestamp: 109
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 7
+    type: 1
+  - timestamp: 110
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 4
+    type: 0
+  - timestamp: 111
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 2
+    type: 1
+  - timestamp: 112
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 113
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 113.5
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 114
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 4
+    type: 0
+  - timestamp: 115
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 3
+    type: 0
+  - timestamp: 116
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 4
+    type: 0
+  - timestamp: 117
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 5
+    type: 1
+  - timestamp: 118
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 6
+    type: 1
+  - timestamp: 118
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 6
+    type: 1
+  - timestamp: 119
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 119
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 1
+    type: 0
+  - timestamp: 120
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 0
+    type: 0
+  - timestamp: 121
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 7
+    type: 0
+  - timestamp: 122
+    lineIndex: 1
+    lineLayer: 1
+    cutDirection: 4
+    type: 0
+  - timestamp: 123
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 123.5
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 124
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 125
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 126
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 5
+    type: 1
+  - timestamp: 127
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 128
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 3
+    type: 0
+  - timestamp: 129
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 6
+    type: 1
+  - timestamp: 130
+    lineIndex: 2
+    lineLayer: 1
+    cutDirection: 5
+    type: 1
+  - timestamp: 131
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 132
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 133.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 133.5
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 134
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 134
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 135
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 135
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 0
+    type: 0
+  - timestamp: 136
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 0
+    type: 1
+  - timestamp: 137
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 7
+    type: 0
+  - timestamp: 138
+    lineIndex: 1
+    lineLayer: 1
+    cutDirection: 4
+    type: 0
+  - timestamp: 139
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 139.5
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 140
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 140.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 142
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 6
+    type: 1
+  - timestamp: 143
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 5
+    type: 1
+  - timestamp: 144
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 145
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 6
+    type: 1
+  - timestamp: 146
+    lineIndex: 2
+    lineLayer: 1
+    cutDirection: 5
+    type: 1
+  - timestamp: 147
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 148
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 149.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 149.5
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 150
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 150
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 151
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 152
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 2
+    type: 1
+  - timestamp: 158
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 158
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 159
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 160
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 0
+    type: 0
+  - timestamp: 161
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 162
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 163
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 164
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 5
+    type: 1
+  - timestamp: 165
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 166
+    lineIndex: 0
+    lineLayer: 2
+    cutDirection: 4
+    type: 0
+  - timestamp: 166
+    lineIndex: 3
+    lineLayer: 2
+    cutDirection: 5
+    type: 1
+  - timestamp: 167
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 167
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 167.5
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 168
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 169
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 170
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 171
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 7
+    type: 0
+  - timestamp: 171
+    lineIndex: 3
+    lineLayer: 2
+    cutDirection: 5
+    type: 1
+  - timestamp: 173
+    lineIndex: 0
+    lineLayer: 2
+    cutDirection: 4
+    type: 0
+  - timestamp: 173
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 6
+    type: 1
+  - timestamp: 175
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 176
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 177
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 2
+    type: 1
+  - timestamp: 178
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 179
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 179
+    lineIndex: 2
+    lineLayer: 2
+    cutDirection: 0
+    type: 1
+  - timestamp: 181
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 6
+    type: 1
+  - timestamp: 182
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 183
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 0
+    type: 0
+  - timestamp: 183
+    lineIndex: 0
+    lineLayer: 2
+    cutDirection: 0
+    type: 0
+  - timestamp: 185
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 6
+    type: 1
+  - timestamp: 186
+    lineIndex: 2
+    lineLayer: 1
+    cutDirection: 5
+    type: 1
+  - timestamp: 187
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 187.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 189
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 189.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 190
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 191
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 192
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 4
+    type: 0
+  - timestamp: 193
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 7
+    type: 0
+  - timestamp: 194
+    lineIndex: 1
+    lineLayer: 1
+    cutDirection: 4
+    type: 0
+  - timestamp: 195
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 196
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 197.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 197.5
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 198
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 198
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 199
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 0
+    type: 0
+  - timestamp: 199
+    lineIndex: 0
+    lineLayer: 2
+    cutDirection: 0
+    type: 0
+  - timestamp: 200
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 0
+    type: 1
+  - timestamp: 201
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 6
+    type: 1
+  - timestamp: 202
+    lineIndex: 2
+    lineLayer: 1
+    cutDirection: 5
+    type: 1
+  - timestamp: 203
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 204
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 205
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 5
+    type: 1
+  - timestamp: 206
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 207
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 208
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 5
+    type: 1
+  - timestamp: 209
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 6
+    type: 1
+  - timestamp: 210
+    lineIndex: 2
+    lineLayer: 1
+    cutDirection: 5
+    type: 1
+  - timestamp: 211
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 212
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 213
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 5
+    type: 1
+  - timestamp: 214
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 6
+    type: 1
+  - timestamp: 215
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 215
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 0
+    type: 0
+  - timestamp: 216
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 217
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 218
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 219
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 220
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 221
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 221
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 222
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 222
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 223
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 225
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 227
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 5
+    type: 1
+  - timestamp: 228
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 4
+    type: 0
+  - timestamp: 229
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 230
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 231
+    lineIndex: 0
+    lineLayer: 2
+    cutDirection: 4
+    type: 0
+  - timestamp: 231
+    lineIndex: 3
+    lineLayer: 2
+    cutDirection: 5
+    type: 1
+  - timestamp: 232
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 233
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 234
+    lineIndex: 2
+    lineLayer: 2
+    cutDirection: 0
+    type: 1
+  - timestamp: 235
+    lineIndex: 1
+    lineLayer: 2
+    cutDirection: 5
+    type: 0
+  - timestamp: 235
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 6
+    type: 1
+  - timestamp: 237
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 237
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 239
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 6
+    type: 1
+  - timestamp: 239
+    lineIndex: 2
+    lineLayer: 2
+    cutDirection: 5
+    type: 0
+  - timestamp: 241
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 6
+    type: 0
+  - timestamp: 241
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 5
+    type: 1
+  - timestamp: 243
+    lineIndex: 1
+    lineLayer: 2
+    cutDirection: 0
+    type: 0
+  - timestamp: 243
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 245
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 7
+    type: 0
+  - timestamp: 246
+    lineIndex: 0
+    lineLayer: 2
+    cutDirection: 0
+    type: 0
+  - timestamp: 247
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 0
+    type: 1
+  - timestamp: 247
+    lineIndex: 3
+    lineLayer: 2
+    cutDirection: 0
+    type: 1
+  - timestamp: 248
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 248.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 249
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 250
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 250.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 251
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 252
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 253
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 254
+    lineIndex: 2
+    lineLayer: 2
+    cutDirection: 5
+    type: 0
+  - timestamp: 255
+    lineIndex: 0
+    lineLayer: 2
+    cutDirection: 8
+    type: 0
+  - timestamp: 256
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 256.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 257
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 2
+    type: 1
+  - timestamp: 258
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 0
+    type: 0
+  - timestamp: 258.5
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 259
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 261.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 261.5
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 262
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 262
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 263
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 263.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 264
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 265
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 5
+    type: 1
+  - timestamp: 265.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 266
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 267
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 268
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 269
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 270
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 6
+    type: 1
+  - timestamp: 270.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 271
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 5
+    type: 1
+  - timestamp: 272
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 273
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 2
+    type: 1
+  - timestamp: 274
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 275
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 277.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 277.5
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 278
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 278
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 279
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 0
+    type: 1
+  - timestamp: 279
+    lineIndex: 3
+    lineLayer: 2
+    cutDirection: 0
+    type: 1
+  - timestamp: 279.5
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 280
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 281
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 281.5
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 282
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 283
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 284
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 285
+    lineIndex: 2
+    lineLayer: 2
+    cutDirection: 0
+    type: 1
+  - timestamp: 286
+    lineIndex: 1
+    lineLayer: 2
+    cutDirection: 0
+    type: 0
+  - timestamp: 287
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 287.5
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 288
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 288.5
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 290
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 291
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 292
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 4
+    type: 0
+  - timestamp: 293
+    lineIndex: 3
+    lineLayer: 2
+    cutDirection: 5
+    type: 1
+  - timestamp: 295
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 295
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 295.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 296
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 297
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 298
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 299
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 5
+    type: 1
+  - timestamp: 300
+    lineIndex: 1
+    lineLayer: 2
+    cutDirection: 5
+    type: 0
+  - timestamp: 300
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 6
+    type: 1
+  - timestamp: 301
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 6
+    type: 0
+  - timestamp: 302
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 5
+    type: 1
+  - timestamp: 303
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 3
+    type: 0
+  - timestamp: 304
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 305
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 305.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 306
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 5
+    type: 1
+  - timestamp: 307
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 2
+    type: 1
+  - timestamp: 308
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 5
+    type: 1
+  - timestamp: 309
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 4
+    type: 0
+  - timestamp: 310
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 7
+    type: 0
+  - timestamp: 311
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 311
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 1
+    type: 1
+  - timestamp: 311.5
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 4
+    type: 0
+  - timestamp: 312
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 313
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 314
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 315
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 316
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 316.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 317
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 6
+    type: 1
+  - timestamp: 318
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 319
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 4
+    type: 0
+  - timestamp: 320
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 320.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 321
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 322
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 323
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 325.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 325.5
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 326
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 326
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 327
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 327
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 1
+    type: 1
+  - timestamp: 328
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 0
+    type: 1
+  - timestamp: 329
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 6
+    type: 1
+  - timestamp: 330
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 331
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 5
+    type: 1
+  - timestamp: 332
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 333
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 334
+    lineIndex: 3
+    lineLayer: 2
+    cutDirection: 5
+    type: 1
+  - timestamp: 335
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 4
+    type: 0
+  - timestamp: 336
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 337
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 0
+    type: 0
+  - timestamp: 338
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 338.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 339
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 340
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 0
+    type: 0
+  - timestamp: 341.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 342
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 343
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 343
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 1
+    type: 1
+  - timestamp: 344
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 345
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 346
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 347
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 348
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 349
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 350
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 351
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 2
+    type: 0
+  - timestamp: 352
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 3
+    type: 0
+  - timestamp: 353
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 2
+    type: 0
+  - timestamp: 354
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 3
+    type: 0
+  - timestamp: 355
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 2
+    type: 0
+  - timestamp: 356
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 3
+    type: 0
+  - timestamp: 357
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 2
+    type: 0
+  - timestamp: 358
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 3
+    type: 0
+  - timestamp: 359
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 359
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 1
+    type: 1
+  - timestamp: 359.5
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 360
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 360.5
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 362
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 363
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 6
+    type: 0
+  - timestamp: 363
+    lineIndex: 3
+    lineLayer: 2
+    cutDirection: 5
+    type: 1
+  - timestamp: 365
+    lineIndex: 1
+    lineLayer: 2
+    cutDirection: 0
+    type: 0
+  - timestamp: 365
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 367
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 367
+    lineIndex: 2
+    lineLayer: 2
+    cutDirection: 0
+    type: 1
+  - timestamp: 368
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 8
+    type: 1
+  - timestamp: 369
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 8
+    type: 0
+  - timestamp: 370
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 8
+    type: 1
+  - timestamp: 371
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 8
+    type: 0
+  - timestamp: 372
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 8
+    type: 1
+  - timestamp: 373
+    lineIndex: 0
+    lineLayer: 2
+    cutDirection: 0
+    type: 0
+  - timestamp: 374
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 375
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 0
+    type: 1
+  - timestamp: 375
+    lineIndex: 3
+    lineLayer: 2
+    cutDirection: 0
+    type: 1
+  - timestamp: 376
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 4
+    type: 0
+  - timestamp: 377
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 6
+    type: 1
+  - timestamp: 378
+    lineIndex: 2
+    lineLayer: 1
+    cutDirection: 5
+    type: 1
+  - timestamp: 379
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 380
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 381
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 4
+    type: 0
+  - timestamp: 383
+    lineIndex: 2
+    lineLayer: 2
+    cutDirection: 0
+    type: 1
+  - timestamp: 384
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 385
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 8
+    type: 1
+  - timestamp: 386
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 8
+    type: 0
+  - timestamp: 387
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 8
+    type: 1
+  - timestamp: 388
+    lineIndex: 0
+    lineLayer: 0
+    cutDirection: 8
+    type: 0
+  - timestamp: 389
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 6
+    type: 1
+  - timestamp: 390
+    lineIndex: 3
+    lineLayer: 2
+    cutDirection: 5
+    type: 1
+  - timestamp: 391
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 0
+    type: 0
+  - timestamp: 391
+    lineIndex: 0
+    lineLayer: 2
+    cutDirection: 0
+    type: 0
+  - timestamp: 393
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 7
+    type: 0
+  - timestamp: 394
+    lineIndex: 1
+    lineLayer: 1
+    cutDirection: 4
+    type: 0
+  - timestamp: 395
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 395.5
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 0
+    type: 1
+  - timestamp: 396
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 397
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 0
+    type: 0
+  - timestamp: 398
+    lineIndex: 3
+    lineLayer: 1
+    cutDirection: 3
+    type: 1
+  - timestamp: 399
+    lineIndex: 0
+    lineLayer: 1
+    cutDirection: 2
+    type: 0
+  - timestamp: 400
+    lineIndex: 1
+    lineLayer: 0
+    cutDirection: 7
+    type: 0
+  - timestamp: 401
+    lineIndex: 1
+    lineLayer: 1
+    cutDirection: 4
+    type: 0
+  - timestamp: 402
+    lineIndex: 3
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 403
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 0
+  - timestamp: 404
+    lineIndex: 3
+    lineLayer: 2
+    cutDirection: 0
+    type: 1
+  - timestamp: 406
+    lineIndex: 1
+    lineLayer: 1
+    cutDirection: 0
+    type: 0
+  - timestamp: 406
+    lineIndex: 1
+    lineLayer: 2
+    cutDirection: 0
+    type: 0
+  - timestamp: 406
+    lineIndex: 2
+    lineLayer: 0
+    cutDirection: 1
+    type: 1
+  - timestamp: 406
+    lineIndex: 2
+    lineLayer: 1
+    cutDirection: 1
+    type: 1
+  eventList:
+  - time: 5
+    type: 2
+    value: 6
+  - time: 5
+    type: 13
+    value: 0
+  - time: 5
+    type: 3
+    value: 2
+  - time: 5
+    type: 12
+    value: 0
+  - time: 5
+    type: 0
+    value: 2
+  - time: 5.75
+    type: 8
+    value: 0
+  - time: 5.75
+    type: 3
+    value: 0
+  - time: 5.75
+    type: 2
+    value: 2
+  - time: 5.75
+    type: 0
+    value: 0
+  - time: 5.75
+    type: 1
+    value: 6
+  - time: 6.5
+    type: 8
+    value: 0
+  - time: 6.5
+    type: 1
+    value: 3
+  - time: 6.5
+    type: 0
+    value: 3
+  - time: 6.5
+    type: 3
+    value: 2
+  - time: 6.5
+    type: 4
+    value: 6
+  - time: 7
+    type: 8
+    value: 0
+  - time: 7
+    type: 1
+    value: 7
+  - time: 7
+    type: 0
+    value: 7
+  - time: 7
+    type: 12
+    value: 1
+  - time: 7
+    type: 13
+    value: 1
+  - time: 7
+    type: 2
+    value: 2
+  - time: 7
+    type: 4
+    value: 0
+  - time: 7
+    type: 3
+    value: 6
+  - time: 7.5
+    type: 2
+    value: 7
+  - time: 7.75
+    type: 3
+    value: 3
+  - time: 8
+    type: 0
+    value: 7
+  - time: 8
+    type: 1
+    value: 0
+  - time: 8.5
+    type: 3
+    value: 0
+  - time: 8.5
+    type: 1
+    value: 3
+  - time: 8.5
+    type: 2
+    value: 0
+  - time: 8.5
+    type: 4
+    value: 7
+  - time: 8.5
+    type: 0
+    value: 0
+  - time: 9
+    type: 3
+    value: 3
+  - time: 9
+    type: 0
+    value: 3
+  - time: 9
+    type: 2
+    value: 7
+  - time: 9
+    type: 4
+    value: 0
+  - time: 9
+    type: 1
+    value: 7
+  - time: 9.25
+    type: 2
+    value: 0
+  - time: 9.5
+    type: 3
+    value: 0
+  - time: 9.5
+    type: 2
+    value: 7
+  - time: 9.75
+    type: 3
+    value: 3
+  - time: 10
+    type: 1
+    value: 0
+  - time: 10
+    type: 0
+    value: 7
+  - time: 10.5
+    type: 0
+    value: 0
+  - time: 10.5
+    type: 3
+    value: 0
+  - time: 10.5
+    type: 8
+    value: 0
+  - time: 10.5
+    type: 4
+    value: 7
+  - time: 10.5
+    type: 2
+    value: 0
+  - time: 10.5
+    type: 1
+    value: 3
+  - time: 11
+    type: 1
+    value: 7
+  - time: 11
+    type: 0
+    value: 3
+  - time: 11
+    type: 8
+    value: 0
+  - time: 11
+    type: 3
+    value: 3
+  - time: 11
+    type: 4
+    value: 0
+  - time: 11
+    type: 2
+    value: 7
+  - time: 11.25
+    type: 2
+    value: 0
+  - time: 11.5
+    type: 3
+    value: 0
+  - time: 11.5
+    type: 2
+    value: 7
+  - time: 11.75
+    type: 3
+    value: 3
+  - time: 12
+    type: 1
+    value: 0
+  - time: 12
+    type: 0
+    value: 7
+  - time: 12.5
+    type: 0
+    value: 0
+  - time: 12.5
+    type: 8
+    value: 0
+  - time: 12.5
+    type: 2
+    value: 0
+  - time: 12.5
+    type: 3
+    value: 0
+  - time: 12.5
+    type: 4
+    value: 7
+  - time: 12.5
+    type: 1
+    value: 3
+  - time: 13
+    type: 3
+    value: 3
+  - time: 13
+    type: 0
+    value: 3
+  - time: 13
+    type: 2
+    value: 7
+  - time: 13
+    type: 8
+    value: 0
+  - time: 13
+    type: 1
+    value: 7
+  - time: 13
+    type: 4
+    value: 0
+  - time: 13.25
+    type: 2
+    value: 0
+  - time: 13.5
+    type: 3
+    value: 0
+  - time: 13.5
+    type: 2
+    value: 7
+  - time: 13.75
+    type: 3
+    value: 3
+  - time: 14
+    type: 1
+    value: 0
+  - time: 14
+    type: 0
+    value: 7
+  - time: 14.5
+    type: 4
+    value: 7
+  - time: 14.5
+    type: 1
+    value: 3
+  - time: 14.5
+    type: 0
+    value: 0
+  - time: 14.5
+    type: 8
+    value: 0
+  - time: 14.5
+    type: 2
+    value: 0
+  - time: 14.5
+    type: 3
+    value: 0
+  - time: 15
+    type: 1
+    value: 7
+  - time: 15
+    type: 4
+    value: 0
+  - time: 15
+    type: 3
+    value: 3
+  - time: 15
+    type: 0
+    value: 3
+  - time: 15
+    type: 2
+    value: 7
+  - time: 15
+    type: 8
+    value: 0
+  - time: 15.25
+    type: 2
+    value: 0
+  - time: 15.5
+    type: 3
+    value: 0
+  - time: 15.5
+    type: 2
+    value: 7
+  - time: 15.75
+    type: 3
+    value: 3
+  - time: 16
+    type: 1
+    value: 0
+  - time: 16
+    type: 0
+    value: 7
+  - time: 16.5
+    type: 3
+    value: 0
+  - time: 16.5
+    type: 4
+    value: 7
+  - time: 16.5
+    type: 1
+    value: 3
+  - time: 16.5
+    type: 0
+    value: 0
+  - time: 16.5
+    type: 2
+    value: 0
+  - time: 17
+    type: 1
+    value: 7
+  - time: 17
+    type: 4
+    value: 0
+  - time: 17
+    type: 3
+    value: 3
+  - time: 17
+    type: 2
+    value: 7
+  - time: 17
+    type: 0
+    value: 3
+  - time: 17.25
+    type: 2
+    value: 0
+  - time: 17.5
+    type: 3
+    value: 0
+  - time: 17.5
+    type: 2
+    value: 7
+  - time: 17.75
+    type: 3
+    value: 3
+  - time: 18
+    type: 1
+    value: 0
+  - time: 18
+    type: 0
+    value: 7
+  - time: 18.5
+    type: 1
+    value: 3
+  - time: 18.5
+    type: 4
+    value: 7
+  - time: 18.5
+    type: 0
+    value: 0
+  - time: 18.5
+    type: 8
+    value: 0
+  - time: 18.5
+    type: 2
+    value: 0
+  - time: 18.5
+    type: 3
+    value: 0
+  - time: 19
+    type: 0
+    value: 3
+  - time: 19
+    type: 2
+    value: 7
+  - time: 19
+    type: 8
+    value: 0
+  - time: 19
+    type: 1
+    value: 7
+  - time: 19
+    type: 4
+    value: 0
+  - time: 19
+    type: 3
+    value: 3
+  - time: 19.25
+    type: 2
+    value: 0
+  - time: 19.5
+    type: 3
+    value: 0
+  - time: 19.5
+    type: 2
+    value: 7
+  - time: 19.75
+    type: 3
+    value: 3
+  - time: 20
+    type: 1
+    value: 6
+  - time: 20
+    type: 4
+    value: 2
+  - time: 20
+    type: 0
+    value: 7
+  - time: 20.25
+    type: 2
+    value: 6
+  - time: 20.25
+    type: 3
+    value: 2
+  - time: 20.5
+    type: 3
+    value: 2
+  - time: 20.5
+    type: 2
+    value: 6
+  - time: 20.5
+    type: 0
+    value: 2
+  - time: 20.75
+    type: 3
+    value: 2
+  - time: 20.75
+    type: 2
+    value: 6
+  - time: 21
+    type: 1
+    value: 2
+  - time: 21
+    type: 3
+    value: 2
+  - time: 21
+    type: 2
+    value: 6
+  - time: 21
+    type: 0
+    value: 6
+  - time: 21
+    type: 4
+    value: 6
+  - time: 21.5
+    type: 3
+    value: 0
+  - time: 22
+    type: 2
+    value: 0
+  - time: 23
+    type: 8
+    value: 0
+  - time: 23
+    type: 4
+    value: 3
+  - time: 23
+    type: 1
+    value: 7
+  - time: 23
+    type: 0
+    value: 3
+  - time: 23
+    type: 2
+    value: 7
+  - time: 23
+    type: 3
+    value: 3
+  - time: 23
+    type: 13
+    value: 3
+  - time: 23
+    type: 12
+    value: 3
+  - time: 23.5
+    type: 2
+    value: 7
+  - time: 23.5
+    type: 0
+    value: 7
+  - time: 24
+    type: 0
+    value: 3
+  - time: 24
+    type: 4
+    value: 2
+  - time: 24
+    type: 3
+    value: 3
+  - time: 24.5
+    type: 0
+    value: 7
+  - time: 24.5
+    type: 2
+    value: 3
+  - time: 25
+    type: 3
+    value: 7
+  - time: 25
+    type: 4
+    value: 2
+  - time: 25
+    type: 0
+    value: 3
+  - time: 25.25
+    type: 2
+    value: 7
+  - time: 25.5
+    type: 2
+    value: 3
+  - time: 25.5
+    type: 0
+    value: 7
+  - time: 26
+    type: 3
+    value: 7
+  - time: 26
+    type: 0
+    value: 3
+  - time: 26
+    type: 4
+    value: 2
+  - time: 26.5
+    type: 0
+    value: 7
+  - time: 26.5
+    type: 2
+    value: 3
+  - time: 27
+    type: 0
+    value: 3
+  - time: 27
+    type: 4
+    value: 2
+  - time: 27
+    type: 3
+    value: 7
+  - time: 27.5
+    type: 2
+    value: 3
+  - time: 27.5
+    type: 0
+    value: 7
+  - time: 28
+    type: 3
+    value: 2
+  - time: 28
+    type: 0
+    value: 3
+  - time: 28.5
+    type: 0
+    value: 7
+  - time: 28.5
+    type: 2
+    value: 7
+  - time: 29
+    type: 3
+    value: 7
+  - time: 29
+    type: 0
+    value: 3
+  - time: 29.5
+    type: 0
+    value: 7
+  - time: 29.5
+    type: 2
+    value: 3
+  - time: 30
+    type: 3
+    value: 7
+  - time: 30
+    type: 0
+    value: 3
+  - time: 30.5
+    type: 2
+    value: 3
+  - time: 30.5
+    type: 0
+    value: 7
+  - time: 31
+    type: 0
+    value: 3
+  - time: 31
+    type: 3
+    value: 7
+  - time: 31.5
+    type: 0
+    value: 7
+  - time: 31.5
+    type: 2
+    value: 7
+  - time: 32
+    type: 3
+    value: 3
+  - time: 32
+    type: 0
+    value: 3
+  - time: 32.5
+    type: 0
+    value: 7
+  - time: 32.5
+    type: 3
+    value: 3
+  - time: 33
+    type: 2
+    value: 7
+  - time: 33
+    type: 0
+    value: 3
+  - time: 33.5
+    type: 0
+    value: 7
+  - time: 33.5
+    type: 3
+    value: 3
+  - time: 34
+    type: 2
+    value: 7
+  - time: 34
+    type: 0
+    value: 3
+  - time: 34.5
+    type: 0
+    value: 7
+  - time: 34.5
+    type: 3
+    value: 7
+  - time: 35
+    type: 2
+    value: 7
+  - time: 35
+    type: 0
+    value: 3
+  - time: 35.5
+    type: 3
+    value: 3
+  - time: 35.5
+    type: 0
+    value: 7
+  - time: 36
+    type: 2
+    value: 3
+  - time: 36
+    type: 0
+    value: 3
+  - time: 36.5
+    type: 0
+    value: 7
+  - time: 36.5
+    type: 3
+    value: 7
+  - time: 37
+    type: 3
+    value: 3
+  - time: 37
+    type: 8
+    value: 0
+  - time: 37
+    type: 0
+    value: 3
+  - time: 37
+    type: 4
+    value: 7
+  - time: 37
+    type: 1
+    value: 7
+  - time: 37
+    type: 2
+    value: 3
+  - time: 37.5
+    type: 0
+    value: 7
+  - time: 37.5
+    type: 1
+    value: 3
+  - time: 37.5
+    type: 2
+    value: 7
+  - time: 37.5
+    type: 3
+    value: 7
+  - time: 37.5
+    type: 4
+    value: 3
+  - time: 38
+    type: 4
+    value: 7
+  - time: 38
+    type: 2
+    value: 3
+  - time: 38
+    type: 3
+    value: 3
+  - time: 38
+    type: 1
+    value: 7
+  - time: 38
+    type: 0
+    value: 3
+  - time: 38.5
+    type: 2
+    value: 7
+  - time: 38.75
+    type: 3
+    value: 7
+  - time: 39
+    type: 2
+    value: 0
+  - time: 39
+    type: 8
+    value: 0
+  - time: 39
+    type: 3
+    value: 6
+  - time: 39
+    type: 1
+    value: 3
+  - time: 39
+    type: 4
+    value: 3
+  - time: 39
+    type: 0
+    value: 0
+  - time: 39.5
+    type: 0
+    value: 3
+  - time: 40
+    type: 2
+    value: 6
+  - time: 40
+    type: 8
+    value: 0
+  - time: 40
+    type: 3
+    value: 0
+  - time: 40.5
+    type: 0
+    value: 7
+  - time: 41
+    type: 2
+    value: 0
+  - time: 41
+    type: 8
+    value: 0
+  - time: 41
+    type: 3
+    value: 6
+  - time: 41.5
+    type: 0
+    value: 3
+  - time: 42
+    type: 3
+    value: 0
+  - time: 42
+    type: 8
+    value: 0
+  - time: 42
+    type: 2
+    value: 6
+  - time: 42.5
+    type: 0
+    value: 7
+  - time: 43
+    type: 3
+    value: 6
+  - time: 43
+    type: 2
+    value: 0
+  - time: 43
+    type: 8
+    value: 0
+  - time: 43
+    type: 4
+    value: 7
+  - time: 43.5
+    type: 0
+    value: 3
+  - time: 44
+    type: 3
+    value: 0
+  - time: 44
+    type: 8
+    value: 0
+  - time: 44
+    type: 2
+    value: 6
+  - time: 44.5
+    type: 0
+    value: 7
+  - time: 45
+    type: 3
+    value: 6
+  - time: 45
+    type: 2
+    value: 0
+  - time: 45
+    type: 8
+    value: 0
+  - time: 45.5
+    type: 0
+    value: 3
+  - time: 46
+    type: 8
+    value: 0
+  - time: 46
+    type: 2
+    value: 6
+  - time: 46
+    type: 3
+    value: 0
+  - time: 46.5
+    type: 0
+    value: 7
+  - time: 47
+    type: 8
+    value: 0
+  - time: 47
+    type: 3
+    value: 6
+  - time: 47
+    type: 2
+    value: 0
+  - time: 47
+    type: 4
+    value: 7
+  - time: 47.5
+    type: 0
+    value: 3
+  - time: 48
+    type: 3
+    value: 0
+  - time: 48
+    type: 2
+    value: 6
+  - time: 48
+    type: 8
+    value: 0
+  - time: 48.5
+    type: 0
+    value: 7
+  - time: 49
+    type: 3
+    value: 6
+  - time: 49
+    type: 8
+    value: 0
+  - time: 49
+    type: 2
+    value: 0
+  - time: 49.5
+    type: 0
+    value: 3
+  - time: 50
+    type: 3
+    value: 0
+  - time: 50
+    type: 8
+    value: 0
+  - time: 50
+    type: 2
+    value: 6
+  - time: 50.5
+    type: 0
+    value: 7
+  - time: 51
+    type: 4
+    value: 7
+  - time: 51
+    type: 3
+    value: 6
+  - time: 51
+    type: 8
+    value: 0
+  - time: 51
+    type: 2
+    value: 0
+  - time: 51.5
+    type: 0
+    value: 3
+  - time: 52
+    type: 3
+    value: 0
+  - time: 52
+    type: 2
+    value: 6
+  - time: 52
+    type: 8
+    value: 0
+  - time: 52.5
+    type: 0
+    value: 7
+  - time: 53
+    type: 8
+    value: 0
+  - time: 53
+    type: 2
+    value: 0
+  - time: 53
+    type: 3
+    value: 6
+  - time: 53.5
+    type: 0
+    value: 3
+  - time: 54
+    type: 2
+    value: 6
+  - time: 54
+    type: 8
+    value: 0
+  - time: 54
+    type: 3
+    value: 0
+  - time: 54.5
+    type: 3
+    value: 3
+  - time: 54.5
+    type: 0
+    value: 7
+  - time: 54.75
+    type: 2
+    value: 3
+  - time: 55
+    type: 1
+    value: 3
+  - time: 55
+    type: 4
+    value: 3
+  - time: 55
+    type: 8
+    value: 0
+  - time: 55
+    type: 0
+    value: 3
+  - time: 55.5
+    type: 3
+    value: 6
+  - time: 55.5
+    type: 2
+    value: 0
+  - time: 56
+    type: 3
+    value: 0
+  - time: 56
+    type: 0
+    value: 7
+  - time: 56
+    type: 2
+    value: 2
+  - time: 56.5
+    type: 2
+    value: 0
+  - time: 56.5
+    type: 3
+    value: 6
+  - time: 57
+    type: 8
+    value: 0
+  - time: 57
+    type: 4
+    value: 7
+  - time: 57
+    type: 0
+    value: 3
+  - time: 57
+    type: 2
+    value: 2
+  - time: 57
+    type: 1
+    value: 7
+  - time: 57
+    type: 3
+    value: 0
+  - time: 57.5
+    type: 2
+    value: 0
+  - time: 57.5
+    type: 3
+    value: 6
+  - time: 58
+    type: 3
+    value: 0
+  - time: 58
+    type: 0
+    value: 7
+  - time: 58
+    type: 2
+    value: 2
+  - time: 59
+    type: 8
+    value: 0
+  - time: 59
+    type: 1
+    value: 3
+  - time: 59
+    type: 3
+    value: 6
+  - time: 59
+    type: 2
+    value: 0
+  - time: 59
+    type: 0
+    value: 3
+  - time: 59
+    type: 4
+    value: 3
+  - time: 60
+    type: 2
+    value: 2
+  - time: 60
+    type: 3
+    value: 0
+  - time: 60
+    type: 0
+    value: 7
+  - time: 60.5
+    type: 2
+    value: 0
+  - time: 60.5
+    type: 3
+    value: 6
+  - time: 61
+    type: 8
+    value: 0
+  - time: 61
+    type: 3
+    value: 0
+  - time: 61
+    type: 0
+    value: 3
+  - time: 61
+    type: 4
+    value: 7
+  - time: 61
+    type: 1
+    value: 7
+  - time: 61
+    type: 2
+    value: 2
+  - time: 62
+    type: 3
+    value: 6
+  - time: 62
+    type: 2
+    value: 0
+  - time: 62
+    type: 0
+    value: 7
+  - time: 63
+    type: 3
+    value: 0
+  - time: 63
+    type: 1
+    value: 3
+  - time: 63
+    type: 4
+    value: 3
+  - time: 63
+    type: 8
+    value: 0
+  - time: 63
+    type: 0
+    value: 3
+  - time: 63
+    type: 2
+    value: 2
+  - time: 63.5
+    type: 3
+    value: 6
+  - time: 64
+    type: 1
+    value: 7
+  - time: 64
+    type: 8
+    value: 0
+  - time: 64
+    type: 0
+    value: 7
+  - time: 64
+    type: 2
+    value: 2
+  - time: 64.5
+    type: 3
+    value: 6
+  - time: 65
+    type: 0
+    value: 3
+  - time: 65
+    type: 1
+    value: 7
+  - time: 65
+    type: 2
+    value: 2
+  - time: 65
+    type: 8
+    value: 0
+  - time: 65.5
+    type: 3
+    value: 6
+  - time: 66
+    type: 8
+    value: 0
+  - time: 66
+    type: 0
+    value: 7
+  - time: 66
+    type: 2
+    value: 2
+  - time: 66
+    type: 1
+    value: 7
+  - time: 66.5
+    type: 3
+    value: 6
+  - time: 67
+    type: 2
+    value: 2
+  - time: 67
+    type: 4
+    value: 3
+  - time: 67
+    type: 1
+    value: 3
+  - time: 67
+    type: 0
+    value: 3
+  - time: 67
+    type: 8
+    value: 0
+  - time: 67.5
+    type: 3
+    value: 6
+  - time: 68
+    type: 0
+    value: 7
+  - time: 68
+    type: 8
+    value: 0
+  - time: 68
+    type: 2
+    value: 2
+  - time: 68
+    type: 1
+    value: 3
+  - time: 68.5
+    type: 3
+    value: 6
+  - time: 69
+    type: 8
+    value: 0
+  - time: 69
+    type: 2
+    value: 2
+  - time: 69
+    type: 0
+    value: 3
+  - time: 69
+    type: 1
+    value: 3
+  - time: 69.5
+    type: 3
+    value: 6
+  - time: 70
+    type: 1
+    value: 7
+  - time: 70
+    type: 8
+    value: 0
+  - time: 70
+    type: 0
+    value: 7
+  - time: 70
+    type: 2
+    value: 2
+  - time: 70.5
+    type: 3
+    value: 6
+  - time: 71
+    type: 4
+    value: 3
+  - time: 71
+    type: 0
+    value: 3
+  - time: 71
+    type: 1
+    value: 7
+  - time: 71
+    type: 2
+    value: 7
+  - time: 71
+    type: 3
+    value: 3
+  - time: 71
+    type: 8
+    value: 0
+  - time: 71.5
+    type: 2
+    value: 7
+  - time: 71.5
+    type: 0
+    value: 7
+  - time: 72
+    type: 4
+    value: 2
+  - time: 72
+    type: 3
+    value: 3
+  - time: 72
+    type: 0
+    value: 3
+  - time: 72.5
+    type: 2
+    value: 3
+  - time: 72.5
+    type: 0
+    value: 7
+  - time: 73
+    type: 0
+    value: 3
+  - time: 73
+    type: 4
+    value: 2
+  - time: 73
+    type: 3
+    value: 7
+  - time: 73.25
+    type: 2
+    value: 7
+  - time: 73.5
+    type: 2
+    value: 3
+  - time: 73.5
+    type: 0
+    value: 7
+  - time: 74
+    type: 4
+    value: 2
+  - time: 74
+    type: 0
+    value: 3
+  - time: 74
+    type: 3
+    value: 7
+  - time: 74.5
+    type: 2
+    value: 3
+  - time: 74.5
+    type: 0
+    value: 7
+  - time: 75
+    type: 3
+    value: 7
+  - time: 75
+    type: 0
+    value: 3
+  - time: 75
+    type: 4
+    value: 2
+  - time: 75.5
+    type: 2
+    value: 3
+  - time: 75.5
+    type: 0
+    value: 7
+  - time: 76
+    type: 3
+    value: 2
+  - time: 76
+    type: 0
+    value: 3
+  - time: 76.5
+    type: 2
+    value: 7
+  - time: 76.5
+    type: 0
+    value: 7
+  - time: 77
+    type: 3
+    value: 7
+  - time: 77
+    type: 0
+    value: 3
+  - time: 77.5
+    type: 0
+    value: 7
+  - time: 77.5
+    type: 2
+    value: 3
+  - time: 78
+    type: 0
+    value: 3
+  - time: 78
+    type: 3
+    value: 7
+  - time: 78.5
+    type: 0
+    value: 7
+  - time: 78.5
+    type: 2
+    value: 3
+  - time: 79
+    type: 3
+    value: 7
+  - time: 79
+    type: 0
+    value: 3
+  - time: 79.5
+    type: 2
+    value: 7
+  - time: 79.5
+    type: 0
+    value: 7
+  - time: 80
+    type: 3
+    value: 3
+  - time: 80
+    type: 0
+    value: 3
+  - time: 80.5
+    type: 0
+    value: 7
+  - time: 80.5
+    type: 3
+    value: 3
+  - time: 81
+    type: 0
+    value: 3
+  - time: 81
+    type: 2
+    value: 7
+  - time: 81.5
+    type: 3
+    value: 3
+  - time: 81.5
+    type: 0
+    value: 7
+  - time: 82
+    type: 2
+    value: 7
+  - time: 82
+    type: 0
+    value: 3
+  - time: 82.5
+    type: 0
+    value: 7
+  - time: 82.5
+    type: 3
+    value: 7
+  - time: 83
+    type: 2
+    value: 7
+  - time: 83
+    type: 0
+    value: 3
+  - time: 83.5
+    type: 3
+    value: 3
+  - time: 83.5
+    type: 0
+    value: 7
+  - time: 84
+    type: 2
+    value: 3
+  - time: 84
+    type: 0
+    value: 3
+  - time: 84.5
+    type: 3
+    value: 7
+  - time: 84.5
+    type: 0
+    value: 7
+  - time: 85
+    type: 8
+    value: 0
+  - time: 85
+    type: 3
+    value: 3
+  - time: 85
+    type: 4
+    value: 7
+  - time: 85
+    type: 2
+    value: 3
+  - time: 85
+    type: 1
+    value: 7
+  - time: 85
+    type: 0
+    value: 3
+  - time: 85.5
+    type: 1
+    value: 3
+  - time: 85.5
+    type: 4
+    value: 3
+  - time: 85.5
+    type: 3
+    value: 7
+  - time: 85.5
+    type: 0
+    value: 7
+  - time: 85.5
+    type: 2
+    value: 7
+  - time: 86
+    type: 1
+    value: 7
+  - time: 86
+    type: 4
+    value: 7
+  - time: 86
+    type: 3
+    value: 3
+  - time: 86
+    type: 2
+    value: 3
+  - time: 86
+    type: 0
+    value: 3
+  - time: 86.5
+    type: 2
+    value: 7
+  - time: 86.75
+    type: 3
+    value: 7
+  - time: 87
+    type: 3
+    value: 6
+  - time: 87
+    type: 4
+    value: 3
+  - time: 87
+    type: 0
+    value: 0
+  - time: 87
+    type: 1
+    value: 3
+  - time: 87
+    type: 8
+    value: 0
+  - time: 87
+    type: 2
+    value: 0
+  - time: 87.5
+    type: 0
+    value: 3
+  - time: 88
+    type: 3
+    value: 0
+  - time: 88
+    type: 2
+    value: 6
+  - time: 88
+    type: 8
+    value: 0
+  - time: 88.5
+    type: 0
+    value: 7
+  - time: 89
+    type: 8
+    value: 0
+  - time: 89
+    type: 3
+    value: 6
+  - time: 89
+    type: 2
+    value: 0
+  - time: 89.5
+    type: 0
+    value: 3
+  - time: 90
+    type: 2
+    value: 6
+  - time: 90
+    type: 3
+    value: 0
+  - time: 90
+    type: 8
+    value: 0
+  - time: 90.5
+    type: 0
+    value: 7
+  - time: 91
+    type: 4
+    value: 7
+  - time: 91
+    type: 3
+    value: 6
+  - time: 91
+    type: 2
+    value: 0
+  - time: 91
+    type: 8
+    value: 0
+  - time: 91.5
+    type: 0
+    value: 3
+  - time: 92
+    type: 2
+    value: 6
+  - time: 92
+    type: 8
+    value: 0
+  - time: 92
+    type: 3
+    value: 0
+  - time: 92.5
+    type: 0
+    value: 7
+  - time: 93
+    type: 2
+    value: 0
+  - time: 93
+    type: 3
+    value: 6
+  - time: 93
+    type: 8
+    value: 0
+  - time: 93.5
+    type: 0
+    value: 3
+  - time: 94
+    type: 8
+    value: 0
+  - time: 94
+    type: 2
+    value: 6
+  - time: 94
+    type: 3
+    value: 0
+  - time: 94.5
+    type: 0
+    value: 7
+  - time: 95
+    type: 3
+    value: 6
+  - time: 95
+    type: 4
+    value: 7
+  - time: 95
+    type: 8
+    value: 0
+  - time: 95
+    type: 2
+    value: 0
+  - time: 95.5
+    type: 0
+    value: 3
+  - time: 96
+    type: 8
+    value: 0
+  - time: 96
+    type: 2
+    value: 6
+  - time: 96
+    type: 3
+    value: 0
+  - time: 96.5
+    type: 0
+    value: 7
+  - time: 97
+    type: 8
+    value: 0
+  - time: 97
+    type: 2
+    value: 0
+  - time: 97
+    type: 3
+    value: 6
+  - time: 97.5
+    type: 0
+    value: 3
+  - time: 98
+    type: 8
+    value: 0
+  - time: 98
+    type: 3
+    value: 0
+  - time: 98
+    type: 2
+    value: 6
+  - time: 98.5
+    type: 0
+    value: 7
+  - time: 99
+    type: 3
+    value: 6
+  - time: 99
+    type: 2
+    value: 0
+  - time: 99
+    type: 4
+    value: 7
+  - time: 99
+    type: 8
+    value: 0
+  - time: 99.5
+    type: 0
+    value: 3
+  - time: 100
+    type: 8
+    value: 0
+  - time: 100
+    type: 3
+    value: 0
+  - time: 100
+    type: 2
+    value: 6
+  - time: 100.5
+    type: 0
+    value: 7
+  - time: 101
+    type: 8
+    value: 0
+  - time: 101
+    type: 2
+    value: 0
+  - time: 101
+    type: 3
+    value: 6
+  - time: 101.5
+    type: 0
+    value: 3
+  - time: 102
+    type: 2
+    value: 6
+  - time: 102
+    type: 8
+    value: 0
+  - time: 102
+    type: 3
+    value: 0
+  - time: 102.5
+    type: 0
+    value: 7
+  - time: 102.5
+    type: 3
+    value: 3
+  - time: 102.75
+    type: 2
+    value: 3
+  - time: 103
+    type: 1
+    value: 3
+  - time: 103
+    type: 0
+    value: 3
+  - time: 103
+    type: 4
+    value: 3
+  - time: 103
+    type: 8
+    value: 0
+  - time: 103.5
+    type: 2
+    value: 0
+  - time: 103.5
+    type: 3
+    value: 6
+  - time: 104
+    type: 2
+    value: 2
+  - time: 104
+    type: 0
+    value: 7
+  - time: 104
+    type: 3
+    value: 0
+  - time: 104.5
+    type: 2
+    value: 0
+  - time: 104.5
+    type: 3
+    value: 6
+  - time: 105
+    type: 8
+    value: 0
+  - time: 105
+    type: 3
+    value: 0
+  - time: 105
+    type: 4
+    value: 7
+  - time: 105
+    type: 2
+    value: 2
+  - time: 105
+    type: 1
+    value: 7
+  - time: 105
+    type: 0
+    value: 3
+  - time: 105.5
+    type: 2
+    value: 0
+  - time: 105.5
+    type: 3
+    value: 6
+  - time: 106
+    type: 0
+    value: 7
+  - time: 106
+    type: 3
+    value: 0
+  - time: 106
+    type: 2
+    value: 2
+  - time: 106.5
+    type: 2
+    value: 0
+  - time: 106.5
+    type: 3
+    value: 6
+  - time: 107
+    type: 0
+    value: 3
+  - time: 107
+    type: 1
+    value: 3
+  - time: 107
+    type: 4
+    value: 3
+  - time: 107
+    type: 2
+    value: 2
+  - time: 107
+    type: 3
+    value: 0
+  - time: 107
+    type: 8
+    value: 0
+  - time: 108
+    type: 0
+    value: 7
+  - time: 108
+    type: 2
+    value: 0
+  - time: 108
+    type: 3
+    value: 6
+  - time: 109
+    type: 1
+    value: 7
+  - time: 109
+    type: 8
+    value: 0
+  - time: 109
+    type: 3
+    value: 0
+  - time: 109
+    type: 0
+    value: 3
+  - time: 109
+    type: 2
+    value: 2
+  - time: 109
+    type: 4
+    value: 7
+  - time: 109.5
+    type: 2
+    value: 0
+  - time: 109.5
+    type: 3
+    value: 6
+  - time: 110
+    type: 0
+    value: 7
+  - time: 110
+    type: 2
+    value: 2
+  - time: 110
+    type: 3
+    value: 0
+  - time: 111
+    type: 1
+    value: 3
+  - time: 111
+    type: 0
+    value: 3
+  - time: 111
+    type: 8
+    value: 0
+  - time: 111
+    type: 4
+    value: 3
+  - time: 111
+    type: 3
+    value: 0
+  - time: 111
+    type: 2
+    value: 2
+  - time: 111.5
+    type: 3
+    value: 6
+  - time: 112
+    type: 8
+    value: 0
+  - time: 112
+    type: 1
+    value: 7
+  - time: 112
+    type: 0
+    value: 7
+  - time: 112
+    type: 2
+    value: 2
+  - time: 112.5
+    type: 3
+    value: 6
+  - time: 113
+    type: 1
+    value: 7
+  - time: 113
+    type: 0
+    value: 3
+  - time: 113
+    type: 2
+    value: 2
+  - time: 113
+    type: 8
+    value: 0
+  - time: 113.5
+    type: 3
+    value: 6
+  - time: 114
+    type: 2
+    value: 2
+  - time: 114
+    type: 1
+    value: 7
+  - time: 114
+    type: 0
+    value: 7
+  - time: 114
+    type: 8
+    value: 0
+  - time: 114.5
+    type: 3
+    value: 6
+  - time: 115
+    type: 4
+    value: 3
+  - time: 115
+    type: 8
+    value: 0
+  - time: 115
+    type: 1
+    value: 3
+  - time: 115
+    type: 2
+    value: 2
+  - time: 115
+    type: 0
+    value: 3
+  - time: 115.5
+    type: 3
+    value: 6
+  - time: 116
+    type: 8
+    value: 0
+  - time: 116
+    type: 2
+    value: 2
+  - time: 116
+    type: 1
+    value: 3
+  - time: 116
+    type: 0
+    value: 7
+  - time: 116.5
+    type: 3
+    value: 6
+  - time: 117
+    type: 2
+    value: 2
+  - time: 117
+    type: 1
+    value: 3
+  - time: 117
+    type: 0
+    value: 3
+  - time: 117
+    type: 8
+    value: 0
+  - time: 117.5
+    type: 3
+    value: 6
+  - time: 118
+    type: 2
+    value: 2
+  - time: 118
+    type: 0
+    value: 7
+  - time: 118
+    type: 1
+    value: 7
+  - time: 118
+    type: 8
+    value: 0
+  - time: 118.5
+    type: 3
+    value: 6
+  - time: 119
+    type: 4
+    value: 3
+  - time: 119
+    type: 0
+    value: 3
+  - time: 119
+    type: 8
+    value: 0
+  - time: 119
+    type: 1
+    value: 7
+  - time: 119
+    type: 2
+    value: 7
+  - time: 119
+    type: 3
+    value: 3
+  - time: 119.5
+    type: 2
+    value: 7
+  - time: 119.5
+    type: 0
+    value: 7
+  - time: 120
+    type: 3
+    value: 3
+  - time: 120
+    type: 4
+    value: 2
+  - time: 120
+    type: 0
+    value: 3
+  - time: 120.5
+    type: 2
+    value: 3
+  - time: 120.5
+    type: 0
+    value: 7
+  - time: 121
+    type: 0
+    value: 3
+  - time: 121
+    type: 8
+    value: 0
+  - time: 121
+    type: 3
+    value: 7
+  - time: 121
+    type: 4
+    value: 2
+  - time: 121
+    type: 1
+    value: 3
+  - time: 121.25
+    type: 2
+    value: 7
+  - time: 121.5
+    type: 0
+    value: 7
+  - time: 121.5
+    type: 2
+    value: 3
+  - time: 121.5
+    type: 1
+    value: 7
+  - time: 121.5
+    type: 8
+    value: 0
+  - time: 122
+    type: 4
+    value: 2
+  - time: 122
+    type: 3
+    value: 7
+  - time: 122
+    type: 0
+    value: 3
+  - time: 122.5
+    type: 2
+    value: 3
+  - time: 122.5
+    type: 0
+    value: 7
+  - time: 123
+    type: 3
+    value: 7
+  - time: 123
+    type: 4
+    value: 2
+  - time: 123
+    type: 0
+    value: 3
+  - time: 123.5
+    type: 2
+    value: 3
+  - time: 123.5
+    type: 0
+    value: 7
+  - time: 124
+    type: 0
+    value: 3
+  - time: 124
+    type: 3
+    value: 2
+  - time: 124.5
+    type: 2
+    value: 7
+  - time: 124.5
+    type: 0
+    value: 7
+  - time: 125
+    type: 0
+    value: 3
+  - time: 125
+    type: 3
+    value: 7
+  - time: 125.5
+    type: 2
+    value: 3
+  - time: 125.5
+    type: 0
+    value: 7
+  - time: 126
+    type: 0
+    value: 3
+  - time: 126
+    type: 3
+    value: 7
+  - time: 126.5
+    type: 2
+    value: 3
+  - time: 126.5
+    type: 0
+    value: 7
+  - time: 127
+    type: 0
+    value: 3
+  - time: 127
+    type: 3
+    value: 7
+  - time: 127.5
+    type: 2
+    value: 7
+  - time: 127.5
+    type: 0
+    value: 7
+  - time: 128
+    type: 0
+    value: 3
+  - time: 128
+    type: 3
+    value: 3
+  - time: 128.5
+    type: 3
+    value: 3
+  - time: 128.5
+    type: 0
+    value: 7
+  - time: 129
+    type: 1
+    value: 3
+  - time: 129
+    type: 2
+    value: 7
+  - time: 129
+    type: 0
+    value: 3
+  - time: 129
+    type: 8
+    value: 0
+  - time: 129.5
+    type: 3
+    value: 3
+  - time: 129.5
+    type: 0
+    value: 7
+  - time: 130
+    type: 2
+    value: 7
+  - time: 130
+    type: 0
+    value: 3
+  - time: 130.5
+    type: 0
+    value: 7
+  - time: 130.5
+    type: 3
+    value: 7
+  - time: 131
+    type: 2
+    value: 7
+  - time: 131
+    type: 0
+    value: 3
+  - time: 131.5
+    type: 0
+    value: 7
+  - time: 131.5
+    type: 3
+    value: 3
+  - time: 132
+    type: 2
+    value: 3
+  - time: 132
+    type: 0
+    value: 3
+  - time: 132.5
+    type: 0
+    value: 7
+  - time: 132.5
+    type: 3
+    value: 7
+  - time: 133
+    type: 2
+    value: 3
+  - time: 133
+    type: 3
+    value: 3
+  - time: 133
+    type: 0
+    value: 3
+  - time: 133
+    type: 1
+    value: 7
+  - time: 133
+    type: 4
+    value: 7
+  - time: 133
+    type: 8
+    value: 0
+  - time: 133.5
+    type: 1
+    value: 3
+  - time: 133.5
+    type: 2
+    value: 7
+  - time: 133.5
+    type: 4
+    value: 3
+  - time: 133.5
+    type: 3
+    value: 7
+  - time: 133.5
+    type: 0
+    value: 7
+  - time: 134
+    type: 1
+    value: 7
+  - time: 134
+    type: 0
+    value: 3
+  - time: 134
+    type: 2
+    value: 3
+  - time: 134
+    type: 4
+    value: 7
+  - time: 134
+    type: 3
+    value: 3
+  - time: 134.5
+    type: 2
+    value: 7
+  - time: 134.75
+    type: 3
+    value: 7
+  - time: 135
+    type: 2
+    value: 7
+  - time: 135
+    type: 3
+    value: 3
+  - time: 135
+    type: 4
+    value: 3
+  - time: 135
+    type: 0
+    value: 3
+  - time: 135
+    type: 8
+    value: 0
+  - time: 135
+    type: 1
+    value: 3
+  - time: 135.5
+    type: 0
+    value: 7
+  - time: 135.5
+    type: 2
+    value: 7
+  - time: 136
+    type: 3
+    value: 3
+  - time: 136
+    type: 4
+    value: 2
+  - time: 136
+    type: 0
+    value: 3
+  - time: 136.5
+    type: 0
+    value: 7
+  - time: 136.5
+    type: 2
+    value: 3
+  - time: 137
+    type: 0
+    value: 3
+  - time: 137
+    type: 3
+    value: 7
+  - time: 137
+    type: 8
+    value: 0
+  - time: 137
+    type: 1
+    value: 7
+  - time: 137
+    type: 4
+    value: 2
+  - time: 137.25
+    type: 2
+    value: 7
+  - time: 137.5
+    type: 2
+    value: 3
+  - time: 137.5
+    type: 0
+    value: 7
+  - time: 138
+    type: 3
+    value: 7
+  - time: 138
+    type: 4
+    value: 2
+  - time: 138
+    type: 1
+    value: 7
+  - time: 138
+    type: 0
+    value: 3
+  - time: 138.5
+    type: 0
+    value: 7
+  - time: 138.5
+    type: 2
+    value: 3
+  - time: 139
+    type: 0
+    value: 3
+  - time: 139
+    type: 3
+    value: 7
+  - time: 139
+    type: 4
+    value: 2
+  - time: 139.5
+    type: 2
+    value: 3
+  - time: 139.5
+    type: 0
+    value: 7
+  - time: 140
+    type: 0
+    value: 3
+  - time: 140
+    type: 3
+    value: 2
+  - time: 140.5
+    type: 2
+    value: 7
+  - time: 140.5
+    type: 0
+    value: 7
+  - time: 141
+    type: 0
+    value: 3
+  - time: 141
+    type: 3
+    value: 7
+  - time: 141.5
+    type: 2
+    value: 3
+  - time: 141.5
+    type: 0
+    value: 7
+  - time: 142
+    type: 0
+    value: 3
+  - time: 142
+    type: 3
+    value: 7
+  - time: 142.5
+    type: 2
+    value: 3
+  - time: 142.5
+    type: 0
+    value: 7
+  - time: 143
+    type: 0
+    value: 3
+  - time: 143
+    type: 3
+    value: 7
+  - time: 143.5
+    type: 2
+    value: 7
+  - time: 143.5
+    type: 0
+    value: 7
+  - time: 144
+    type: 0
+    value: 3
+  - time: 144
+    type: 3
+    value: 3
+  - time: 144.5
+    type: 3
+    value: 3
+  - time: 144.5
+    type: 0
+    value: 7
+  - time: 145
+    type: 1
+    value: 3
+  - time: 145
+    type: 2
+    value: 7
+  - time: 145
+    type: 0
+    value: 3
+  - time: 145
+    type: 8
+    value: 0
+  - time: 145.5
+    type: 3
+    value: 3
+  - time: 145.5
+    type: 0
+    value: 7
+  - time: 146
+    type: 2
+    value: 7
+  - time: 146
+    type: 0
+    value: 3
+  - time: 146
+    type: 1
+    value: 3
+  - time: 146.5
+    type: 0
+    value: 7
+  - time: 146.5
+    type: 3
+    value: 7
+  - time: 147
+    type: 2
+    value: 7
+  - time: 147
+    type: 0
+    value: 3
+  - time: 147.5
+    type: 0
+    value: 7
+  - time: 147.5
+    type: 3
+    value: 3
+  - time: 148
+    type: 2
+    value: 3
+  - time: 148
+    type: 0
+    value: 3
+  - time: 148.5
+    type: 0
+    value: 7
+  - time: 148.5
+    type: 3
+    value: 7
+  - time: 149
+    type: 1
+    value: 7
+  - time: 149
+    type: 4
+    value: 7
+  - time: 149
+    type: 8
+    value: 0
+  - time: 149
+    type: 2
+    value: 3
+  - time: 149
+    type: 3
+    value: 3
+  - time: 149
+    type: 0
+    value: 3
+  - time: 149.5
+    type: 3
+    value: 7
+  - time: 149.5
+    type: 0
+    value: 7
+  - time: 149.5
+    type: 1
+    value: 3
+  - time: 149.5
+    type: 2
+    value: 7
+  - time: 149.5
+    type: 4
+    value: 3
+  - time: 150
+    type: 4
+    value: 7
+  - time: 150
+    type: 3
+    value: 3
+  - time: 150
+    type: 1
+    value: 7
+  - time: 150
+    type: 0
+    value: 3
+  - time: 150
+    type: 2
+    value: 3
+  - time: 150.5
+    type: 2
+    value: 7
+  - time: 150.75
+    type: 3
+    value: 7
+  - time: 151
+    type: 3
+    value: 6
+  - time: 151
+    type: 1
+    value: 3
+  - time: 151
+    type: 0
+    value: 0
+  - time: 151
+    type: 4
+    value: 3
+  - time: 151
+    type: 2
+    value: 0
+  - time: 151
+    type: 8
+    value: 0
+  - time: 151.5
+    type: 0
+    value: 3
+  - time: 152
+    type: 3
+    value: 0
+  - time: 152
+    type: 8
+    value: 0
+  - time: 152
+    type: 2
+    value: 6
+  - time: 152.5
+    type: 0
+    value: 7
+  - time: 153
+    type: 2
+    value: 0
+  - time: 153
+    type: 3
+    value: 6
+  - time: 153
+    type: 8
+    value: 0
+  - time: 153.5
+    type: 0
+    value: 3
+  - time: 154
+    type: 3
+    value: 0
+  - time: 154
+    type: 2
+    value: 6
+  - time: 154
+    type: 8
+    value: 0
+  - time: 154.5
+    type: 0
+    value: 7
+  - time: 155
+    type: 4
+    value: 7
+  - time: 155
+    type: 8
+    value: 0
+  - time: 155
+    type: 2
+    value: 0
+  - time: 155
+    type: 3
+    value: 6
+  - time: 155.5
+    type: 0
+    value: 3
+  - time: 156
+    type: 8
+    value: 0
+  - time: 156
+    type: 2
+    value: 6
+  - time: 156
+    type: 3
+    value: 0
+  - time: 156.5
+    type: 0
+    value: 7
+  - time: 157
+    type: 2
+    value: 0
+  - time: 157
+    type: 3
+    value: 6
+  - time: 157
+    type: 8
+    value: 0
+  - time: 157.5
+    type: 0
+    value: 3
+  - time: 158
+    type: 8
+    value: 0
+  - time: 158
+    type: 2
+    value: 6
+  - time: 158
+    type: 3
+    value: 0
+  - time: 158.5
+    type: 0
+    value: 7
+  - time: 159
+    type: 3
+    value: 6
+  - time: 159
+    type: 8
+    value: 0
+  - time: 159
+    type: 2
+    value: 0
+  - time: 159
+    type: 4
+    value: 7
+  - time: 159.5
+    type: 0
+    value: 3
+  - time: 160
+    type: 2
+    value: 6
+  - time: 160
+    type: 3
+    value: 0
+  - time: 160
+    type: 8
+    value: 0
+  - time: 160.5
+    type: 0
+    value: 7
+  - time: 161
+    type: 8
+    value: 0
+  - time: 161
+    type: 2
+    value: 0
+  - time: 161
+    type: 3
+    value: 6
+  - time: 161.5
+    type: 0
+    value: 3
+  - time: 162
+    type: 2
+    value: 6
+  - time: 162
+    type: 8
+    value: 0
+  - time: 162
+    type: 3
+    value: 0
+  - time: 162.5
+    type: 0
+    value: 7
+  - time: 163
+    type: 3
+    value: 6
+  - time: 163
+    type: 4
+    value: 7
+  - time: 163
+    type: 8
+    value: 0
+  - time: 163
+    type: 2
+    value: 0
+  - time: 163.5
+    type: 0
+    value: 3
+  - time: 164
+    type: 8
+    value: 0
+  - time: 164
+    type: 3
+    value: 0
+  - time: 164
+    type: 2
+    value: 6
+  - time: 164.5
+    type: 0
+    value: 7
+  - time: 165
+    type: 3
+    value: 6
+  - time: 165
+    type: 8
+    value: 0
+  - time: 165
+    type: 2
+    value: 0
+  - time: 165.5
+    type: 0
+    value: 3
+  - time: 166
+    type: 8
+    value: 0
+  - time: 166
+    type: 2
+    value: 6
+  - time: 166
+    type: 3
+    value: 0
+  - time: 166.5
+    type: 3
+    value: 3
+  - time: 166.5
+    type: 0
+    value: 7
+  - time: 166.75
+    type: 2
+    value: 3
+  - time: 167
+    type: 8
+    value: 0
+  - time: 167
+    type: 1
+    value: 3
+  - time: 167
+    type: 0
+    value: 3
+  - time: 167
+    type: 4
+    value: 3
+  - time: 167.5
+    type: 3
+    value: 6
+  - time: 167.5
+    type: 2
+    value: 0
+  - time: 168
+    type: 3
+    value: 0
+  - time: 168
+    type: 0
+    value: 7
+  - time: 168
+    type: 2
+    value: 2
+  - time: 168.5
+    type: 3
+    value: 6
+  - time: 168.5
+    type: 2
+    value: 0
+  - time: 169
+    type: 1
+    value: 7
+  - time: 169
+    type: 8
+    value: 0
+  - time: 169
+    type: 3
+    value: 0
+  - time: 169
+    type: 0
+    value: 3
+  - time: 169
+    type: 4
+    value: 7
+  - time: 169
+    type: 2
+    value: 2
+  - time: 169.5
+    type: 2
+    value: 0
+  - time: 169.5
+    type: 3
+    value: 6
+  - time: 170
+    type: 3
+    value: 0
+  - time: 170
+    type: 2
+    value: 2
+  - time: 170
+    type: 0
+    value: 7
+  - time: 170.5
+    type: 3
+    value: 6
+  - time: 170.5
+    type: 2
+    value: 0
+  - time: 171
+    type: 0
+    value: 3
+  - time: 171
+    type: 8
+    value: 0
+  - time: 171
+    type: 3
+    value: 0
+  - time: 171
+    type: 2
+    value: 2
+  - time: 171
+    type: 4
+    value: 3
+  - time: 171
+    type: 1
+    value: 3
+  - time: 172
+    type: 2
+    value: 0
+  - time: 172
+    type: 3
+    value: 6
+  - time: 172
+    type: 0
+    value: 7
+  - time: 173
+    type: 0
+    value: 3
+  - time: 173
+    type: 3
+    value: 0
+  - time: 173
+    type: 8
+    value: 0
+  - time: 173
+    type: 1
+    value: 7
+  - time: 173
+    type: 4
+    value: 7
+  - time: 173
+    type: 2
+    value: 2
+  - time: 173.5
+    type: 3
+    value: 6
+  - time: 173.5
+    type: 2
+    value: 0
+  - time: 174
+    type: 0
+    value: 7
+  - time: 174
+    type: 2
+    value: 2
+  - time: 174
+    type: 3
+    value: 0
+  - time: 175
+    type: 2
+    value: 2
+  - time: 175
+    type: 3
+    value: 0
+  - time: 175
+    type: 4
+    value: 3
+  - time: 175
+    type: 8
+    value: 0
+  - time: 175
+    type: 0
+    value: 3
+  - time: 175
+    type: 1
+    value: 3
+  - time: 175.5
+    type: 3
+    value: 6
+  - time: 176
+    type: 2
+    value: 2
+  - time: 176
+    type: 0
+    value: 7
+  - time: 176
+    type: 1
+    value: 7
+  - time: 176
+    type: 8
+    value: 0
+  - time: 176.5
+    type: 3
+    value: 6
+  - time: 177
+    type: 2
+    value: 2
+  - time: 177
+    type: 0
+    value: 3
+  - time: 177
+    type: 1
+    value: 7
+  - time: 177
+    type: 8
+    value: 0
+  - time: 177.5
+    type: 3
+    value: 6
+  - time: 178
+    type: 0
+    value: 7
+  - time: 178
+    type: 2
+    value: 2
+  - time: 178
+    type: 8
+    value: 0
+  - time: 178
+    type: 1
+    value: 7
+  - time: 178.5
+    type: 3
+    value: 6
+  - time: 179
+    type: 2
+    value: 2
+  - time: 179
+    type: 1
+    value: 3
+  - time: 179
+    type: 8
+    value: 0
+  - time: 179
+    type: 4
+    value: 3
+  - time: 179
+    type: 0
+    value: 3
+  - time: 179.5
+    type: 3
+    value: 6
+  - time: 180
+    type: 1
+    value: 3
+  - time: 180
+    type: 2
+    value: 2
+  - time: 180
+    type: 8
+    value: 0
+  - time: 180
+    type: 0
+    value: 7
+  - time: 180.5
+    type: 3
+    value: 6
+  - time: 181
+    type: 8
+    value: 0
+  - time: 181
+    type: 0
+    value: 3
+  - time: 181
+    type: 1
+    value: 3
+  - time: 181
+    type: 2
+    value: 2
+  - time: 181.5
+    type: 3
+    value: 6
+  - time: 182
+    type: 1
+    value: 7
+  - time: 182
+    type: 0
+    value: 7
+  - time: 182
+    type: 2
+    value: 2
+  - time: 182
+    type: 8
+    value: 0
+  - time: 182.5
+    type: 3
+    value: 6
+  - time: 183
+    type: 0
+    value: 3
+  - time: 183
+    type: 1
+    value: 7
+  - time: 183
+    type: 8
+    value: 0
+  - time: 183
+    type: 4
+    value: 3
+  - time: 183
+    type: 3
+    value: 3
+  - time: 183
+    type: 2
+    value: 7
+  - time: 183.5
+    type: 2
+    value: 7
+  - time: 183.5
+    type: 0
+    value: 7
+  - time: 184
+    type: 4
+    value: 2
+  - time: 184
+    type: 3
+    value: 3
+  - time: 184
+    type: 0
+    value: 3
+  - time: 184.5
+    type: 0
+    value: 7
+  - time: 184.5
+    type: 2
+    value: 3
+  - time: 185
+    type: 0
+    value: 3
+  - time: 185
+    type: 1
+    value: 7
+  - time: 185
+    type: 8
+    value: 0
+  - time: 185
+    type: 3
+    value: 7
+  - time: 185
+    type: 4
+    value: 2
+  - time: 185.25
+    type: 2
+    value: 7
+  - time: 185.5
+    type: 0
+    value: 7
+  - time: 185.5
+    type: 2
+    value: 3
+  - time: 186
+    type: 3
+    value: 7
+  - time: 186
+    type: 1
+    value: 7
+  - time: 186
+    type: 0
+    value: 3
+  - time: 186
+    type: 4
+    value: 2
+  - time: 186.5
+    type: 2
+    value: 3
+  - time: 186.5
+    type: 0
+    value: 7
+  - time: 187
+    type: 3
+    value: 7
+  - time: 187
+    type: 0
+    value: 3
+  - time: 187
+    type: 4
+    value: 2
+  - time: 187.5
+    type: 0
+    value: 7
+  - time: 187.5
+    type: 2
+    value: 3
+  - time: 188
+    type: 0
+    value: 3
+  - time: 188
+    type: 3
+    value: 2
+  - time: 188.5
+    type: 0
+    value: 7
+  - time: 188.5
+    type: 2
+    value: 7
+  - time: 189
+    type: 0
+    value: 3
+  - time: 189
+    type: 3
+    value: 7
+  - time: 189.5
+    type: 2
+    value: 3
+  - time: 189.5
+    type: 0
+    value: 7
+  - time: 190
+    type: 0
+    value: 3
+  - time: 190
+    type: 3
+    value: 7
+  - time: 190.5
+    type: 2
+    value: 3
+  - time: 190.5
+    type: 0
+    value: 7
+  - time: 191
+    type: 0
+    value: 3
+  - time: 191
+    type: 3
+    value: 7
+  - time: 191.5
+    type: 2
+    value: 7
+  - time: 191.5
+    type: 0
+    value: 7
+  - time: 192
+    type: 0
+    value: 3
+  - time: 192
+    type: 3
+    value: 3
+  - time: 192.5
+    type: 3
+    value: 3
+  - time: 192.5
+    type: 0
+    value: 7
+  - time: 193
+    type: 1
+    value: 7
+  - time: 193
+    type: 2
+    value: 7
+  - time: 193
+    type: 0
+    value: 3
+  - time: 193
+    type: 8
+    value: 0
+  - time: 193.5
+    type: 3
+    value: 3
+  - time: 193.5
+    type: 0
+    value: 7
+  - time: 194
+    type: 0
+    value: 3
+  - time: 194
+    type: 1
+    value: 7
+  - time: 194
+    type: 2
+    value: 7
+  - time: 194.5
+    type: 0
+    value: 7
+  - time: 194.5
+    type: 3
+    value: 7
+  - time: 195
+    type: 2
+    value: 7
+  - time: 195
+    type: 0
+    value: 3
+  - time: 195.5
+    type: 0
+    value: 7
+  - time: 195.5
+    type: 3
+    value: 3
+  - time: 196
+    type: 2
+    value: 3
+  - time: 196
+    type: 0
+    value: 3
+  - time: 196.5
+    type: 0
+    value: 7
+  - time: 196.5
+    type: 3
+    value: 7
+  - time: 197
+    type: 3
+    value: 3
+  - time: 197
+    type: 0
+    value: 3
+  - time: 197
+    type: 1
+    value: 7
+  - time: 197
+    type: 4
+    value: 7
+  - time: 197
+    type: 8
+    value: 0
+  - time: 197
+    type: 2
+    value: 3
+  - time: 197.5
+    type: 2
+    value: 7
+  - time: 197.5
+    type: 4
+    value: 3
+  - time: 197.5
+    type: 3
+    value: 7
+  - time: 197.5
+    type: 0
+    value: 7
+  - time: 197.5
+    type: 1
+    value: 3
+  - time: 198
+    type: 0
+    value: 3
+  - time: 198
+    type: 2
+    value: 3
+  - time: 198
+    type: 4
+    value: 7
+  - time: 198
+    type: 3
+    value: 3
+  - time: 198
+    type: 1
+    value: 7
+  - time: 198.5
+    type: 2
+    value: 7
+  - time: 198.75
+    type: 3
+    value: 7
+  - time: 199
+    type: 2
+    value: 7
+  - time: 199
+    type: 8
+    value: 0
+  - time: 199
+    type: 1
+    value: 7
+  - time: 199
+    type: 0
+    value: 3
+  - time: 199
+    type: 4
+    value: 3
+  - time: 199
+    type: 3
+    value: 3
+  - time: 199.5
+    type: 0
+    value: 7
+  - time: 199.5
+    type: 2
+    value: 7
+  - time: 199.75
+    type: 4
+    value: 6
+  - time: 200
+    type: 4
+    value: 2
+  - time: 200
+    type: 3
+    value: 3
+  - time: 200
+    type: 0
+    value: 3
+  - time: 200.5
+    type: 0
+    value: 7
+  - time: 200.5
+    type: 2
+    value: 3
+  - time: 201
+    type: 4
+    value: 2
+  - time: 201
+    type: 0
+    value: 3
+  - time: 201
+    type: 1
+    value: 3
+  - time: 201
+    type: 8
+    value: 0
+  - time: 201
+    type: 3
+    value: 7
+  - time: 201.25
+    type: 2
+    value: 7
+  - time: 201.5
+    type: 0
+    value: 7
+  - time: 201.5
+    type: 2
+    value: 3
+  - time: 202
+    type: 0
+    value: 3
+  - time: 202
+    type: 3
+    value: 7
+  - time: 202
+    type: 1
+    value: 3
+  - time: 202
+    type: 4
+    value: 2
+  - time: 202.5
+    type: 0
+    value: 7
+  - time: 202.5
+    type: 2
+    value: 3
+  - time: 203
+    type: 4
+    value: 2
+  - time: 203
+    type: 0
+    value: 3
+  - time: 203
+    type: 3
+    value: 7
+  - time: 203.5
+    type: 2
+    value: 3
+  - time: 203.5
+    type: 0
+    value: 7
+  - time: 203.75
+    type: 2
+    value: 7
+  - time: 204
+    type: 3
+    value: 2
+  - time: 204
+    type: 0
+    value: 3
+  - time: 204.5
+    type: 0
+    value: 7
+  - time: 204.5
+    type: 2
+    value: 7
+  - time: 205
+    type: 3
+    value: 7
+  - time: 205
+    type: 0
+    value: 3
+  - time: 205.5
+    type: 0
+    value: 7
+  - time: 205.5
+    type: 2
+    value: 3
+  - time: 206
+    type: 3
+    value: 7
+  - time: 206
+    type: 0
+    value: 3
+  - time: 206.5
+    type: 0
+    value: 7
+  - time: 206.5
+    type: 2
+    value: 3
+  - time: 207
+    type: 3
+    value: 7
+  - time: 207
+    type: 0
+    value: 3
+  - time: 207.5
+    type: 0
+    value: 7
+  - time: 207.5
+    type: 2
+    value: 7
+  - time: 207.75
+    type: 2
+    value: 3
+  - time: 208
+    type: 0
+    value: 3
+  - time: 208
+    type: 3
+    value: 3
+  - time: 208.5
+    type: 3
+    value: 3
+  - time: 208.5
+    type: 0
+    value: 7
+  - time: 209
+    type: 1
+    value: 7
+  - time: 209
+    type: 2
+    value: 7
+  - time: 209
+    type: 0
+    value: 3
+  - time: 209
+    type: 8
+    value: 0
+  - time: 209.5
+    type: 3
+    value: 3
+  - time: 209.5
+    type: 0
+    value: 7
+  - time: 210
+    type: 0
+    value: 3
+  - time: 210
+    type: 1
+    value: 7
+  - time: 210
+    type: 2
+    value: 7
+  - time: 210.5
+    type: 0
+    value: 7
+  - time: 210.5
+    type: 3
+    value: 7
+  - time: 211
+    type: 2
+    value: 7
+  - time: 211
+    type: 0
+    value: 3
+  - time: 211.5
+    type: 0
+    value: 7
+  - time: 211.5
+    type: 3
+    value: 3
+  - time: 212
+    type: 2
+    value: 3
+  - time: 212
+    type: 0
+    value: 3
+  - time: 212.5
+    type: 0
+    value: 7
+  - time: 212.5
+    type: 3
+    value: 7
+  - time: 212.875
+    type: 2
+    value: 0
+  - time: 212.875
+    type: 3
+    value: 0
+  - time: 212.875
+    type: 4
+    value: 0
+  - time: 212.875
+    type: 0
+    value: 0
+  - time: 212.875
+    type: 1
+    value: 0
+  - time: 213
+    type: 8
+    value: 0
+  - time: 213
+    type: 4
+    value: 3
+  - time: 213
+    type: 3
+    value: 3
+  - time: 213.25
+    type: 0
+    value: 3
+  - time: 213.375
+    type: 2
+    value: 3
+  - time: 213.5
+    type: 0
+    value: 0
+  - time: 213.5
+    type: 3
+    value: 0
+  - time: 214
+    type: 2
+    value: 7
+  - time: 214.25
+    type: 3
+    value: 7
+  - time: 214.25
+    type: 2
+    value: 0
+  - time: 214.25
+    type: 0
+    value: 7
+  - time: 214.5
+    type: 0
+    value: 0
+  - time: 215
+    type: 0
+    value: 0
+  - time: 215
+    type: 4
+    value: 3
+  - time: 215
+    type: 3
+    value: 6
+  - time: 215
+    type: 2
+    value: 0
+  - time: 215
+    type: 8
+    value: 0
+  - time: 215
+    type: 1
+    value: 3
+  - time: 215.5
+    type: 0
+    value: 3
+  - time: 216
+    type: 2
+    value: 6
+  - time: 216
+    type: 3
+    value: 0
+  - time: 216
+    type: 8
+    value: 0
+  - time: 216.5
+    type: 0
+    value: 7
+  - time: 217
+    type: 8
+    value: 0
+  - time: 217
+    type: 2
+    value: 0
+  - time: 217
+    type: 3
+    value: 6
+  - time: 217.5
+    type: 0
+    value: 3
+  - time: 218
+    type: 8
+    value: 0
+  - time: 218
+    type: 3
+    value: 0
+  - time: 218
+    type: 2
+    value: 6
+  - time: 218.5
+    type: 0
+    value: 7
+  - time: 219
+    type: 8
+    value: 0
+  - time: 219
+    type: 2
+    value: 0
+  - time: 219
+    type: 3
+    value: 6
+  - time: 219
+    type: 4
+    value: 7
+  - time: 219.5
+    type: 0
+    value: 3
+  - time: 220
+    type: 3
+    value: 0
+  - time: 220
+    type: 8
+    value: 0
+  - time: 220
+    type: 2
+    value: 6
+  - time: 220.5
+    type: 0
+    value: 7
+  - time: 221
+    type: 2
+    value: 0
+  - time: 221
+    type: 3
+    value: 6
+  - time: 221
+    type: 8
+    value: 0
+  - time: 221.5
+    type: 0
+    value: 3
+  - time: 222
+    type: 2
+    value: 6
+  - time: 222
+    type: 3
+    value: 0
+  - time: 222
+    type: 8
+    value: 0
+  - time: 222.5
+    type: 0
+    value: 7
+  - time: 223
+    type: 2
+    value: 0
+  - time: 223
+    type: 1
+    value: 7
+  - time: 223
+    type: 3
+    value: 6
+  - time: 223
+    type: 4
+    value: 7
+  - time: 223
+    type: 8
+    value: 0
+  - time: 223.5
+    type: 0
+    value: 3
+  - time: 224
+    type: 2
+    value: 6
+  - time: 224
+    type: 8
+    value: 0
+  - time: 224
+    type: 3
+    value: 0
+  - time: 224.5
+    type: 0
+    value: 7
+  - time: 225
+    type: 3
+    value: 6
+  - time: 225
+    type: 2
+    value: 0
+  - time: 225
+    type: 8
+    value: 0
+  - time: 225.5
+    type: 0
+    value: 3
+  - time: 226
+    type: 8
+    value: 0
+  - time: 226
+    type: 2
+    value: 6
+  - time: 226
+    type: 3
+    value: 0
+  - time: 226.5
+    type: 0
+    value: 7
+  - time: 227
+    type: 2
+    value: 0
+  - time: 227
+    type: 1
+    value: 7
+  - time: 227
+    type: 8
+    value: 0
+  - time: 227
+    type: 4
+    value: 7
+  - time: 227
+    type: 3
+    value: 6
+  - time: 227.5
+    type: 0
+    value: 3
+  - time: 228
+    type: 3
+    value: 0
+  - time: 228
+    type: 8
+    value: 0
+  - time: 228
+    type: 2
+    value: 6
+  - time: 228.5
+    type: 0
+    value: 7
+  - time: 229
+    type: 2
+    value: 0
+  - time: 229
+    type: 8
+    value: 0
+  - time: 229
+    type: 1
+    value: 7
+  - time: 229
+    type: 3
+    value: 6
+  - time: 229.5
+    type: 0
+    value: 3
+  - time: 230
+    type: 8
+    value: 0
+  - time: 230
+    type: 3
+    value: 0
+  - time: 230
+    type: 2
+    value: 6
+  - time: 230
+    type: 1
+    value: 3
+  - time: 230.5
+    type: 0
+    value: 7
+  - time: 230.5
+    type: 3
+    value: 3
+  - time: 230.75
+    type: 2
+    value: 3
+  - time: 231
+    type: 8
+    value: 0
+  - time: 231
+    type: 4
+    value: 3
+  - time: 231
+    type: 0
+    value: 3
+  - time: 231
+    type: 1
+    value: 3
+  - time: 231.5
+    type: 3
+    value: 6
+  - time: 231.5
+    type: 2
+    value: 0
+  - time: 232
+    type: 2
+    value: 2
+  - time: 232
+    type: 0
+    value: 7
+  - time: 232
+    type: 3
+    value: 0
+  - time: 232.5
+    type: 2
+    value: 0
+  - time: 232.5
+    type: 3
+    value: 6
+  - time: 233
+    type: 0
+    value: 3
+  - time: 233
+    type: 3
+    value: 0
+  - time: 233
+    type: 8
+    value: 0
+  - time: 233
+    type: 1
+    value: 7
+  - time: 233
+    type: 2
+    value: 2
+  - time: 233
+    type: 4
+    value: 7
+  - time: 233.5
+    type: 3
+    value: 6
+  - time: 233.5
+    type: 2
+    value: 0
+  - time: 234
+    type: 2
+    value: 2
+  - time: 234
+    type: 3
+    value: 0
+  - time: 234
+    type: 0
+    value: 7
+  - time: 234.5
+    type: 3
+    value: 6
+  - time: 234.5
+    type: 2
+    value: 0
+  - time: 235
+    type: 3
+    value: 0
+  - time: 235
+    type: 8
+    value: 0
+  - time: 235
+    type: 0
+    value: 3
+  - time: 235
+    type: 1
+    value: 3
+  - time: 235
+    type: 4
+    value: 3
+  - time: 235
+    type: 2
+    value: 2
+  - time: 236
+    type: 2
+    value: 0
+  - time: 236
+    type: 3
+    value: 6
+  - time: 236
+    type: 0
+    value: 7
+  - time: 236.5
+    type: 2
+    value: 2
+  - time: 236.5
+    type: 3
+    value: 0
+  - time: 237
+    type: 3
+    value: 0
+  - time: 237
+    type: 0
+    value: 3
+  - time: 237
+    type: 2
+    value: 2
+  - time: 237
+    type: 4
+    value: 7
+  - time: 237
+    type: 1
+    value: 7
+  - time: 237
+    type: 8
+    value: 0
+  - time: 238
+    type: 0
+    value: 7
+  - time: 238
+    type: 2
+    value: 0
+  - time: 238
+    type: 3
+    value: 6
+  - time: 239
+    type: 8
+    value: 0
+  - time: 239
+    type: 4
+    value: 3
+  - time: 239
+    type: 3
+    value: 0
+  - time: 239
+    type: 2
+    value: 2
+  - time: 239
+    type: 1
+    value: 3
+  - time: 239
+    type: 0
+    value: 3
+  - time: 239.5
+    type: 3
+    value: 6
+  - time: 240
+    type: 0
+    value: 7
+  - time: 240
+    type: 2
+    value: 2
+  - time: 240
+    type: 8
+    value: 0
+  - time: 240
+    type: 1
+    value: 7
+  - time: 240.5
+    type: 3
+    value: 6
+  - time: 241
+    type: 2
+    value: 2
+  - time: 241
+    type: 8
+    value: 0
+  - time: 241
+    type: 1
+    value: 7
+  - time: 241
+    type: 0
+    value: 3
+  - time: 241.5
+    type: 3
+    value: 6
+  - time: 242
+    type: 1
+    value: 7
+  - time: 242
+    type: 8
+    value: 0
+  - time: 242
+    type: 2
+    value: 2
+  - time: 242
+    type: 0
+    value: 7
+  - time: 242.5
+    type: 3
+    value: 6
+  - time: 243
+    type: 2
+    value: 2
+  - time: 243
+    type: 0
+    value: 3
+  - time: 243
+    type: 4
+    value: 3
+  - time: 243
+    type: 8
+    value: 0
+  - time: 243
+    type: 1
+    value: 3
+  - time: 243.5
+    type: 3
+    value: 6
+  - time: 244
+    type: 1
+    value: 3
+  - time: 244
+    type: 0
+    value: 7
+  - time: 244
+    type: 8
+    value: 0
+  - time: 244
+    type: 2
+    value: 2
+  - time: 244.5
+    type: 3
+    value: 6
+  - time: 245
+    type: 2
+    value: 2
+  - time: 245
+    type: 1
+    value: 3
+  - time: 245
+    type: 0
+    value: 3
+  - time: 245
+    type: 8
+    value: 0
+  - time: 245.5
+    type: 3
+    value: 6
+  - time: 246
+    type: 2
+    value: 2
+  - time: 246
+    type: 0
+    value: 7
+  - time: 246
+    type: 1
+    value: 7
+  - time: 246
+    type: 8
+    value: 0
+  - time: 246.5
+    type: 3
+    value: 6
+  - time: 247
+    type: 0
+    value: 3
+  - time: 247
+    type: 2
+    value: 7
+  - time: 247
+    type: 8
+    value: 0
+  - time: 247
+    type: 1
+    value: 7
+  - time: 247
+    type: 4
+    value: 3
+  - time: 247
+    type: 3
+    value: 3
+  - time: 247.5
+    type: 2
+    value: 7
+  - time: 247.5
+    type: 0
+    value: 7
+  - time: 248
+    type: 4
+    value: 2
+  - time: 248
+    type: 1
+    value: 6
+  - time: 248
+    type: 0
+    value: 3
+  - time: 248
+    type: 3
+    value: 3
+  - time: 248
+    type: 8
+    value: 0
+  - time: 248.5
+    type: 0
+    value: 7
+  - time: 248.5
+    type: 2
+    value: 3
+  - time: 249
+    type: 1
+    value: 0
+  - time: 249
+    type: 3
+    value: 7
+  - time: 249
+    type: 4
+    value: 2
+  - time: 249
+    type: 0
+    value: 3
+  - time: 249
+    type: 8
+    value: 0
+  - time: 249.25
+    type: 2
+    value: 7
+  - time: 249.5
+    type: 0
+    value: 7
+  - time: 249.5
+    type: 2
+    value: 3
+  - time: 250
+    type: 0
+    value: 3
+  - time: 250
+    type: 1
+    value: 7
+  - time: 250
+    type: 3
+    value: 7
+  - time: 250
+    type: 8
+    value: 0
+  - time: 250
+    type: 4
+    value: 2
+  - time: 250.5
+    type: 0
+    value: 7
+  - time: 250.5
+    type: 2
+    value: 3
+  - time: 251
+    type: 3
+    value: 7
+  - time: 251
+    type: 0
+    value: 3
+  - time: 251
+    type: 1
+    value: 0
+  - time: 251
+    type: 8
+    value: 0
+  - time: 251
+    type: 4
+    value: 2
+  - time: 251.5
+    type: 2
+    value: 3
+  - time: 251.5
+    type: 0
+    value: 7
+  - time: 252
+    type: 3
+    value: 2
+  - time: 252
+    type: 1
+    value: 6
+  - time: 252
+    type: 8
+    value: 0
+  - time: 252
+    type: 0
+    value: 3
+  - time: 252.5
+    type: 2
+    value: 7
+  - time: 252.5
+    type: 0
+    value: 7
+  - time: 253
+    type: 3
+    value: 7
+  - time: 253
+    type: 8
+    value: 0
+  - time: 253
+    type: 1
+    value: 0
+  - time: 253
+    type: 0
+    value: 3
+  - time: 253.5
+    type: 0
+    value: 7
+  - time: 253.5
+    type: 2
+    value: 3
+  - time: 254
+    type: 3
+    value: 7
+  - time: 254
+    type: 1
+    value: 6
+  - time: 254
+    type: 8
+    value: 0
+  - time: 254
+    type: 0
+    value: 3
+  - time: 254.5
+    type: 0
+    value: 7
+  - time: 254.5
+    type: 2
+    value: 3
+  - time: 255
+    type: 8
+    value: 0
+  - time: 255
+    type: 0
+    value: 3
+  - time: 255
+    type: 3
+    value: 7
+  - time: 255
+    type: 1
+    value: 0
+  - time: 255.5
+    type: 0
+    value: 7
+  - time: 255.5
+    type: 2
+    value: 7
+  - time: 256
+    type: 3
+    value: 3
+  - time: 256
+    type: 1
+    value: 6
+  - time: 256
+    type: 8
+    value: 0
+  - time: 256
+    type: 0
+    value: 3
+  - time: 256.5
+    type: 0
+    value: 7
+  - time: 256.5
+    type: 3
+    value: 3
+  - time: 257
+    type: 8
+    value: 0
+  - time: 257
+    type: 2
+    value: 7
+  - time: 257
+    type: 0
+    value: 3
+  - time: 257
+    type: 1
+    value: 0
+  - time: 257.5
+    type: 0
+    value: 7
+  - time: 257.5
+    type: 3
+    value: 3
+  - time: 258
+    type: 0
+    value: 3
+  - time: 258
+    type: 1
+    value: 6
+  - time: 258
+    type: 8
+    value: 0
+  - time: 258
+    type: 2
+    value: 7
+  - time: 258.5
+    type: 0
+    value: 7
+  - time: 258.5
+    type: 3
+    value: 7
+  - time: 259
+    type: 8
+    value: 0
+  - time: 259
+    type: 0
+    value: 3
+  - time: 259
+    type: 2
+    value: 7
+  - time: 259
+    type: 1
+    value: 0
+  - time: 259.5
+    type: 0
+    value: 7
+  - time: 259.5
+    type: 3
+    value: 3
+  - time: 260
+    type: 2
+    value: 3
+  - time: 260
+    type: 1
+    value: 6
+  - time: 260
+    type: 8
+    value: 0
+  - time: 260
+    type: 0
+    value: 3
+  - time: 260.5
+    type: 0
+    value: 7
+  - time: 260.5
+    type: 3
+    value: 7
+  - time: 261
+    type: 8
+    value: 0
+  - time: 261
+    type: 4
+    value: 7
+  - time: 261
+    type: 3
+    value: 3
+  - time: 261
+    type: 2
+    value: 3
+  - time: 261
+    type: 1
+    value: 7
+  - time: 261
+    type: 0
+    value: 3
+  - time: 261.5
+    type: 2
+    value: 7
+  - time: 261.5
+    type: 1
+    value: 3
+  - time: 261.5
+    type: 4
+    value: 3
+  - time: 261.5
+    type: 3
+    value: 7
+  - time: 261.5
+    type: 0
+    value: 7
+  - time: 262
+    type: 1
+    value: 7
+  - time: 262
+    type: 3
+    value: 3
+  - time: 262
+    type: 4
+    value: 7
+  - time: 262
+    type: 0
+    value: 3
+  - time: 262
+    type: 2
+    value: 3
+  - time: 262.5
+    type: 2
+    value: 7
+  - time: 262.75
+    type: 3
+    value: 7
+  - time: 263
+    type: 1
+    value: 7
+  - time: 263
+    type: 4
+    value: 3
+  - time: 263
+    type: 2
+    value: 7
+  - time: 263
+    type: 0
+    value: 3
+  - time: 263
+    type: 3
+    value: 3
+  - time: 263
+    type: 8
+    value: 0
+  - time: 263.5
+    type: 2
+    value: 7
+  - time: 263.5
+    type: 0
+    value: 7
+  - time: 264
+    type: 3
+    value: 3
+  - time: 264
+    type: 8
+    value: 0
+  - time: 264
+    type: 0
+    value: 3
+  - time: 264
+    type: 4
+    value: 6
+  - time: 264
+    type: 1
+    value: 2
+  - time: 264.5
+    type: 0
+    value: 7
+  - time: 264.5
+    type: 2
+    value: 3
+  - time: 265
+    type: 1
+    value: 0
+  - time: 265
+    type: 8
+    value: 0
+  - time: 265
+    type: 0
+    value: 3
+  - time: 265
+    type: 4
+    value: 2
+  - time: 265
+    type: 3
+    value: 7
+  - time: 265.25
+    type: 2
+    value: 7
+  - time: 265.5
+    type: 2
+    value: 3
+  - time: 265.5
+    type: 0
+    value: 7
+  - time: 266
+    type: 0
+    value: 3
+  - time: 266
+    type: 8
+    value: 0
+  - time: 266
+    type: 1
+    value: 2
+  - time: 266
+    type: 4
+    value: 6
+  - time: 266
+    type: 3
+    value: 7
+  - time: 266.5
+    type: 0
+    value: 7
+  - time: 266.5
+    type: 2
+    value: 3
+  - time: 267
+    type: 3
+    value: 7
+  - time: 267
+    type: 8
+    value: 0
+  - time: 267
+    type: 4
+    value: 2
+  - time: 267
+    type: 1
+    value: 0
+  - time: 267
+    type: 0
+    value: 3
+  - time: 267.5
+    type: 2
+    value: 3
+  - time: 267.5
+    type: 0
+    value: 7
+  - time: 268
+    type: 8
+    value: 0
+  - time: 268
+    type: 4
+    value: 6
+  - time: 268
+    type: 0
+    value: 3
+  - time: 268
+    type: 3
+    value: 2
+  - time: 268
+    type: 1
+    value: 2
+  - time: 268.5
+    type: 2
+    value: 7
+  - time: 268.5
+    type: 0
+    value: 7
+  - time: 269
+    type: 4
+    value: 2
+  - time: 269
+    type: 3
+    value: 7
+  - time: 269
+    type: 8
+    value: 0
+  - time: 269
+    type: 0
+    value: 3
+  - time: 269
+    type: 1
+    value: 0
+  - time: 269.5
+    type: 2
+    value: 3
+  - time: 269.5
+    type: 0
+    value: 7
+  - time: 270
+    type: 0
+    value: 3
+  - time: 270
+    type: 1
+    value: 2
+  - time: 270
+    type: 8
+    value: 0
+  - time: 270
+    type: 3
+    value: 7
+  - time: 270
+    type: 4
+    value: 6
+  - time: 270.5
+    type: 0
+    value: 7
+  - time: 270.5
+    type: 2
+    value: 3
+  - time: 271
+    type: 3
+    value: 7
+  - time: 271
+    type: 8
+    value: 0
+  - time: 271
+    type: 0
+    value: 3
+  - time: 271
+    type: 4
+    value: 2
+  - time: 271
+    type: 1
+    value: 0
+  - time: 271.5
+    type: 0
+    value: 7
+  - time: 271.5
+    type: 2
+    value: 7
+  - time: 272
+    type: 8
+    value: 0
+  - time: 272
+    type: 0
+    value: 3
+  - time: 272
+    type: 4
+    value: 6
+  - time: 272
+    type: 1
+    value: 2
+  - time: 272
+    type: 3
+    value: 3
+  - time: 272.5
+    type: 0
+    value: 7
+  - time: 272.5
+    type: 3
+    value: 3
+  - time: 273
+    type: 1
+    value: 0
+  - time: 273
+    type: 4
+    value: 2
+  - time: 273
+    type: 2
+    value: 7
+  - time: 273
+    type: 8
+    value: 0
+  - time: 273
+    type: 0
+    value: 3
+  - time: 273.5
+    type: 3
+    value: 3
+  - time: 273.5
+    type: 0
+    value: 7
+  - time: 274
+    type: 4
+    value: 6
+  - time: 274
+    type: 1
+    value: 2
+  - time: 274
+    type: 2
+    value: 7
+  - time: 274
+    type: 0
+    value: 3
+  - time: 274
+    type: 8
+    value: 0
+  - time: 274.5
+    type: 0
+    value: 7
+  - time: 274.5
+    type: 3
+    value: 7
+  - time: 275
+    type: 2
+    value: 7
+  - time: 275
+    type: 8
+    value: 0
+  - time: 275
+    type: 0
+    value: 3
+  - time: 275
+    type: 1
+    value: 0
+  - time: 275
+    type: 4
+    value: 2
+  - time: 275.5
+    type: 3
+    value: 3
+  - time: 275.5
+    type: 0
+    value: 7
+  - time: 276
+    type: 1
+    value: 2
+  - time: 276
+    type: 2
+    value: 3
+  - time: 276
+    type: 0
+    value: 3
+  - time: 276
+    type: 4
+    value: 6
+  - time: 276
+    type: 8
+    value: 0
+  - time: 276.5
+    type: 0
+    value: 7
+  - time: 276.5
+    type: 3
+    value: 7
+  - time: 277
+    type: 4
+    value: 7
+  - time: 277
+    type: 8
+    value: 0
+  - time: 277
+    type: 3
+    value: 3
+  - time: 277
+    type: 0
+    value: 3
+  - time: 277
+    type: 1
+    value: 7
+  - time: 277
+    type: 2
+    value: 3
+  - time: 277.5
+    type: 4
+    value: 3
+  - time: 277.5
+    type: 3
+    value: 7
+  - time: 277.5
+    type: 0
+    value: 7
+  - time: 277.5
+    type: 2
+    value: 7
+  - time: 277.5
+    type: 1
+    value: 3
+  - time: 278
+    type: 1
+    value: 7
+  - time: 278
+    type: 0
+    value: 3
+  - time: 278
+    type: 2
+    value: 3
+  - time: 278
+    type: 4
+    value: 7
+  - time: 278
+    type: 3
+    value: 3
+  - time: 278.5
+    type: 2
+    value: 7
+  - time: 278.75
+    type: 3
+    value: 7
+  - time: 279
+    type: 1
+    value: 3
+  - time: 279
+    type: 0
+    value: 0
+  - time: 279
+    type: 4
+    value: 3
+  - time: 279
+    type: 3
+    value: 6
+  - time: 279
+    type: 2
+    value: 0
+  - time: 279
+    type: 8
+    value: 0
+  - time: 279.5
+    type: 0
+    value: 3
+  - time: 280
+    type: 8
+    value: 0
+  - time: 280
+    type: 2
+    value: 6
+  - time: 280
+    type: 3
+    value: 0
+  - time: 280.5
+    type: 0
+    value: 7
+  - time: 281
+    type: 3
+    value: 6
+  - time: 281
+    type: 8
+    value: 0
+  - time: 281
+    type: 2
+    value: 0
+  - time: 281.5
+    type: 0
+    value: 3
+  - time: 282
+    type: 2
+    value: 6
+  - time: 282
+    type: 8
+    value: 0
+  - time: 282
+    type: 3
+    value: 0
+  - time: 282.5
+    type: 0
+    value: 7
+  - time: 283
+    type: 4
+    value: 7
+  - time: 283
+    type: 8
+    value: 0
+  - time: 283
+    type: 2
+    value: 0
+  - time: 283
+    type: 3
+    value: 6
+  - time: 283.5
+    type: 0
+    value: 3
+  - time: 284
+    type: 2
+    value: 6
+  - time: 284
+    type: 3
+    value: 0
+  - time: 284
+    type: 8
+    value: 0
+  - time: 284.5
+    type: 0
+    value: 7
+  - time: 285
+    type: 8
+    value: 0
+  - time: 285
+    type: 2
+    value: 0
+  - time: 285
+    type: 3
+    value: 6
+  - time: 285.5
+    type: 0
+    value: 3
+  - time: 286
+    type: 3
+    value: 0
+  - time: 286
+    type: 8
+    value: 0
+  - time: 286
+    type: 2
+    value: 6
+  - time: 286.5
+    type: 0
+    value: 7
+  - time: 287
+    type: 8
+    value: 0
+  - time: 287
+    type: 2
+    value: 0
+  - time: 287
+    type: 3
+    value: 6
+  - time: 287
+    type: 4
+    value: 7
+  - time: 287.5
+    type: 0
+    value: 3
+  - time: 288
+    type: 2
+    value: 6
+  - time: 288
+    type: 3
+    value: 0
+  - time: 288
+    type: 8
+    value: 0
+  - time: 288.5
+    type: 0
+    value: 7
+  - time: 289
+    type: 8
+    value: 0
+  - time: 289
+    type: 2
+    value: 0
+  - time: 289
+    type: 3
+    value: 6
+  - time: 289.5
+    type: 0
+    value: 3
+  - time: 290
+    type: 2
+    value: 6
+  - time: 290
+    type: 8
+    value: 0
+  - time: 290
+    type: 3
+    value: 0
+  - time: 290.5
+    type: 0
+    value: 7
+  - time: 291
+    type: 3
+    value: 6
+  - time: 291
+    type: 4
+    value: 7
+  - time: 291
+    type: 8
+    value: 0
+  - time: 291
+    type: 2
+    value: 0
+  - time: 291.5
+    type: 0
+    value: 3
+  - time: 292
+    type: 8
+    value: 0
+  - time: 292
+    type: 3
+    value: 0
+  - time: 292
+    type: 2
+    value: 6
+  - time: 292.5
+    type: 0
+    value: 7
+  - time: 293
+    type: 3
+    value: 6
+  - time: 293
+    type: 8
+    value: 0
+  - time: 293
+    type: 2
+    value: 0
+  - time: 293.5
+    type: 0
+    value: 3
+  - time: 294
+    type: 2
+    value: 6
+  - time: 294
+    type: 3
+    value: 0
+  - time: 294
+    type: 8
+    value: 0
+  - time: 294.5
+    type: 0
+    value: 7
+  - time: 294.5
+    type: 3
+    value: 3
+  - time: 294.75
+    type: 2
+    value: 3
+  - time: 295
+    type: 1
+    value: 3
+  - time: 295
+    type: 0
+    value: 3
+  - time: 295
+    type: 4
+    value: 3
+  - time: 295
+    type: 8
+    value: 0
+  - time: 295.5
+    type: 2
+    value: 0
+  - time: 295.5
+    type: 3
+    value: 6
+  - time: 296
+    type: 2
+    value: 2
+  - time: 296
+    type: 0
+    value: 7
+  - time: 296
+    type: 3
+    value: 0
+  - time: 296.5
+    type: 2
+    value: 0
+  - time: 296.5
+    type: 3
+    value: 6
+  - time: 297
+    type: 2
+    value: 2
+  - time: 297
+    type: 8
+    value: 0
+  - time: 297
+    type: 1
+    value: 7
+  - time: 297
+    type: 3
+    value: 0
+  - time: 297
+    type: 0
+    value: 3
+  - time: 297
+    type: 4
+    value: 7
+  - time: 297.5
+    type: 2
+    value: 0
+  - time: 297.5
+    type: 3
+    value: 6
+  - time: 298
+    type: 3
+    value: 0
+  - time: 298
+    type: 2
+    value: 2
+  - time: 298
+    type: 0
+    value: 7
+  - time: 298.5
+    type: 3
+    value: 6
+  - time: 298.5
+    type: 2
+    value: 0
+  - time: 299
+    type: 1
+    value: 3
+  - time: 299
+    type: 8
+    value: 0
+  - time: 299
+    type: 4
+    value: 3
+  - time: 299
+    type: 0
+    value: 3
+  - time: 299
+    type: 3
+    value: 0
+  - time: 299
+    type: 2
+    value: 2
+  - time: 300
+    type: 2
+    value: 0
+  - time: 300
+    type: 0
+    value: 7
+  - time: 300
+    type: 3
+    value: 6
+  - time: 300.5
+    type: 3
+    value: 0
+  - time: 300.5
+    type: 2
+    value: 2
+  - time: 301
+    type: 2
+    value: 0
+  - time: 301
+    type: 4
+    value: 7
+  - time: 301
+    type: 8
+    value: 0
+  - time: 301
+    type: 1
+    value: 7
+  - time: 301
+    type: 0
+    value: 3
+  - time: 301
+    type: 3
+    value: 6
+  - time: 301.5
+    type: 2
+    value: 2
+  - time: 301.5
+    type: 3
+    value: 0
+  - time: 302
+    type: 3
+    value: 6
+  - time: 302
+    type: 2
+    value: 0
+  - time: 302
+    type: 0
+    value: 7
+  - time: 303
+    type: 3
+    value: 0
+  - time: 303
+    type: 2
+    value: 2
+  - time: 303
+    type: 8
+    value: 0
+  - time: 303
+    type: 1
+    value: 3
+  - time: 303
+    type: 0
+    value: 3
+  - time: 303
+    type: 4
+    value: 3
+  - time: 303.5
+    type: 3
+    value: 6
+  - time: 304
+    type: 8
+    value: 0
+  - time: 304
+    type: 0
+    value: 7
+  - time: 304
+    type: 2
+    value: 2
+  - time: 304
+    type: 1
+    value: 7
+  - time: 304.5
+    type: 3
+    value: 6
+  - time: 305
+    type: 8
+    value: 0
+  - time: 305
+    type: 0
+    value: 3
+  - time: 305
+    type: 1
+    value: 7
+  - time: 305
+    type: 2
+    value: 2
+  - time: 305.5
+    type: 3
+    value: 6
+  - time: 306
+    type: 2
+    value: 2
+  - time: 306
+    type: 0
+    value: 7
+  - time: 306
+    type: 1
+    value: 7
+  - time: 306
+    type: 8
+    value: 0
+  - time: 306.5
+    type: 3
+    value: 6
+  - time: 307
+    type: 1
+    value: 3
+  - time: 307
+    type: 4
+    value: 3
+  - time: 307
+    type: 0
+    value: 3
+  - time: 307
+    type: 2
+    value: 2
+  - time: 307
+    type: 8
+    value: 0
+  - time: 307.5
+    type: 3
+    value: 6
+  - time: 308
+    type: 8
+    value: 0
+  - time: 308
+    type: 0
+    value: 7
+  - time: 308
+    type: 2
+    value: 2
+  - time: 308
+    type: 1
+    value: 3
+  - time: 308.5
+    type: 3
+    value: 6
+  - time: 309
+    type: 1
+    value: 3
+  - time: 309
+    type: 2
+    value: 2
+  - time: 309
+    type: 8
+    value: 0
+  - time: 309
+    type: 0
+    value: 3
+  - time: 309.5
+    type: 3
+    value: 6
+  - time: 310
+    type: 2
+    value: 2
+  - time: 310
+    type: 8
+    value: 0
+  - time: 310
+    type: 1
+    value: 7
+  - time: 310
+    type: 0
+    value: 7
+  - time: 310.5
+    type: 3
+    value: 6
+  - time: 311
+    type: 8
+    value: 0
+  - time: 311
+    type: 4
+    value: 3
+  - time: 311
+    type: 3
+    value: 3
+  - time: 311
+    type: 2
+    value: 7
+  - time: 311
+    type: 0
+    value: 3
+  - time: 311
+    type: 1
+    value: 7
+  - time: 311.5
+    type: 2
+    value: 7
+  - time: 311.5
+    type: 0
+    value: 7
+  - time: 312
+    type: 0
+    value: 3
+  - time: 312
+    type: 8
+    value: 0
+  - time: 312
+    type: 4
+    value: 2
+  - time: 312
+    type: 1
+    value: 6
+  - time: 312
+    type: 3
+    value: 3
+  - time: 312.5
+    type: 0
+    value: 7
+  - time: 312.5
+    type: 2
+    value: 3
+  - time: 313
+    type: 3
+    value: 7
+  - time: 313
+    type: 4
+    value: 2
+  - time: 313
+    type: 8
+    value: 0
+  - time: 313
+    type: 0
+    value: 3
+  - time: 313
+    type: 1
+    value: 0
+  - time: 313.25
+    type: 2
+    value: 7
+  - time: 313.5
+    type: 0
+    value: 7
+  - time: 313.5
+    type: 2
+    value: 3
+  - time: 314
+    type: 4
+    value: 2
+  - time: 314
+    type: 1
+    value: 7
+  - time: 314
+    type: 8
+    value: 0
+  - time: 314
+    type: 0
+    value: 3
+  - time: 314
+    type: 3
+    value: 7
+  - time: 314.5
+    type: 2
+    value: 3
+  - time: 314.5
+    type: 0
+    value: 7
+  - time: 315
+    type: 1
+    value: 0
+  - time: 315
+    type: 3
+    value: 7
+  - time: 315
+    type: 8
+    value: 0
+  - time: 315
+    type: 0
+    value: 3
+  - time: 315
+    type: 4
+    value: 2
+  - time: 315.5
+    type: 0
+    value: 7
+  - time: 315.5
+    type: 2
+    value: 3
+  - time: 316
+    type: 1
+    value: 6
+  - time: 316
+    type: 0
+    value: 3
+  - time: 316
+    type: 8
+    value: 0
+  - time: 316
+    type: 3
+    value: 2
+  - time: 316.5
+    type: 2
+    value: 7
+  - time: 316.5
+    type: 0
+    value: 7
+  - time: 317
+    type: 3
+    value: 7
+  - time: 317
+    type: 0
+    value: 3
+  - time: 317
+    type: 1
+    value: 0
+  - time: 317
+    type: 8
+    value: 0
+  - time: 317.5
+    type: 2
+    value: 3
+  - time: 317.5
+    type: 0
+    value: 7
+  - time: 318
+    type: 0
+    value: 3
+  - time: 318
+    type: 3
+    value: 7
+  - time: 318
+    type: 1
+    value: 6
+  - time: 318
+    type: 8
+    value: 0
+  - time: 318.5
+    type: 2
+    value: 3
+  - time: 318.5
+    type: 0
+    value: 7
+  - time: 319
+    type: 0
+    value: 3
+  - time: 319
+    type: 3
+    value: 7
+  - time: 319
+    type: 8
+    value: 0
+  - time: 319
+    type: 1
+    value: 0
+  - time: 319.5
+    type: 2
+    value: 7
+  - time: 319.5
+    type: 0
+    value: 7
+  - time: 320
+    type: 0
+    value: 3
+  - time: 320
+    type: 8
+    value: 0
+  - time: 320
+    type: 3
+    value: 3
+  - time: 320
+    type: 1
+    value: 6
+  - time: 320.5
+    type: 3
+    value: 3
+  - time: 320.5
+    type: 0
+    value: 7
+  - time: 321
+    type: 0
+    value: 3
+  - time: 321
+    type: 8
+    value: 0
+  - time: 321
+    type: 1
+    value: 0
+  - time: 321
+    type: 2
+    value: 7
+  - time: 321.5
+    type: 3
+    value: 3
+  - time: 321.5
+    type: 0
+    value: 7
+  - time: 322
+    type: 2
+    value: 7
+  - time: 322
+    type: 0
+    value: 3
+  - time: 322
+    type: 1
+    value: 6
+  - time: 322
+    type: 8
+    value: 0
+  - time: 322.5
+    type: 0
+    value: 7
+  - time: 322.5
+    type: 3
+    value: 7
+  - time: 323
+    type: 8
+    value: 0
+  - time: 323
+    type: 0
+    value: 3
+  - time: 323
+    type: 1
+    value: 0
+  - time: 323
+    type: 2
+    value: 7
+  - time: 323.5
+    type: 3
+    value: 3
+  - time: 323.5
+    type: 0
+    value: 7
+  - time: 324
+    type: 8
+    value: 0
+  - time: 324
+    type: 2
+    value: 3
+  - time: 324
+    type: 1
+    value: 6
+  - time: 324
+    type: 0
+    value: 3
+  - time: 324.5
+    type: 3
+    value: 7
+  - time: 324.5
+    type: 0
+    value: 7
+  - time: 325
+    type: 2
+    value: 3
+  - time: 325
+    type: 4
+    value: 7
+  - time: 325
+    type: 3
+    value: 3
+  - time: 325
+    type: 8
+    value: 0
+  - time: 325
+    type: 1
+    value: 7
+  - time: 325
+    type: 0
+    value: 3
+  - time: 325.5
+    type: 2
+    value: 7
+  - time: 325.5
+    type: 4
+    value: 3
+  - time: 325.5
+    type: 0
+    value: 7
+  - time: 325.5
+    type: 1
+    value: 3
+  - time: 325.5
+    type: 3
+    value: 7
+  - time: 326
+    type: 2
+    value: 3
+  - time: 326
+    type: 4
+    value: 7
+  - time: 326
+    type: 0
+    value: 3
+  - time: 326
+    type: 1
+    value: 7
+  - time: 326
+    type: 3
+    value: 3
+  - time: 326.5
+    type: 2
+    value: 7
+  - time: 326.75
+    type: 3
+    value: 7
+  - time: 327
+    type: 1
+    value: 7
+  - time: 327
+    type: 0
+    value: 3
+  - time: 327
+    type: 4
+    value: 3
+  - time: 327
+    type: 8
+    value: 0
+  - time: 327
+    type: 2
+    value: 7
+  - time: 327
+    type: 3
+    value: 3
+  - time: 327.5
+    type: 2
+    value: 7
+  - time: 327.5
+    type: 0
+    value: 7
+  - time: 328
+    type: 0
+    value: 3
+  - time: 328
+    type: 8
+    value: 0
+  - time: 328
+    type: 4
+    value: 6
+  - time: 328
+    type: 1
+    value: 2
+  - time: 328
+    type: 3
+    value: 3
+  - time: 328.5
+    type: 2
+    value: 3
+  - time: 328.5
+    type: 0
+    value: 7
+  - time: 329
+    type: 8
+    value: 0
+  - time: 329
+    type: 0
+    value: 3
+  - time: 329
+    type: 4
+    value: 2
+  - time: 329
+    type: 1
+    value: 0
+  - time: 329
+    type: 3
+    value: 7
+  - time: 329.25
+    type: 2
+    value: 7
+  - time: 329.5
+    type: 0
+    value: 7
+  - time: 329.5
+    type: 2
+    value: 3
+  - time: 330
+    type: 4
+    value: 6
+  - time: 330
+    type: 8
+    value: 0
+  - time: 330
+    type: 0
+    value: 3
+  - time: 330
+    type: 3
+    value: 7
+  - time: 330
+    type: 1
+    value: 2
+  - time: 330.5
+    type: 0
+    value: 7
+  - time: 330.5
+    type: 2
+    value: 3
+  - time: 331
+    type: 3
+    value: 7
+  - time: 331
+    type: 4
+    value: 2
+  - time: 331
+    type: 8
+    value: 0
+  - time: 331
+    type: 0
+    value: 3
+  - time: 331
+    type: 1
+    value: 0
+  - time: 331.5
+    type: 2
+    value: 3
+  - time: 331.5
+    type: 0
+    value: 7
+  - time: 332
+    type: 4
+    value: 6
+  - time: 332
+    type: 8
+    value: 0
+  - time: 332
+    type: 0
+    value: 3
+  - time: 332
+    type: 1
+    value: 2
+  - time: 332
+    type: 3
+    value: 2
+  - time: 332.5
+    type: 0
+    value: 7
+  - time: 332.5
+    type: 2
+    value: 7
+  - time: 333
+    type: 8
+    value: 0
+  - time: 333
+    type: 1
+    value: 0
+  - time: 333
+    type: 0
+    value: 3
+  - time: 333
+    type: 3
+    value: 7
+  - time: 333
+    type: 4
+    value: 2
+  - time: 333.5
+    type: 0
+    value: 7
+  - time: 333.5
+    type: 2
+    value: 3
+  - time: 334
+    type: 1
+    value: 2
+  - time: 334
+    type: 0
+    value: 3
+  - time: 334
+    type: 3
+    value: 7
+  - time: 334
+    type: 4
+    value: 6
+  - time: 334
+    type: 8
+    value: 0
+  - time: 334.5
+    type: 2
+    value: 3
+  - time: 334.5
+    type: 0
+    value: 7
+  - time: 335
+    type: 3
+    value: 7
+  - time: 335
+    type: 0
+    value: 3
+  - time: 335
+    type: 1
+    value: 0
+  - time: 335
+    type: 4
+    value: 2
+  - time: 335
+    type: 8
+    value: 0
+  - time: 335.5
+    type: 0
+    value: 7
+  - time: 335.5
+    type: 2
+    value: 7
+  - time: 336
+    type: 3
+    value: 3
+  - time: 336
+    type: 8
+    value: 0
+  - time: 336
+    type: 4
+    value: 6
+  - time: 336
+    type: 1
+    value: 2
+  - time: 336
+    type: 0
+    value: 3
+  - time: 336.5
+    type: 3
+    value: 3
+  - time: 336.5
+    type: 0
+    value: 7
+  - time: 337
+    type: 4
+    value: 2
+  - time: 337
+    type: 0
+    value: 3
+  - time: 337
+    type: 8
+    value: 0
+  - time: 337
+    type: 1
+    value: 0
+  - time: 337
+    type: 2
+    value: 7
+  - time: 337.5
+    type: 0
+    value: 7
+  - time: 337.5
+    type: 3
+    value: 3
+  - time: 338
+    type: 8
+    value: 0
+  - time: 338
+    type: 1
+    value: 2
+  - time: 338
+    type: 2
+    value: 7
+  - time: 338
+    type: 4
+    value: 6
+  - time: 338
+    type: 0
+    value: 3
+  - time: 338.5
+    type: 3
+    value: 7
+  - time: 338.5
+    type: 0
+    value: 7
+  - time: 339
+    type: 2
+    value: 7
+  - time: 339
+    type: 8
+    value: 0
+  - time: 339
+    type: 1
+    value: 0
+  - time: 339
+    type: 4
+    value: 2
+  - time: 339
+    type: 0
+    value: 3
+  - time: 339.5
+    type: 0
+    value: 7
+  - time: 339.5
+    type: 3
+    value: 3
+  - time: 340
+    type: 8
+    value: 0
+  - time: 340
+    type: 4
+    value: 6
+  - time: 340
+    type: 2
+    value: 3
+  - time: 340
+    type: 0
+    value: 3
+  - time: 340
+    type: 1
+    value: 2
+  - time: 340.5
+    type: 3
+    value: 7
+  - time: 340.5
+    type: 0
+    value: 7
+  - time: 341
+    type: 4
+    value: 7
+  - time: 341
+    type: 3
+    value: 3
+  - time: 341
+    type: 2
+    value: 3
+  - time: 341
+    type: 0
+    value: 3
+  - time: 341
+    type: 1
+    value: 7
+  - time: 341
+    type: 8
+    value: 0
+  - time: 341.5
+    type: 1
+    value: 3
+  - time: 341.5
+    type: 0
+    value: 7
+  - time: 341.5
+    type: 4
+    value: 3
+  - time: 341.5
+    type: 2
+    value: 7
+  - time: 341.5
+    type: 3
+    value: 7
+  - time: 342
+    type: 1
+    value: 7
+  - time: 342
+    type: 2
+    value: 3
+  - time: 342
+    type: 3
+    value: 3
+  - time: 342
+    type: 4
+    value: 7
+  - time: 342
+    type: 0
+    value: 3
+  - time: 342
+    type: 8
+    value: 0
+  - time: 342.5
+    type: 2
+    value: 7
+  - time: 342.75
+    type: 3
+    value: 7
+  - time: 343
+    type: 3
+    value: 2
+  - time: 343
+    type: 13
+    value: 5
+  - time: 343
+    type: 2
+    value: 0
+  - time: 343
+    type: 8
+    value: 0
+  - time: 343
+    type: 1
+    value: 7
+  - time: 343
+    type: 4
+    value: 0
+  - time: 343
+    type: 0
+    value: 0
+  - time: 343
+    type: 12
+    value: 5
+  - time: 343.5
+    type: 3
+    value: 0
+  - time: 343.5
+    type: 2
+    value: 6
+  - time: 344
+    type: 2
+    value: 0
+  - time: 344
+    type: 3
+    value: 2
+  - time: 344.5
+    type: 2
+    value: 6
+  - time: 344.5
+    type: 3
+    value: 0
+  - time: 345
+    type: 2
+    value: 0
+  - time: 345
+    type: 3
+    value: 2
+  - time: 345.5
+    type: 2
+    value: 6
+  - time: 345.5
+    type: 3
+    value: 0
+  - time: 346
+    type: 3
+    value: 2
+  - time: 346
+    type: 2
+    value: 0
+  - time: 346.5
+    type: 2
+    value: 6
+  - time: 346.5
+    type: 3
+    value: 0
+  - time: 347
+    type: 3
+    value: 2
+  - time: 347
+    type: 2
+    value: 0
+  - time: 347.5
+    type: 2
+    value: 6
+  - time: 347.5
+    type: 3
+    value: 0
+  - time: 348
+    type: 3
+    value: 2
+  - time: 348
+    type: 2
+    value: 0
+  - time: 348.5
+    type: 2
+    value: 6
+  - time: 348.5
+    type: 3
+    value: 0
+  - time: 349
+    type: 3
+    value: 2
+  - time: 349
+    type: 2
+    value: 0
+  - time: 349.5
+    type: 2
+    value: 6
+  - time: 349.5
+    type: 3
+    value: 0
+  - time: 350
+    type: 3
+    value: 2
+  - time: 350
+    type: 2
+    value: 0
+  - time: 350.5
+    type: 2
+    value: 6
+  - time: 350.5
+    type: 3
+    value: 0
+  - time: 351
+    type: 0
+    value: 3
+  - time: 351
+    type: 2
+    value: 0
+  - time: 351
+    type: 3
+    value: 2
+  - time: 351.5
+    type: 3
+    value: 0
+  - time: 351.5
+    type: 2
+    value: 6
+  - time: 352
+    type: 3
+    value: 2
+  - time: 352
+    type: 2
+    value: 0
+  - time: 352.5
+    type: 3
+    value: 0
+  - time: 352.5
+    type: 2
+    value: 6
+  - time: 353
+    type: 3
+    value: 2
+  - time: 353
+    type: 2
+    value: 0
+  - time: 353.5
+    type: 3
+    value: 0
+  - time: 353.5
+    type: 2
+    value: 6
+  - time: 354
+    type: 3
+    value: 2
+  - time: 354
+    type: 2
+    value: 0
+  - time: 354.5
+    type: 2
+    value: 6
+  - time: 354.5
+    type: 3
+    value: 0
+  - time: 355
+    type: 3
+    value: 2
+  - time: 355
+    type: 0
+    value: 2
+  - time: 355
+    type: 2
+    value: 0
+  - time: 355.125
+    type: 0
+    value: 0
+  - time: 355.25
+    type: 0
+    value: 2
+  - time: 355.375
+    type: 0
+    value: 0
+  - time: 355.5
+    type: 2
+    value: 6
+  - time: 355.5
+    type: 0
+    value: 2
+  - time: 355.5
+    type: 3
+    value: 0
+  - time: 355.625
+    type: 0
+    value: 0
+  - time: 355.75
+    type: 0
+    value: 2
+  - time: 355.875
+    type: 0
+    value: 0
+  - time: 356
+    type: 0
+    value: 2
+  - time: 356
+    type: 2
+    value: 0
+  - time: 356
+    type: 3
+    value: 2
+  - time: 356.125
+    type: 0
+    value: 0
+  - time: 356.25
+    type: 0
+    value: 2
+  - time: 356.375
+    type: 0
+    value: 0
+  - time: 356.5
+    type: 3
+    value: 0
+  - time: 356.5
+    type: 2
+    value: 6
+  - time: 356.5
+    type: 0
+    value: 2
+  - time: 356.625
+    type: 0
+    value: 0
+  - time: 356.75
+    type: 0
+    value: 2
+  - time: 356.875
+    type: 0
+    value: 0
+  - time: 357
+    type: 2
+    value: 0
+  - time: 357
+    type: 3
+    value: 2
+  - time: 357
+    type: 1
+    value: 6
+  - time: 357
+    type: 0
+    value: 7
+  - time: 357
+    type: 8
+    value: 0
+  - time: 357.125
+    type: 1
+    value: 0
+  - time: 357.125
+    type: 0
+    value: 0
+  - time: 357.25
+    type: 0
+    value: 7
+  - time: 357.25
+    type: 1
+    value: 6
+  - time: 357.375
+    type: 0
+    value: 0
+  - time: 357.375
+    type: 1
+    value: 0
+  - time: 357.5
+    type: 0
+    value: 7
+  - time: 357.5
+    type: 1
+    value: 6
+  - time: 357.5
+    type: 3
+    value: 0
+  - time: 357.5
+    type: 2
+    value: 6
+  - time: 357.625
+    type: 1
+    value: 0
+  - time: 357.625
+    type: 0
+    value: 0
+  - time: 357.75
+    type: 0
+    value: 7
+  - time: 357.75
+    type: 1
+    value: 6
+  - time: 357.875
+    type: 1
+    value: 0
+  - time: 357.875
+    type: 0
+    value: 0
+  - time: 358
+    type: 0
+    value: 7
+  - time: 358
+    type: 1
+    value: 6
+  - time: 358
+    type: 2
+    value: 0
+  - time: 358
+    type: 3
+    value: 2
+  - time: 358.125
+    type: 1
+    value: 0
+  - time: 358.125
+    type: 0
+    value: 0
+  - time: 358.25
+    type: 0
+    value: 7
+  - time: 358.25
+    type: 1
+    value: 6
+  - time: 358.375
+    type: 1
+    value: 0
+  - time: 358.375
+    type: 0
+    value: 0
+  - time: 358.5
+    type: 3
+    value: 0
+  - time: 358.5
+    type: 2
+    value: 6
+  - time: 358.5
+    type: 0
+    value: 7
+  - time: 358.5
+    type: 1
+    value: 6
+  - time: 358.625
+    type: 1
+    value: 0
+  - time: 358.625
+    type: 0
+    value: 0
+  - time: 358.75
+    type: 0
+    value: 7
+  - time: 358.75
+    type: 1
+    value: 6
+  - time: 358.875
+    type: 1
+    value: 0
+  - time: 358.875
+    type: 0
+    value: 0
+  - time: 359
+    type: 8
+    value: 0
+  - time: 359
+    type: 0
+    value: 3
+  - time: 359
+    type: 1
+    value: 3
+  - time: 359
+    type: 4
+    value: 3
+  - time: 359.5
+    type: 2
+    value: 0
+  - time: 359.5
+    type: 3
+    value: 6
+  - time: 360
+    type: 0
+    value: 7
+  - time: 360
+    type: 2
+    value: 2
+  - time: 360
+    type: 3
+    value: 0
+  - time: 360.5
+    type: 3
+    value: 6
+  - time: 360.5
+    type: 2
+    value: 0
+  - time: 361
+    type: 2
+    value: 2
+  - time: 361
+    type: 1
+    value: 7
+  - time: 361
+    type: 0
+    value: 3
+  - time: 361
+    type: 8
+    value: 0
+  - time: 361
+    type: 4
+    value: 7
+  - time: 361
+    type: 3
+    value: 0
+  - time: 361.5
+    type: 2
+    value: 0
+  - time: 361.5
+    type: 3
+    value: 6
+  - time: 362
+    type: 2
+    value: 2
+  - time: 362
+    type: 0
+    value: 7
+  - time: 362
+    type: 3
+    value: 0
+  - time: 362.5
+    type: 2
+    value: 0
+  - time: 362.5
+    type: 3
+    value: 6
+  - time: 363
+    type: 0
+    value: 3
+  - time: 363
+    type: 1
+    value: 3
+  - time: 363
+    type: 2
+    value: 2
+  - time: 363
+    type: 4
+    value: 3
+  - time: 363
+    type: 8
+    value: 0
+  - time: 363
+    type: 3
+    value: 0
+  - time: 364
+    type: 0
+    value: 7
+  - time: 364
+    type: 3
+    value: 6
+  - time: 364
+    type: 2
+    value: 0
+  - time: 364.5
+    type: 3
+    value: 0
+  - time: 364.5
+    type: 2
+    value: 2
+  - time: 365
+    type: 0
+    value: 3
+  - time: 365
+    type: 1
+    value: 7
+  - time: 365
+    type: 2
+    value: 0
+  - time: 365
+    type: 3
+    value: 6
+  - time: 365
+    type: 8
+    value: 0
+  - time: 365
+    type: 4
+    value: 7
+  - time: 365.5
+    type: 2
+    value: 2
+  - time: 365.5
+    type: 3
+    value: 0
+  - time: 366
+    type: 0
+    value: 7
+  - time: 366
+    type: 2
+    value: 0
+  - time: 366
+    type: 3
+    value: 6
+  - time: 367
+    type: 8
+    value: 0
+  - time: 367
+    type: 0
+    value: 3
+  - time: 367
+    type: 2
+    value: 2
+  - time: 367
+    type: 3
+    value: 0
+  - time: 367
+    type: 1
+    value: 3
+  - time: 367
+    type: 4
+    value: 3
+  - time: 367.5
+    type: 3
+    value: 6
+  - time: 368
+    type: 8
+    value: 0
+  - time: 368
+    type: 1
+    value: 7
+  - time: 368
+    type: 2
+    value: 2
+  - time: 368
+    type: 0
+    value: 7
+  - time: 368.5
+    type: 3
+    value: 6
+  - time: 369
+    type: 8
+    value: 0
+  - time: 369
+    type: 1
+    value: 7
+  - time: 369
+    type: 0
+    value: 3
+  - time: 369
+    type: 2
+    value: 2
+  - time: 369.5
+    type: 3
+    value: 6
+  - time: 370
+    type: 1
+    value: 7
+  - time: 370
+    type: 0
+    value: 7
+  - time: 370
+    type: 2
+    value: 2
+  - time: 370
+    type: 8
+    value: 0
+  - time: 370.5
+    type: 3
+    value: 6
+  - time: 371
+    type: 0
+    value: 3
+  - time: 371
+    type: 4
+    value: 3
+  - time: 371
+    type: 8
+    value: 0
+  - time: 371
+    type: 1
+    value: 3
+  - time: 371
+    type: 2
+    value: 2
+  - time: 371.5
+    type: 3
+    value: 6
+  - time: 372
+    type: 2
+    value: 2
+  - time: 372
+    type: 8
+    value: 0
+  - time: 372
+    type: 1
+    value: 3
+  - time: 372
+    type: 0
+    value: 7
+  - time: 372.5
+    type: 3
+    value: 6
+  - time: 373
+    type: 2
+    value: 2
+  - time: 373
+    type: 8
+    value: 0
+  - time: 373
+    type: 0
+    value: 3
+  - time: 373
+    type: 1
+    value: 3
+  - time: 373.5
+    type: 3
+    value: 6
+  - time: 374
+    type: 2
+    value: 2
+  - time: 374
+    type: 8
+    value: 0
+  - time: 374
+    type: 0
+    value: 7
+  - time: 374
+    type: 1
+    value: 7
+  - time: 374.5
+    type: 3
+    value: 6
+  - time: 375
+    type: 1
+    value: 7
+  - time: 375
+    type: 4
+    value: 3
+  - time: 375
+    type: 3
+    value: 3
+  - time: 375
+    type: 2
+    value: 7
+  - time: 375
+    type: 0
+    value: 3
+  - time: 375
+    type: 8
+    value: 0
+  - time: 375.5
+    type: 2
+    value: 7
+  - time: 375.5
+    type: 0
+    value: 7
+  - time: 376
+    type: 1
+    value: 7
+  - time: 376
+    type: 3
+    value: 3
+  - time: 376
+    type: 4
+    value: 2
+  - time: 376
+    type: 0
+    value: 3
+  - time: 376
+    type: 8
+    value: 0
+  - time: 376.5
+    type: 0
+    value: 7
+  - time: 376.5
+    type: 2
+    value: 3
+  - time: 377
+    type: 3
+    value: 7
+  - time: 377
+    type: 4
+    value: 2
+  - time: 377
+    type: 1
+    value: 3
+  - time: 377
+    type: 0
+    value: 3
+  - time: 377
+    type: 8
+    value: 0
+  - time: 377.25
+    type: 2
+    value: 7
+  - time: 377.5
+    type: 0
+    value: 7
+  - time: 377.5
+    type: 2
+    value: 3
+  - time: 378
+    type: 4
+    value: 2
+  - time: 378
+    type: 3
+    value: 7
+  - time: 378
+    type: 0
+    value: 3
+  - time: 378
+    type: 1
+    value: 3
+  - time: 378.5
+    type: 2
+    value: 3
+  - time: 378.5
+    type: 0
+    value: 7
+  - time: 379
+    type: 0
+    value: 3
+  - time: 379
+    type: 4
+    value: 2
+  - time: 379
+    type: 3
+    value: 7
+  - time: 379.5
+    type: 0
+    value: 7
+  - time: 379.5
+    type: 2
+    value: 3
+  - time: 380
+    type: 0
+    value: 3
+  - time: 380
+    type: 3
+    value: 2
+  - time: 380.5
+    type: 0
+    value: 7
+  - time: 380.5
+    type: 2
+    value: 7
+  - time: 381
+    type: 0
+    value: 3
+  - time: 381
+    type: 3
+    value: 7
+  - time: 381.5
+    type: 0
+    value: 7
+  - time: 381.5
+    type: 2
+    value: 3
+  - time: 382
+    type: 0
+    value: 3
+  - time: 382
+    type: 3
+    value: 7
+  - time: 382.5
+    type: 0
+    value: 7
+  - time: 382.5
+    type: 2
+    value: 3
+  - time: 383
+    type: 2
+    value: 2
+  - time: 383
+    type: 8
+    value: 0
+  - time: 383
+    type: 1
+    value: 3
+  - time: 383
+    type: 0
+    value: 3
+  - time: 383
+    type: 4
+    value: 3
+  - time: 383
+    type: 3
+    value: 0
+  - time: 383.5
+    type: 3
+    value: 6
+  - time: 384
+    type: 0
+    value: 7
+  - time: 384
+    type: 2
+    value: 2
+  - time: 384
+    type: 8
+    value: 0
+  - time: 384
+    type: 1
+    value: 7
+  - time: 384.5
+    type: 3
+    value: 6
+  - time: 385
+    type: 0
+    value: 3
+  - time: 385
+    type: 8
+    value: 0
+  - time: 385
+    type: 1
+    value: 7
+  - time: 385
+    type: 2
+    value: 2
+  - time: 385.5
+    type: 3
+    value: 6
+  - time: 386
+    type: 0
+    value: 7
+  - time: 386
+    type: 1
+    value: 7
+  - time: 386
+    type: 8
+    value: 0
+  - time: 386
+    type: 2
+    value: 2
+  - time: 386.5
+    type: 3
+    value: 6
+  - time: 387
+    type: 0
+    value: 3
+  - time: 387
+    type: 1
+    value: 3
+  - time: 387
+    type: 2
+    value: 2
+  - time: 387
+    type: 4
+    value: 3
+  - time: 387
+    type: 8
+    value: 0
+  - time: 387.5
+    type: 3
+    value: 6
+  - time: 388
+    type: 8
+    value: 0
+  - time: 388
+    type: 0
+    value: 7
+  - time: 388
+    type: 1
+    value: 3
+  - time: 388
+    type: 2
+    value: 2
+  - time: 388.5
+    type: 3
+    value: 6
+  - time: 389
+    type: 2
+    value: 2
+  - time: 389
+    type: 8
+    value: 0
+  - time: 389
+    type: 1
+    value: 3
+  - time: 389
+    type: 0
+    value: 3
+  - time: 389.5
+    type: 3
+    value: 6
+  - time: 390
+    type: 8
+    value: 0
+  - time: 390
+    type: 0
+    value: 7
+  - time: 390
+    type: 1
+    value: 7
+  - time: 390
+    type: 2
+    value: 2
+  - time: 390.5
+    type: 3
+    value: 6
+  - time: 391
+    type: 8
+    value: 0
+  - time: 391
+    type: 1
+    value: 7
+  - time: 391
+    type: 4
+    value: 3
+  - time: 391
+    type: 0
+    value: 3
+  - time: 391
+    type: 3
+    value: 3
+  - time: 391
+    type: 2
+    value: 7
+  - time: 391.5
+    type: 0
+    value: 7
+  - time: 391.5
+    type: 2
+    value: 7
+  - time: 392
+    type: 0
+    value: 3
+  - time: 392
+    type: 4
+    value: 2
+  - time: 392
+    type: 3
+    value: 3
+  - time: 392.5
+    type: 2
+    value: 3
+  - time: 392.5
+    type: 0
+    value: 7
+  - time: 393
+    type: 8
+    value: 0
+  - time: 393
+    type: 1
+    value: 7
+  - time: 393
+    type: 4
+    value: 2
+  - time: 393
+    type: 0
+    value: 3
+  - time: 393
+    type: 3
+    value: 7
+  - time: 393.25
+    type: 2
+    value: 7
+  - time: 393.5
+    type: 2
+    value: 3
+  - time: 393.5
+    type: 0
+    value: 7
+  - time: 394
+    type: 3
+    value: 7
+  - time: 394
+    type: 0
+    value: 3
+  - time: 394
+    type: 1
+    value: 7
+  - time: 394
+    type: 4
+    value: 2
+  - time: 394.5
+    type: 0
+    value: 7
+  - time: 394.5
+    type: 2
+    value: 3
+  - time: 395
+    type: 0
+    value: 3
+  - time: 395
+    type: 3
+    value: 7
+  - time: 395
+    type: 4
+    value: 2
+  - time: 395.5
+    type: 2
+    value: 3
+  - time: 395.5
+    type: 0
+    value: 7
+  - time: 396
+    type: 4
+    value: 7
+  - time: 396
+    type: 0
+    value: 3
+  - time: 396
+    type: 3
+    value: 2
+  - time: 396.5
+    type: 2
+    value: 7
+  - time: 396.5
+    type: 0
+    value: 7
+  - time: 397
+    type: 0
+    value: 3
+  - time: 397
+    type: 3
+    value: 7
+  - time: 397
+    type: 4
+    value: 3
+  - time: 397.5
+    type: 2
+    value: 3
+  - time: 397.5
+    type: 0
+    value: 7
+  - time: 398
+    type: 3
+    value: 7
+  - time: 398
+    type: 4
+    value: 7
+  - time: 398
+    type: 0
+    value: 3
+  - time: 398.5
+    type: 2
+    value: 3
+  - time: 398.5
+    type: 0
+    value: 7
+  - time: 399
+    type: 4
+    value: 3
+  - time: 399
+    type: 0
+    value: 3
+  - time: 399
+    type: 3
+    value: 7
+  - time: 399.5
+    type: 2
+    value: 7
+  - time: 399.5
+    type: 0
+    value: 7
+  - time: 400
+    type: 0
+    value: 3
+  - time: 400
+    type: 3
+    value: 3
+  - time: 400
+    type: 8
+    value: 0
+  - time: 400
+    type: 4
+    value: 7
+  - time: 400
+    type: 1
+    value: 7
+  - time: 400.5
+    type: 3
+    value: 3
+  - time: 400.5
+    type: 0
+    value: 7
+  - time: 401
+    type: 4
+    value: 3
+  - time: 401
+    type: 1
+    value: 7
+  - time: 401
+    type: 0
+    value: 3
+  - time: 401
+    type: 2
+    value: 7
+  - time: 401.5
+    type: 3
+    value: 3
+  - time: 401.5
+    type: 0
+    value: 7
+  - time: 402
+    type: 4
+    value: 7
+  - time: 402
+    type: 0
+    value: 3
+  - time: 402
+    type: 2
+    value: 7
+  - time: 402.5
+    type: 3
+    value: 7
+  - time: 402.5
+    type: 0
+    value: 7
+  - time: 402.75
+    type: 0
+    value: 0
+  - time: 402.75
+    type: 2
+    value: 0
+  - time: 403
+    type: 0
+    value: 3
+  - time: 403
+    type: 4
+    value: 3
+  - time: 403
+    type: 2
+    value: 7
+  - time: 403.5
+    type: 3
+    value: 3
+  - time: 403.5
+    type: 0
+    value: 7
+  - time: 403.75
+    type: 0
+    value: 0
+  - time: 403.75
+    type: 2
+    value: 0
+  - time: 404
+    type: 2
+    value: 3
+  - time: 404
+    type: 4
+    value: 7
+  - time: 404
+    type: 0
+    value: 3
+  - time: 404.5
+    type: 3
+    value: 7
+  - time: 404.5
+    type: 0
+    value: 7
+  - time: 404.75
+    type: 0
+    value: 0
+  - time: 404.75
+    type: 2
+    value: 0
+  - time: 405
+    type: 4
+    value: 3
+  - time: 405
+    type: 1
+    value: 7
+  - time: 405
+    type: 0
+    value: 3
+  - time: 405
+    type: 2
+    value: 3
+  - time: 405
+    type: 3
+    value: 3
+  - time: 405
+    type: 8
+    value: 0
+  - time: 405.25
+    type: 0
+    value: 0
+  - time: 405.25
+    type: 2
+    value: 0
+  - time: 405.5
+    type: 2
+    value: 7
+  - time: 405.5
+    type: 0
+    value: 7
+  - time: 405.5
+    type: 3
+    value: 7
+  - time: 405.75
+    type: 2
+    value: 0
+  - time: 405.75
+    type: 0
+    value: 0
+  - time: 406
+    type: 4
+    value: 7
+  - time: 406
+    type: 0
+    value: 3
+  - time: 406
+    type: 1
+    value: 7
+  - time: 406
+    type: 8
+    value: 0
+  - time: 406
+    type: 3
+    value: 3
+  - time: 406
+    type: 2
+    value: 3
+  noteDataFilePath: Korpkiklaani - Ievan Expert+/ExpertPlusStandard.dat
+  difficulty: Expert+

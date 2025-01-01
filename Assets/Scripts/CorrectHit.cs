@@ -14,7 +14,7 @@ public class CorrectHit : MonoBehaviour
         // Get the direction from the saber to this cube
         Vector3 actualHitDirection = (other.transform.position - transform.position).normalized;
 
-        // the saber is likely to hit the cube from the lower edge in backward direction. means the expected hit direction is about 45° down to the lower egde of the playerside
+        // the saber is likely to hit the cube from the lower edge in backward direction. means the expected hit direction is about 45° down to the lower egde of the playerside, we use TransformDirectione to check localspace direction form the cube with the worldspace direction of the saber.
         Vector3 expectedHitDirection = (transform.TransformDirection(Vector3.down) + transform.TransformDirection(Vector3.back)).normalized;
         float dotProduct = Vector3.Dot(expectedHitDirection, actualHitDirection);
 
