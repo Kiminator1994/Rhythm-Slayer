@@ -98,7 +98,6 @@ public class GameManager : MonoBehaviour
         uiManager = uiManagerRef;
         noteEndManager = noteEndManagerRef;
         musicManager = musicManagerRef;
-        ApplyMusicSpeed();
     }
 
     public void ResetGameSceneStats()
@@ -438,19 +437,10 @@ public class GameManager : MonoBehaviour
         Time.timeScale = speedMultiplier;
         Time.fixedDeltaTime = 0.01f * Time.timeScale; // make sure physic calculations stay consistent with the new timeScale
     }
+
     public float GetSpeedMultiplier()
     {
         return speedMultiplier;
-    }
-
-    private void ApplyMusicSpeed()
-    {
-        // Change Music speed with pitch, according to speedmultiplier, set by gameModification
-        MusicManager musicManager = FindObjectOfType<MusicManager>();
-        if (musicManager != null && musicManager.audioSource != null)
-        {
-            musicManager.audioSource.pitch = speedMultiplier;
-        }
     }
 
     private void LoadSaveData()

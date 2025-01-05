@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CorrectHit : MonoBehaviour
 {
-    [Range(0, 90)] public float toleranceAngle = 60f;
+    [Range(0, 90)] public float toleranceAngle = 65f;
     public int coneSegments = 24;
     public bool correctHit = false;
 

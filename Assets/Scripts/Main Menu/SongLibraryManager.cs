@@ -24,7 +24,7 @@ public class SongLibraryManager : MonoBehaviour
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private SongMapImporter songMapImporter;
 
-    private string customSongsFolder = "Resources/CustomSongs";
+    private string customSongsFolder = "CustomSongs";
 
     private void Start()
     {
